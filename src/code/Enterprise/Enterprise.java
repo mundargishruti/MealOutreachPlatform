@@ -3,14 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package code.Enterprise;
-
+import code.Org.Organization;
+import code.Org.OrgDirectory;
 import java.util.List;
 
 /**
  *
  * @author Rajvi
  */
-public class Enterprise extends Organization{
+public abstract class Enterprise extends Organization{
     private EnterpriseType enterpriseType;
     private OrgDirectory orgDirectory;
 

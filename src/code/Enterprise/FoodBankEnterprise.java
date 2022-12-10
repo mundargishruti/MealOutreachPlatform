@@ -3,11 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package code.Enterprise;
-package Business.Enterprise;
 
 import code.Org.Organization;
 import code.Org.OrgDirectory;
 import code.Beneficiary.BeneficiaryDirectory;
+import code.Role.Role;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,9 +15,9 @@ import java.util.List;
  *
  * @author Rajvi
  */
-public class FoodBankEnterprise {
+public class FoodBankEnterprise extends Enterprise {
     private BeneficiaryDirectory benificiaryDirectory;
-//constructor for the healthservice is declared
+
     public FoodBankEnterprise(String name) {
         super(name, EnterpriseType.FoodBankEnterprise);
         benificiaryDirectory = new BeneficiaryDirectory();
