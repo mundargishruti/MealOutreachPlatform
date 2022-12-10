@@ -5,6 +5,7 @@
 package code.Org;
 
 import code.Role.Role;
+import code.Role.RoleEbtAgent;
 import java.util.ArrayList;
 
 /**
