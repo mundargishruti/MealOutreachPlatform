@@ -5,6 +5,7 @@
 package code.Role;
 
 import code.Enterprise.Enterprise;
+import code.Org.Organization;
 import javax.swing.JPanel;
 
 /**

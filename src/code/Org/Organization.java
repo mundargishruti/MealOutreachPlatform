@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author Rajvi
  */
-public class Organisation {
+public abstract class Organization {
     private String organisationName; //organisation name
     private Process processQueue;
     private EmployeeDirectory empDir; //employee directory
