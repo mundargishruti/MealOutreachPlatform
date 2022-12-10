@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  * @author Rajvi
  */
-public class EnterpriseDirectory {
+public class EntDirectory {
     private ArrayList<Enterprise> enterpriseList;
    
 
