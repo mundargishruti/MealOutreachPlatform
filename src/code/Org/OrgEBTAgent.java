@@ -4,26 +4,25 @@
  */
 package code.Org;
 
-import code.Role.RoleAccountant;
 import code.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author Rajvi
+ * @author shruti
  */
-public class OrgAccountant extends Organization {
+public class OrgEBTAgent extends Organization {
 
-    public OrgAccountant() {
-        super(Organization.Type.Accountant.getValue());
-
+    public OrgEBTAgent() {
+        super(Organization.Type.EBTAgent.getValue());
     }
 
     @Override
     public ArrayList<Role> getSupportRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new RoleAccountant());
+        roles.add(new RoleEbtAgent());
         return roles;
     }
-
 }
+    
+

@@ -3,27 +3,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package code.Org;
-
-import code.Role.RoleAccountant;
+import code.Role.RoleBeneficiary;
 import code.Role.Role;
 import java.util.ArrayList;
-
 /**
  *
  * @author Rajvi
  */
-public class OrgAccountant extends Organization {
+public class OrgBenificiary extends Organization {
 
-    public OrgAccountant() {
-        super(Organization.Type.Accountant.getValue());
-
+   public OrgBenificiary() {
+        super(Organization.Type.Benificiary.getValue());
     }
 
     @Override
     public ArrayList<Role> getSupportRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new RoleAccountant());
+        roles.add(new RoleBeneficiary());
         return roles;
     }
-
+    
 }
+
