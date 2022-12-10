@@ -7,6 +7,9 @@ import code.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Org.Organization;
 import Business.SystemUserAccount.SystemUsers;
+import code.Enterprise.Enterprise;
+import code.Org.Organization;
+import code.SystemUserAccount.SystemUsers;
 import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
 
