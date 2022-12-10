@@ -4,6 +4,7 @@
  */
 package code.Enterprise;
 
+import code.Role.Role;
 import java.util.ArrayList;
 import java.util.List;
 
