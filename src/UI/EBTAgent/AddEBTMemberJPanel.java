@@ -76,7 +76,6 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
         lblAlCstmr = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
         img = new javax.swing.JLabel();
-        dobJDateChooser = new com.toedter.calendar.JDateChooser();
 
         jPanel1.setBackground(new java.awt.Color(249, 244, 236));
 
@@ -84,7 +83,7 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
         lblAddNewCust.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
         lblAddNewCust.setForeground(new java.awt.Color(29, 51, 178));
         lblAddNewCust.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAddNewCust.setText("Get a new EBT card");
+        lblAddNewCust.setText("Get a EBT card");
 
         lblPlcyNo.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
         lblPlcyNo.setForeground(new java.awt.Color(29, 51, 178));
@@ -219,8 +218,6 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
         img.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/photos/card.png"))); // NOI18N
 
-        dobJDateChooser.setBackground(new java.awt.Color(249, 244, 236));
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -261,7 +258,6 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
                                 .addComponent(lblGndr))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(dobJDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(inputgender, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(inputSsn, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(inputAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -307,10 +303,8 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
                                 .addComponent(inputFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(lblFrstNm)
                                 .addComponent(lblLstNm)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblDtOfBrth)
-                            .addComponent(dobJDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(25, 25, 25)
+                        .addComponent(lblDtOfBrth)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(inputgender, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -600,7 +594,6 @@ private boolean phoneValidation() {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddCstmr;
     private javax.swing.JButton btnBack;
-    private com.toedter.calendar.JDateChooser dobJDateChooser;
     private javax.swing.JLabel img;
     private javax.swing.JTextField inputAddress;
     private javax.swing.JTextField inputFirstName;

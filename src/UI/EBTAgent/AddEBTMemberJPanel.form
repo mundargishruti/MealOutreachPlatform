@@ -89,7 +89,6 @@
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="dobJDateChooser" min="-2" pref="141" max="-2" attributes="0"/>
                                   <Component id="inputgender" min="-2" pref="135" max="-2" attributes="0"/>
                                   <Component id="inputSsn" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
                                   <Component id="inputAddress" min="-2" pref="379" max="-2" attributes="0"/>
@@ -146,11 +145,8 @@
                                   <Component id="lblLstNm" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="lblDtOfBrth" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="dobJDateChooser" alignment="1" min="-2" pref="34" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="lblDtOfBrth" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="inputgender" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
@@ -216,7 +212,7 @@
               <Color blue="b2" green="33" red="1d" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Get a new EBT card"/>
+            <Property name="text" type="java.lang.String" value="Get a EBT card"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblPlcyNo">
@@ -526,13 +522,6 @@
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/photos/card.png"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="dobJDateChooser">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ec" green="f4" red="f9" type="rgb"/>
             </Property>
           </Properties>
         </Component>
