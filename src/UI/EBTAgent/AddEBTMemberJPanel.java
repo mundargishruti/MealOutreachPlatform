@@ -16,8 +16,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
-import mealOutreach.EBTCard.EBTCard;
-import mealOutreach.EBTMembers.EBTMembers;
+import code.EBTCard.EBTCard;
+import code.EBTMembers.EBTMembers;
+import code.Enterprise.EBTEnterprise;
+import code.SystemUserAccount.SystemUsers;
 
 /**
  *
@@ -495,9 +497,9 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
 
             ebtMember.setEbt(ebtCard);
 
-            ebtCardEntr.getEBTMemberDirectory().getEbtMem().add(ebtMember);
+            ebtCardEntr.getEbtMembersDirectory().getEbtMem().add(ebtMember);
 
-            ebtCardEntr.getEBTMemberDirectory().getEbtMem();
+            ebtCardEntr.getEbtMembersDirectory().getEbtMem();
 
             populateTable();
             refr();
@@ -559,7 +561,7 @@ private boolean phoneValidation() {
 
     private void populateFields() {
         txtPlcyNum.setText(ebtCardNo);
-        List<EBTCard> policies = ebtCardEntr.getInsPlcyDir().getEBTCards();
+        List<EBTCard> policies = ebtCardEntr.getEbtCardDir().getEBTCards();
 
         for (EBTCard policy : policies) {
             txtInsPlcyNm.addItem(policy);
@@ -582,12 +584,12 @@ private boolean phoneValidation() {
         DefaultTableModel dtm = (DefaultTableModel) tblNewCstmr.getModel();
 
         dtm.setRowCount(0);
-        List<EBTMembers> members = ebtCardEntr.getEBTMemberDirectory().getEbtMem();
+        List<EBTMembers> members = ebtCardEntr.getEbtMembersDirectory().getEbtMem();
         for (EBTMembers member : members) {
             Object[] row = new Object[4];
             row[0] = member.getMemFirstName() + " " + member.getMemLastName();
             row[1] = member;
-            row[2] = member.getEbt().getebtType();
+            row[2] = member.getEbt().getEbtType();
             row[3] = member.getEbt().getAllowance();
 
             dtm.addRow(row);
