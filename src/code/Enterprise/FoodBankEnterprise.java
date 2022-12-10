@@ -5,8 +5,8 @@
 package code.Enterprise;
 package Business.Enterprise;
 
-import Business.Org.Organization;
-import Business.Org.OrgDirectory;
+import code.Org.Organization;
+import code.Org.OrgDirectory;
 import code.Beneficiary.BeneficiaryDirectory;
 import java.util.ArrayList;
 import java.util.List;
