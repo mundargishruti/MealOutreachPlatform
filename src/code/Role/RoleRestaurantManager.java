@@ -3,20 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package code.Role;
-
 import code.EcoSystem;
 import code.Enterprise.Enterprise;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-import userinterface.PatientRole.PatientWorkAreaJPanel;
+import userinterface.BloodBankManagerRole.BloodBankManagerWorkAreaJPanel;
+
 /**
  *
  * @author Rajvi
  */
-public class RoleBeneficiary extends Role{
-     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new PatientWorkAreaJPanel(userProcessContainer, account, organization, business);
+public class RoleRestaurantManager extends Role {
+    @Override
+    public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization,
+            Enterprise enterprise, EcoSystem business) {
+        return new BloodBankManagerWorkAreaJPanel(userProcessContainer, account, organization, business);
     }
 }
