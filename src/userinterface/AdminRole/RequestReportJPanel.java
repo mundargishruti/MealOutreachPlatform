@@ -93,18 +93,19 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         imgReqFund = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
-        lblRequestFund.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblRequestFund.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
         lblRequestFund.setText("REQUEST REPORT");
         add(lblRequestFund);
-        lblRequestFund.setBounds(236, 11, 228, 50);
+        lblRequestFund.setBounds(260, 10, 228, 50);
 
-        lblLocation.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblLocation.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblLocation.setForeground(new java.awt.Color(229, 227, 182));
         lblLocation.setText("Resaurant Name");
         add(lblLocation);
-        lblLocation.setBounds(67, 69, 130, 17);
+        lblLocation.setBounds(67, 69, 130, 22);
 
         txtLoc.setBackground(new java.awt.Color(204, 204, 204));
         txtLoc.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -116,10 +117,11 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         add(txtLoc);
         txtLoc.setBounds(260, 70, 141, 23);
 
-        lblPopulation.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblPopulation.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblPopulation.setForeground(new java.awt.Color(229, 227, 182));
         lblPopulation.setText("RestaurantID");
         add(lblPopulation);
-        lblPopulation.setBounds(67, 107, 120, 17);
+        lblPopulation.setBounds(67, 107, 120, 22);
 
         txtpop.setBackground(new java.awt.Color(204, 204, 204));
         txtpop.addActionListener(new java.awt.event.ActionListener() {
@@ -130,10 +132,11 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         add(txtpop);
         txtpop.setBounds(260, 100, 143, 23);
 
-        lblAmt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblAmt.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblAmt.setForeground(new java.awt.Color(229, 227, 182));
         lblAmt.setText("Zip Code");
         add(lblAmt);
-        lblAmt.setBounds(67, 145, 130, 17);
+        lblAmt.setBounds(67, 145, 130, 22);
 
         txtAmt.setBackground(new java.awt.Color(204, 204, 204));
         txtAmt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -187,12 +190,12 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblWrkReq);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(50, 350, 592, 97);
+        jScrollPane1.setBounds(50, 320, 592, 97);
 
-        lblAllFndReq.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAllFndReq.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         lblAllFndReq.setText("All Funds Requests");
         add(lblAllFndReq);
-        lblAllFndReq.setBounds(270, 310, 124, 36);
+        lblAllFndReq.setBounds(270, 270, 150, 36);
 
         lblTotFundRcvd.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblTotFundRcvd.setText("Total Funds Received :");
@@ -216,10 +219,12 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         add(btnBack);
         btnBack.setBounds(30, 20, 90, 23);
 
-        imgReqFund.setBackground(new java.awt.Color(0, 204, 204));
-        imgReqFund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Gov.gif"))); // NOI18N
+        imgReqFund.setBackground(new java.awt.Color(253, 249, 232));
+        imgReqFund.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        imgReqFund.setForeground(new java.awt.Color(229, 227, 182));
+        imgReqFund.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/how-to-write-a-report.jpeg"))); // NOI18N
         add(imgReqFund);
-        imgReqFund.setBounds(60, 0, 630, 310);
+        imgReqFund.setBounds(0, 0, 730, 510);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtLocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocActionPerformed

@@ -137,7 +137,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         }
 
         rmployeeCreationButton.setBackground(new java.awt.Color(204, 130, 43));
-        rmployeeCreationButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rmployeeCreationButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         rmployeeCreationButton.setText("Create Employee");
         rmployeeCreationButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,12 +154,12 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
 
-        organisationLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        organisationLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         organisationLabel.setForeground(new java.awt.Color(204, 130, 43));
         organisationLabel.setText("Organization");
 
         backButton.setBackground(new java.awt.Color(204, 204, 204));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setText(" Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,7 +167,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
 
-        nameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        nameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         nameLabel.setForeground(new java.awt.Color(204, 130, 43));
         nameLabel.setText("Name");
 
@@ -185,11 +185,11 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
 
         organisationTextLabel.setBackground(new java.awt.Color(204, 204, 204));
-        organisationTextLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        organisationTextLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         organisationTextLabel.setForeground(new java.awt.Color(204, 130, 43));
         organisationTextLabel.setText("Organization");
 
-        manageEmployeeLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        manageEmployeeLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
         manageEmployeeLabel.setForeground(new java.awt.Color(204, 130, 43));
         manageEmployeeLabel.setText("Manage Employee");
 
@@ -205,7 +205,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(backButton)
-                        .addGap(332, 332, 332)
+                        .addGap(258, 258, 258)
                         .addComponent(manageEmployeeLabel))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,7 +223,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(nameText, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(employeeOrganisationcomboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(164, Short.MAX_VALUE))
+                .addContainerGap(158, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rmployeeCreationButton)
@@ -236,14 +236,14 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(backButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(manageEmployeeLabel)))
-                .addGap(26, 26, 26)
+                        .addComponent(backButton)
+                        .addGap(44, 44, 44))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(manageEmployeeLabel)
+                        .addGap(18, 18, 18)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(organisationLabel)
                     .addComponent(organisationComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -260,9 +260,9 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                             .addComponent(nameLabel))
                         .addGap(36, 36, 36)
                         .addComponent(rmployeeCreationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(27, 27, 27)
+                .addGap(85, 85, 85)
                 .addComponent(manageEmployeeImage, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(391, Short.MAX_VALUE))
+                .addContainerGap(325, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
