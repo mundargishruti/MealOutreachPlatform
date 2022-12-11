@@ -230,6 +230,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
 
         buttonGroup1.add(rbPtntInsYes);
         rbPtntInsYes.setFont(new java.awt.Font("YuGothic", 0, 12)); // NOI18N
+        rbPtntInsYes.setForeground(new java.awt.Color(204, 130, 43));
         rbPtntInsYes.setText("Yes");
         rbPtntInsYes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,6 +240,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
 
         buttonGroup1.add(rbPtntInsNo);
         rbPtntInsNo.setFont(new java.awt.Font("YuGothic", 0, 12)); // NOI18N
+        rbPtntInsNo.setForeground(new java.awt.Color(204, 130, 43));
         rbPtntInsNo.setText("No");
         rbPtntInsNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -329,7 +331,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
 
         lblDrTyp.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         lblDrTyp.setForeground(new java.awt.Color(204, 130, 43));
-        lblDrTyp.setText("Doctor Type");
+        lblDrTyp.setText("Volunteer Type");
 
         cbDrTyp.setFont(new java.awt.Font("YuGothic", 0, 13)); // NOI18N
         cbDrTyp.setForeground(new java.awt.Color(204, 130, 43));

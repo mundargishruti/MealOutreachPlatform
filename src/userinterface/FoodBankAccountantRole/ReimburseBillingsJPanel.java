@@ -67,10 +67,10 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
         EBTClaimStatusLabel = new javax.swing.JLabel();
         BeneficiaryBillLabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        processRequestButton.setBackground(new java.awt.Color(0, 102, 102));
-        processRequestButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        processRequestButton.setBackground(new java.awt.Color(204, 130, 43));
+        processRequestButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         processRequestButton.setForeground(new java.awt.Color(255, 255, 255));
         processRequestButton.setText("Process Request");
         processRequestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -122,8 +122,8 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(BeneficiaryBillingTable);
 
-        assignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        assignToMeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        assignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        assignToMeButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         assignToMeButton.setForeground(new java.awt.Color(255, 255, 255));
         assignToMeButton.setText("AssignToMe");
         assignToMeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +133,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
         });
 
         backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -142,7 +142,8 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("Receptionist: Patient Billing Area");
 
         tblInsClmStatus.setBackground(new java.awt.Color(204, 204, 204));
@@ -188,10 +189,12 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(tblInsClmStatus);
 
-        EBTClaimStatusLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        EBTClaimStatusLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        EBTClaimStatusLabel.setForeground(new java.awt.Color(204, 130, 43));
         EBTClaimStatusLabel.setText("Insurance Claim Status Table");
 
-        BeneficiaryBillLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        BeneficiaryBillLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        BeneficiaryBillLabel.setForeground(new java.awt.Color(204, 130, 43));
         BeneficiaryBillLabel.setText("Patient Billing Table");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -215,7 +218,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
                                 .addComponent(assignToMeButton)
                                 .addGap(69, 69, 69)
                                 .addComponent(processRequestButton)))
-                        .addGap(0, 351, Short.MAX_VALUE))
+                        .addGap(0, 324, Short.MAX_VALUE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2))
                 .addContainerGap())
@@ -246,7 +249,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
                 .addComponent(EBTClaimStatusLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

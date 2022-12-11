@@ -69,21 +69,24 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
         rejectButton = new javax.swing.JButton();
         img = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
         amountNeededText.setEnabled(false);
 
-        amountNeededLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        amountNeededLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        amountNeededLabel.setForeground(new java.awt.Color(204, 130, 43));
         amountNeededLabel.setText("Amount Needed:");
 
-        messageabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        messageabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        messageabel.setForeground(new java.awt.Color(204, 130, 43));
         messageabel.setText("Message:");
 
-        requestNGOLabel.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        requestNGOLabel.setFont(new java.awt.Font("YuGothic", 1, 36)); // NOI18N
+        requestNGOLabel.setForeground(new java.awt.Color(204, 130, 43));
         requestNGOLabel.setText("NGO ADMIN WORK REQUEST");
 
-        directorApprovalbutton.setBackground(new java.awt.Color(0, 102, 102));
-        directorApprovalbutton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        directorApprovalbutton.setBackground(new java.awt.Color(204, 130, 43));
+        directorApprovalbutton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         directorApprovalbutton.setText("Send to Director for approval");
         directorApprovalbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +95,7 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
         });
 
         backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,18 +103,20 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        hospitalNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        hospitalNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        hospitalNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         hospitalNameLabel.setText("Food Bank Name:");
 
         hospitalNameText.setEnabled(false);
 
         hospitalAddressText.setEnabled(false);
 
-        hospitalAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        hospitalAddressLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        hospitalAddressLabel.setForeground(new java.awt.Color(204, 130, 43));
         hospitalAddressLabel.setText("Food Bank Address:");
 
-        rejectButton.setBackground(new java.awt.Color(0, 102, 102));
-        rejectButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rejectButton.setBackground(new java.awt.Color(204, 130, 43));
+        rejectButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         rejectButton.setText("Reject");
         rejectButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +124,7 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NGO.gif"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ngo.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -157,7 +162,7 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(requestNGOLabel)
                             .addComponent(img))))
-                .addContainerGap(350, Short.MAX_VALUE))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -191,7 +196,7 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(directorApprovalbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(121, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
