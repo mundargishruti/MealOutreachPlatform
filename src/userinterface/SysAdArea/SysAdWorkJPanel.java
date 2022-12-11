@@ -6,9 +6,9 @@
 package userinterface.SysAdArea;
 
 import code.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Networks.Networks;
-import Business.Org.Organization;
+import code.Enterprise.Enterprise;
+import code.Networks.Networks;
+import code.Org.Organization;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import javax.swing.JPanel;
@@ -17,7 +17,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
- * @author Parth
+ * @author Rajvi
  */
 public class SysAdWorkJPanel extends javax.swing.JPanel {
 

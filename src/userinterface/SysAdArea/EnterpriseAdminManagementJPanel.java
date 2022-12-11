@@ -5,19 +5,19 @@
 
 /**
  *
- * @author Parth
+ * @author Rajvi
  */
 
 package userinterface.SysAdArea;
 
 import code.EcoSystem;
 import code.Employee.Employee;
-import Business.Enterprise.*;
-import Business.Networks.Networks;
-import Business.Role.RoleEntAdmin;
-import Business.Role.Role;
-import Business.SystemUserAccount.SystemUsers;
-import Business.SystemUserAccount.UsersDirectory;
+import code.Enterprise.*;
+import code.Networks.Networks;
+import code.Role.RoleEntAdmin;
+import code.Role.Role;
+import code.SystemUserAccount.SystemUsers;
+import code.SystemUserAccount.UsersDirectory;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
