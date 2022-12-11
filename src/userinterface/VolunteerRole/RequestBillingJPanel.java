@@ -75,13 +75,13 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         backButton = new javax.swing.JButton();
         billRequestImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
         billingRequestLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         billingRequestLabel.setText("Billing Request");
         add(billingRequestLabel);
-        billingRequestLabel.setBounds(310, 60, 157, 29);
+        billingRequestLabel.setBounds(310, 60, 157, 28);
 
         BeneficiaryInfoLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         BeneficiaryInfoLabel.setText("BENEFICIARY INFORMATION");
@@ -100,7 +100,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         lastNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         lastNameLabel.setText("Last Name :");
         add(lastNameLabel);
-        lastNameLabel.setBounds(270, 240, 74, 17);
+        lastNameLabel.setBounds(270, 240, 75, 17);
 
         lastNameText.setEditable(false);
         add(lastNameText);
@@ -127,7 +127,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         billingInformationLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         billingInformationLabel.setText("BILLING INFORMATION");
         add(billingInformationLabel);
-        billingInformationLabel.setBounds(300, 360, 165, 17);
+        billingInformationLabel.setBounds(300, 360, 162, 17);
 
         orderActualPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         orderActualPriceLabel.setText("Actual Amount");
@@ -165,7 +165,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         lblMiscChargesUSD.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         lblMiscChargesUSD.setText("Delivery Charges");
         add(lblMiscChargesUSD);
-        lblMiscChargesUSD.setBounds(230, 490, 103, 17);
+        lblMiscChargesUSD.setBounds(230, 490, 107, 17);
         add(txtMiscChargesUSD);
         txtMiscChargesUSD.setBounds(410, 490, 82, 23);
 
@@ -179,7 +179,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             }
         });
         add(sendBillRequestButton);
-        sendBillRequestButton.setBounds(300, 540, 151, 32);
+        sendBillRequestButton.setBounds(300, 540, 150, 32);
 
         backButton.setBackground(new java.awt.Color(0, 102, 102));
         backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -191,8 +191,9 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             }
         });
         add(backButton);
-        backButton.setBounds(80, 40, 75, 29);
+        backButton.setBounds(80, 40, 90, 25);
 
+        billRequestImage.setBackground(new java.awt.Color(253, 249, 232));
         billRequestImage.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         billRequestImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/patient_experience.gif"))); // NOI18N
         billRequestImage.setToolTipText("");

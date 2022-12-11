@@ -59,11 +59,11 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         lblLabTypReq = new javax.swing.JLabel();
         imgLabTstReq = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnReqTst.setBackground(new java.awt.Color(0, 102, 102));
-        btnReqTst.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnReqTst.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         btnReqTst.setForeground(new java.awt.Color(255, 255, 255));
         btnReqTst.setText("Request Restaurant");
         btnReqTst.addActionListener(new java.awt.event.ActionListener() {
@@ -71,15 +71,17 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
                 btnReqTstActionPerformed(evt);
             }
         });
-        add(btnReqTst, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 170, 30));
+        add(btnReqTst, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 210, 170, 30));
 
-        lblMsg.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblMsg.setBackground(new java.awt.Color(204, 130, 43));
+        lblMsg.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        lblMsg.setForeground(new java.awt.Color(204, 130, 43));
         lblMsg.setText("Message:");
-        add(lblMsg, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 70, -1));
-        add(txtMsg, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 130, 30));
+        add(lblMsg, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, 70, -1));
+        add(txtMsg, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 140, 130, 30));
 
         btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -89,24 +91,33 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 30));
 
-        lblValue.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblValue.setBackground(new java.awt.Color(204, 130, 43));
+        lblValue.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(204, 130, 43));
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 130, 20));
 
-        lblEnt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblEnt.setBackground(new java.awt.Color(204, 130, 43));
+        lblEnt.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        lblEnt.setForeground(new java.awt.Color(204, 130, 43));
         lblEnt.setText("Enterprise :");
         add(lblEnt, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 90, 20));
 
-        lblLabTyp.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblLabTyp.setBackground(new java.awt.Color(204, 130, 43));
+        lblLabTyp.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        lblLabTyp.setForeground(new java.awt.Color(204, 130, 43));
         lblLabTyp.setText("Restaurant Type");
-        add(lblLabTyp, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, -1, -1));
-        add(txtLabTyp, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 130, 30));
+        add(lblLabTyp, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, -1, -1));
+        add(txtLabTyp, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, 130, 30));
 
-        lblLabTypReq.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        lblLabTypReq.setBackground(new java.awt.Color(204, 130, 43));
+        lblLabTypReq.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
+        lblLabTypReq.setForeground(new java.awt.Color(204, 130, 43));
         lblLabTypReq.setText("Restaurant Request");
-        add(lblLabTypReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
+        add(lblLabTypReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, -1, -1));
 
-        imgLabTstReq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/checkup.gif"))); // NOI18N
+        imgLabTstReq.setForeground(new java.awt.Color(204, 130, 43));
+        imgLabTstReq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/restaurant.gif"))); // NOI18N
         imgLabTstReq.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         add(imgLabTstReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1460, 810));
     }// </editor-fold>//GEN-END:initComponents

@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author shruti
+ * @author Pratik
  */
 import code.EcoSystem;
 import code.Enterprise.Enterprise;
@@ -68,10 +68,10 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
         tblNgoReq = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(253, 249, 232));
+        setBackground(new java.awt.Color(0, 204, 204));
 
-        backButton.setBackground(new java.awt.Color(204, 130, 43));
-        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,31 +79,26 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        requestsFundNGOLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
-        requestsFundNGOLabel.setForeground(new java.awt.Color(204, 130, 43));
+        requestsFundNGOLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         requestsFundNGOLabel.setText("Request Funds from NGO");
 
-        contributionsRecievedLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
-        contributionsRecievedLabel.setForeground(new java.awt.Color(204, 130, 43));
+        contributionsRecievedLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         contributionsRecievedLabel.setText("Total Funds Recieved");
 
         totalNgoFundsRecievedText.setEditable(false);
         totalNgoFundsRecievedText.setBackground(new java.awt.Color(204, 204, 204));
         totalNgoFundsRecievedText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        allContributionsRequestLabel.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
-        allContributionsRequestLabel.setForeground(new java.awt.Color(204, 130, 43));
+        allContributionsRequestLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         allContributionsRequestLabel.setText("All Funds Requests");
 
-        hospitalAddressLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
-        hospitalAddressLabel.setForeground(new java.awt.Color(204, 130, 43));
+        hospitalAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         hospitalAddressLabel.setText("Food Bank Address");
 
         hospitalAddressText.setBackground(new java.awt.Color(204, 204, 204));
         hospitalAddressText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        requiredAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
-        requiredAmountLabel.setForeground(new java.awt.Color(204, 130, 43));
+        requiredAmountLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         requiredAmountLabel.setText("Amount Required By Food Bank");
 
         hospitalAmountText.setBackground(new java.awt.Color(204, 204, 204));
@@ -112,12 +107,11 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
         hospitalNameText.setBackground(new java.awt.Color(204, 204, 204));
         hospitalNameText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        hospitalNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
-        hospitalNameLabel.setForeground(new java.awt.Color(204, 130, 43));
+        hospitalNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         hospitalNameLabel.setText("Name Of FoodBank");
 
-        requestFundsFromNgoButton.setBackground(new java.awt.Color(204, 130, 43));
-        requestFundsFromNgoButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        requestFundsFromNgoButton.setBackground(new java.awt.Color(0, 102, 102));
+        requestFundsFromNgoButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         requestFundsFromNgoButton.setText("Request Funds from NGO");
         requestFundsFromNgoButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,20 +149,21 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
         });
         allcontibutionsTable.setViewportView(tblNgoReq);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ngo.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NGO.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(allcontibutionsTable, javax.swing.GroupLayout.PREFERRED_SIZE, 698, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addComponent(backButton)
+                        .addGap(186, 186, 186)
+                        .addComponent(requestsFundNGOLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -188,18 +183,19 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(contributionsRecievedLabel)
                                 .addGap(82, 82, 82)
-                                .addComponent(totalNgoFundsRecievedText, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(backButton)
-                                .addGap(120, 120, 120)
-                                .addComponent(requestsFundNGOLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(49, 49, 49))
+                                .addComponent(totalNgoFundsRecievedText, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addGap(155, 155, 155))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 138, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addComponent(allcontibutionsTable, javax.swing.GroupLayout.PREFERRED_SIZE, 698, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(118, 118, 118))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(allContributionsRequestLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(130, 130, 130)))
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(197, 197, 197))
+                        .addGap(376, 376, 376))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -207,10 +203,14 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(backButton)
-                            .addComponent(requestsFundNGOLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(31, 31, 31)
+                        .addComponent(backButton)
+                        .addGap(25, 25, 25))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(requestsFundNGOLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(hospitalNameText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hospitalNameLabel))
@@ -227,16 +227,15 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
                         .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(contributionsRecievedLabel)
-                            .addComponent(totalNgoFundsRecievedText, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(26, 26, 26)
-                        .addComponent(allContributionsRequestLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2)
-                        .addGap(40, 40, 40)))
+                            .addComponent(totalNgoFundsRecievedText, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel2)))
+                .addGap(26, 26, 26)
+                .addComponent(allContributionsRequestLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(allcontibutionsTable, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(413, Short.MAX_VALUE))
+                .addContainerGap(258, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
