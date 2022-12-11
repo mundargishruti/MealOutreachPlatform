@@ -46,11 +46,11 @@ public class RestaurantWorkRequestJPanel extends javax.swing.JPanel {
         restaurantLabel = new javax.swing.JLabel();
         imageRestaurant = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
-        submitButton.setBackground(new java.awt.Color(0, 102, 102));
-        submitButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        submitButton.setBackground(new java.awt.Color(204, 130, 43));
+        submitButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         submitButton.setForeground(java.awt.Color.white);
         submitButton.setText("Confirm Order");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -62,15 +62,16 @@ public class RestaurantWorkRequestJPanel extends javax.swing.JPanel {
         submitButton.setBounds(260, 170, 140, 36);
 
         messageLabel.setBackground(new java.awt.Color(255, 255, 255));
-        messageLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        messageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        messageLabel.setForeground(new java.awt.Color(204, 130, 43));
         messageLabel.setText("Message");
         add(messageLabel);
-        messageLabel.setBounds(170, 140, 60, 17);
+        messageLabel.setBounds(170, 140, 60, 22);
         add(messageTeaxt);
         messageTeaxt.setBounds(250, 130, 160, 30);
 
-        backButton.setBackground(new java.awt.Color(0, 153, 255));
-        backButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         backButton.setText(" Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,17 +79,18 @@ public class RestaurantWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(backButton);
-        backButton.setBounds(30, 40, 90, 22);
+        backButton.setBounds(30, 40, 75, 29);
 
-        restaurantLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        restaurantLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        restaurantLabel.setForeground(new java.awt.Color(204, 130, 43));
         restaurantLabel.setText("Restaurant Work Request ");
         add(restaurantLabel);
-        restaurantLabel.setBounds(200, 30, 280, 28);
+        restaurantLabel.setBounds(180, 30, 310, 37);
 
         imageRestaurant.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        imageRestaurant.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/labassis.jpeg"))); // NOI18N
+        imageRestaurant.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ordeerprocess.gif"))); // NOI18N
         add(imageRestaurant);
-        imageRestaurant.setBounds(-110, 10, 730, 440);
+        imageRestaurant.setBounds(0, 0, 640, 470);
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed

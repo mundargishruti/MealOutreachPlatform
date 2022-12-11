@@ -59,9 +59,10 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
         btnPrcsReq = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("Director Work Area ");
 
         tblDrctrWrkArea.setBackground(new java.awt.Color(204, 204, 204));
@@ -94,8 +95,8 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDrctrWrkArea);
 
-        btnAssgndToMe.setBackground(new java.awt.Color(0, 102, 102));
-        btnAssgndToMe.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnAssgndToMe.setBackground(new java.awt.Color(204, 130, 43));
+        btnAssgndToMe.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnAssgndToMe.setText("Assign To Me");
         btnAssgndToMe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,8 +104,8 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnPrcsReq.setBackground(new java.awt.Color(0, 102, 102));
-        btnPrcsReq.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnPrcsReq.setBackground(new java.awt.Color(204, 130, 43));
+        btnPrcsReq.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnPrcsReq.setText("Process Request");
         btnPrcsReq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,7 +121,7 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 332, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(478, 478, 478))
             .addGroup(layout.createSequentialGroup()
@@ -149,7 +150,7 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnPrcsReq, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAssgndToMe, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 212, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 204, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(66, 66, 66))
         );
