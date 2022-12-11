@@ -9,8 +9,7 @@ import code.Org.OrgNGOAdmin;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-import code.NGOAdministratorRole.NGOAdministratorWorkAreaPanel;
-import UI.LabAssistantRole.LabAssistantWorkAreaJPanel;
+import userinterface.NGOAdminRole.NGOAdminWorkAreaPanel;
 
 /**
  *
@@ -19,6 +18,6 @@ import UI.LabAssistantRole.LabAssistantWorkAreaJPanel;
 public class RoleNGOAdmin extends Role {
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new NGOAdministratorWorkAreaPanel(userProcessContainer, account, (OrgNGOAdmin)organization, enterprise);
+        return new NGOAdminWorkAreaPanel(userProcessContainer, account, (OrgNGOAdmin)organization, enterprise);
     }
 }

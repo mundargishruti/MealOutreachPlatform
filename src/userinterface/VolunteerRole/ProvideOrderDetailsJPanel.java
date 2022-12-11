@@ -188,7 +188,7 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
                 req.setVolunteerNote(prescription);
-                req.setReqStatus("Prescription Provided");
+                req.setProcessStatus("Prescription Provided");
                 JOptionPane.showMessageDialog(null, "Prescription submitted successfully");
                 submitButton.setEnabled(false);
             }

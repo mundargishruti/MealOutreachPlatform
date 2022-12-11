@@ -51,7 +51,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
 
 
-        for (ProcessRequest req : docOrg.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest req : docOrg.getProcessQueue().getProcesReq()) {
             Object[] row = new Object[8];
             
             if(((OrderPlaceRequest) req).getBeneficiary().getVolType().equals(usrAcnt.getUserType())){
@@ -63,7 +63,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             row[4] = ((OrderPlaceRequest) req).getVolunteerAssigned();
             row[5] = ((OrderPlaceRequest) req).getOrderPlacedVolunteer();
             row[6] = ((OrderPlaceRequest) req).getOrderResult();
-            row[7] = req.getReqStatus();
+            row[7] = req.getProcessStatus();
 
 
             model.addRow(row);
@@ -286,14 +286,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             wrkReq = (OrderPlaceRequest) tblDrWrkArea.getValueAt(selectedRow, 3);
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getReqStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")) {
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();
                         jPanel.add("RequestLabTestJPanel", new RequestHotelFoodJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                         layout.next(jPanel);
 
                     } else {
-                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getReqStatus());
+                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getProcessStatus());
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Not Authorised");
@@ -319,16 +319,16 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if (((OrderPlaceRequest) pntTrtmWrkReq).getVolunteerAssigned() == null) {
 
 
-                if (pntTrtmWrkReq.getReqStatus().equalsIgnoreCase("Waiting for Doctor")) {
+                if (pntTrtmWrkReq.getProcessStatus().equalsIgnoreCase("Waiting for Doctor")) {
                     //patientTreatmentWorkRequest.setReceiver(userAccount);
 
                     ((OrderPlaceRequest) pntTrtmWrkReq).setVolunteerAssigned(usrAcnt);
-                    pntTrtmWrkReq.setReqStatus("Under Consultation");
+                    pntTrtmWrkReq.setProcessStatus("Under Consultation");
                     pplReqTbl();
 
                     JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot assign this patient as its current state is: " + pntTrtmWrkReq.getReqStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot assign this patient as its current state is: " + pntTrtmWrkReq.getProcessStatus());
                 }
 
             } else {
@@ -370,14 +370,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getReqStatus().equalsIgnoreCase("Lab Test Completed") || wrkReq.getReqStatus().equalsIgnoreCase("Under Consultation")||wrkReq.getReqStatus().equalsIgnoreCase("Blood Bank Request Completed")) {
+                if (wrkReq.getOrderStatus().equalsIgnoreCase("Lab Test Completed") || wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")||wrkReq.getProcessStatus().equalsIgnoreCase("Blood Bank Request Completed")) {
 
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("ProvidePrescriptionJPanel", new ProvideOrderDetailsJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                     layout.next(jPanel);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot prescribe the Patient as the status is: " + wrkReq.getReqStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot prescribe the Patient as the status is: " + wrkReq.getOrderStatus());
                 }
             } else {
 
@@ -403,7 +403,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getReqStatus().equalsIgnoreCase("Prescription Provided")) {
+                if (wrkReq.getOrderStatus().equalsIgnoreCase("Prescription Provided")) {
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("RequestBillingJPanel", new RequestBillingJPanel(jPanel, usrAcnt, entrpz, wrkReq));
@@ -411,7 +411,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                     layout.next(jPanel);
 
                 } else {
-                    if(wrkReq.getReqStatus().equalsIgnoreCase("Consultation Completed"))
+                    if(wrkReq.getOrderStatus().equalsIgnoreCase("Consultation Completed"))
                     {
                         JOptionPane.showMessageDialog(null, "Treatment is already complete!");
                     }
@@ -447,14 +447,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
 
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getReqStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")) {
 
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();
                         jPanel.add("RequestLabTestJPanel", new HotelFoodRequestJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                         layout.next(jPanel);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getReqStatus());
+                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getProcessStatus());
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Not Authorised");

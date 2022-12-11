@@ -218,8 +218,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         //Step1: Check in the system admin user account directory if you have the user
         SystemUsers userAccount=ecosystem.getUsrAccDir().validateUser(userName, password);
-        GradientPanel gradientPanel = new GradientPanel(Color.white, Color.BLUE, 2);
-        loginPanel.add(gradientPanel);
+        
 
         Enterprise inEnterprise=null;
         Organization inOrganization=null;

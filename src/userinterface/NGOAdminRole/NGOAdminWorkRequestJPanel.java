@@ -221,7 +221,7 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
             if (dialogResult == JOptionPane.YES_OPTION) {
 
                 ngoFndReq.setSndr(usrAcc);
-                ngoFndReq.setReqStatus("Sent to Director");
+                ngoFndReq.setProcessStatus("Sent to Director");
 
                 Organization org = null;
                 for (Organization organization : ent.getOrgDir().getOrganizations()) {
@@ -231,8 +231,8 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
                     }
                 }
                 if (org != null) {
-                    org.getProcessQueue().getProcessRequests().add(ngoFndReq);
-                    usrAcc.getProcessQueue().getProcessRequests().add(ngoFndReq);
+                    org.getProcessQueue().getProcesReq().add(ngoFndReq);
+                    usrAcc.getProcessQueue().getProcesReq().add(ngoFndReq);
                 }
                 JOptionPane.showMessageDialog(null, "Request to Director Successful!!!");
                 messageText.setText("");
@@ -254,7 +254,7 @@ public class NGOAdminWorkRequestJPanel extends javax.swing.JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
 
             if (dialogResult == JOptionPane.YES_OPTION) {
-                ngoFndReq.setReqStatus("Rejected");
+                ngoFndReq.setProcessStatus("Rejected");
                 messageText.setText("");
                 rejectButton.setEnabled(false);
                 directorApprovalbutton.setEnabled(false);

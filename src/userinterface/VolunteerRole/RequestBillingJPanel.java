@@ -251,14 +251,14 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
 
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
-                pntTrtmntWrkReq.setReqStatus("Consultation Completed");
+                pntTrtmntWrkReq.setProcessStatus("Consultation Completed");
 
                 AccountBillRqst accountantBillingRequest = new AccountBillRqst();
                 accountantBillingRequest.setBillTotal(billingAmount);
                 //  accountantBillingRequest.setPatientId(Integer.parseInt(txtPatientId.getText()));
 
                 accountantBillingRequest.setSndr(usrAcnt);
-                accountantBillingRequest.setReqStatus("Sent");
+                accountantBillingRequest.setProcessStatus("Sent");
 
                 accountantBillingRequest.setBeneficiary(pntTrtmntWrkReq.getBeneficiary());
 
@@ -272,8 +272,8 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
                 }
                 if (org != null) {
 
-                    org.getProcessQueue().getProcessRequests().add(accountantBillingRequest);
-                    usrAcnt.getProcessQueue().getProcessRequests().add(accountantBillingRequest);
+                    org.getProcessQueue().getProcesReq().add(accountantBillingRequest);
+                    usrAcnt.getProcessQueue().getProcesReq().add(accountantBillingRequest);
 
                 }
 

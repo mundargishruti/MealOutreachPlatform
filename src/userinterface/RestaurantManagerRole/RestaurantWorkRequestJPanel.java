@@ -111,7 +111,7 @@ public class RestaurantWorkRequestJPanel extends javax.swing.JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
                 ptTrWrReq.setMsgFromRestaurant(bloodBankMessage);
-                ptTrWrReq.setReqStatus("Blood Bank Request Completed");
+                ptTrWrReq.setOrderStatus("Blood Bank Request Completed");
                 JOptionPane.showMessageDialog(null, "Result submitted successfully");
                 messageTeaxt.setText("");
                 submitButton.setEnabled(false);

@@ -46,12 +46,12 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (ProcessRequest request : labOrganization.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest request : labOrganization.getProcessQueue().getProcesReq()) {
             Object[] row = new Object[7];
             row[0] = request;
             row[1] = request.getSndr().getEmploye().getEmpName();
             row[2] = ((OrderPlaceRequest) request).getOrderPlacedVolunteer();
-            row[3] = request.getReqStatus();
+            row[3] = request.getProcessStatus();
             row[4] = ((OrderPlaceRequest) request).getBeneficiary().getBenFirstName() + " " + ((OrderPlaceRequest) request).getBeneficiary().getBenLastName();
             row[5] = ((OrderPlaceRequest) request).getBeneficiary().getBenId();
             row[6] = ((OrderPlaceRequest) request).getOrderType();
@@ -185,14 +185,14 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
 
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if (request.getOrderPlacedVolunteer() == null) {
-            if (request.getReqStatus().equalsIgnoreCase("SentToLab")) {
+            if (request.getOrderStatus().equalsIgnoreCase("SentToLab")) {
                 request.setOrderPlacedVolunteer(userAccount);
-                request.setReqStatus("Pending on Lab Assistant");
+                request.setProcessStatus("Pending on Lab Assistant");
                 //  request.setReceiver(userAccount);
                 popLabAsstTbl();
                 JOptionPane.showMessageDialog(null, "The request is assigned to You!");
             } else {
-                JOptionPane.showMessageDialog(null, "Cannot assign this lab request as the current status is: " + request.getReqStatus());
+                JOptionPane.showMessageDialog(null, "Cannot assign this lab request as the current status is: " + request.getOrderStatus());
             }
         }
         else
@@ -224,13 +224,13 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         HotelWorkRequestJPanel processWorkRequestJPanel = new HotelWorkRequestJPanel(userProcessContainer, request);
         if (request.getOrderPlacedVolunteer() != null) {
             if (userAccount.equals(request.getOrderPlacedVolunteer())) {
-                if (request.getReqStatus().equalsIgnoreCase("Pending on Lab Assistant")) {
+                if (request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")) {
 
                     userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
                     CardLayout layout = (CardLayout) userProcessContainer.getLayout();
                     layout.next(userProcessContainer);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot process the request as the status is: " + request.getReqStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot process the request as the status is: " + request.getProcessStatus());
                 }
 
             } else {
@@ -254,7 +254,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if(userAccount.equals(request.getOrderPlacedVolunteer()))
             {   
-                if(request.getReqStatus().equalsIgnoreCase("Pending on Lab Assistant")){
+                if(request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")){
                     request.setOrderType("Blood Test");
                 }else{
                     JOptionPane.showMessageDialog(null, "Test is already done!");
@@ -279,7 +279,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if(userAccount.equals(request.getOrderPlacedVolunteer()))
             {   
-                if(request.getReqStatus().equalsIgnoreCase("Pending on Lab Assistant")){
+                if(request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")){
                     request.setOrderType("MRI Scan");
                 }else{
                     JOptionPane.showMessageDialog(null, "Test is already done!");
@@ -303,7 +303,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if(userAccount.equals(request.getOrderPlacedVolunteer()))
             {   
-                if(request.getReqStatus().equalsIgnoreCase("Pending on Lab Assistant")){
+                if(request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")){
                     request.setOrderType("X Ray");
                 }else{
                     JOptionPane.showMessageDialog(null, "Test is already done!");

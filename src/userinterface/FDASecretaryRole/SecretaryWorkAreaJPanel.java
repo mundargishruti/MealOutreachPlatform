@@ -163,13 +163,13 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest req = (FDAApprovalRequest) processRequestTable.getValueAt(selectedRow, 0);
-            if (req.getReqStatus().equals("Sent to Secretary")) {
+            if (req.getProcessStatus().equals("Sent to Secretary")) {
                 req.setRcvr(usrAcnt);
-                req.setReqStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
+                req.setProcessStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
                 ppltTbl();
                 JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
             } else {
-                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getReqStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getProcessStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
             }
         }
     }//GEN-LAST:event_assignToMeButtonActionPerformed
@@ -183,16 +183,16 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             FDAApprovalRequest fundReq = (FDAApprovalRequest) processRequestTable.getValueAt(selectedRow, 0);
-            if (fundReq.getReqStatus().equals("Rejected")) {
+            if (fundReq.getProcessStatus().equals("Rejected")) {
                 JOptionPane.showMessageDialog(null, "Cannot process a Rejected Request", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             
-            if (fundReq.getReqStatus().equalsIgnoreCase("Sent to Treasurer")) {
+            if (fundReq.getProcessStatus().equalsIgnoreCase("Sent to Treasurer")) {
                 JOptionPane.showMessageDialog(null, "Request already processed" , "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (fundReq.getReqStatus().equalsIgnoreCase("Sent to Secretary")) {
+            if (fundReq.getProcessStatus().equalsIgnoreCase("Sent to Secretary")) {
                 JOptionPane.showMessageDialog(null, "Please assign selected request first");
                 return;
             }
@@ -219,8 +219,8 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (ProcessRequest req : secOrg.getProcessQueue().getProcessRequests()) {
-            String status = req.getReqStatus();
+        for (ProcessRequest req : secOrg.getProcessQueue().getProcesReq()) {
+            String status = req.getProcessStatus();
             Object[] row = new Object[6];
             row[0] = ((FDAApprovalRequest) req);
             row[1] = req.getSndr().getEmploye().getEmpName();

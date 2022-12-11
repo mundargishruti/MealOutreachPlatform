@@ -9,7 +9,7 @@ import code.Enterprise.Enterprise;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-
+import userinterface.AdminRole.EnterpriseWorkJPanel;
 /**
  *
  * @author shruti
@@ -18,7 +18,7 @@ public class RoleEntAdmin extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem ecosystem) {
-        return new EnterpriseAdminWorkAreaJPanel(userProcessContainer, enterprise, account,ecosystem);
+        return new EnterpriseWorkJPanel(userProcessContainer, enterprise, account,ecosystem);
     }
     
 }

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package userinterface.EBTAgent;
-
+import userinterface.EBTAgent.AddEBTMemberJPanel;
 import code.Enterprise.Enterprise;
 import code.Org.OrgEBTAgent;
 import code.Org.Organization;
@@ -85,7 +85,7 @@ public class EBTAgentWorkAreaJPanel extends javax.swing.JPanel {
     private void addNewCardHolderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewCardHolderButtonActionPerformed
         String cardNo = UUID.randomUUID().toString().substring(0, 7);
         CardLayout layout = (CardLayout) jPanel.getLayout();
-        jPanel.add("AddEBTMemberJPanel", AddEBTMemberJPanel(jPanel, usrAcnt, entrpz, cardNo));
+        jPanel.add("AddEBTMemberJPanel",new AddEBTMemberJPanel(jPanel, usrAcnt, entrpz, cardNo));
         layout.next(jPanel);
 
     }//GEN-LAST:event_addNewCardHolderButtonActionPerformed
@@ -103,5 +103,7 @@ public class EBTAgentWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel img;
     private javax.swing.JButton processCardRequestButton;
     // End of variables declaration//GEN-END:variables
+
+    
 
     }

@@ -192,13 +192,13 @@ public class NGOAdminWorkAreaPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest request = (NGOFundRequest) tblNgoAdmWrkArea.getValueAt(selectedRow, 0);
-            if (request.getReqStatus().equals("Sent")) {
+            if (request.getProcessStatus().equals("Sent")) {
                 request.setRcvr(usrAcc);
-                request.setReqStatus("Pending on " + request.getRcvr().getEmploye().getEmpName());
+                request.setProcessStatus("Pending on " + request.getRcvr().getEmploye().getEmpName());
                 populateRequestTable();
                 JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
             } else {
-                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + request.getReqStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + request.getProcessStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
             }
         }
     }//GEN-LAST:event_AssignToMeButtonActionPerformed
@@ -214,15 +214,15 @@ public class NGOAdminWorkAreaPanel extends javax.swing.JPanel {
 
             NGOFundRequest request = (NGOFundRequest) tblNgoAdmWrkArea.getValueAt(selectedRow, 0);
 
-            if (request.getReqStatus().equals("Rejected")) {
+            if (request.getProcessStatus().equals("Rejected")) {
                 JOptionPane.showMessageDialog(null, "Cannot process a Rejected Request", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (request.getReqStatus().equalsIgnoreCase("Sent to Director")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Sent to Director")) {
                 JOptionPane.showMessageDialog(null, "Request already processed", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (request.getReqStatus().equalsIgnoreCase("Sent")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Sent")) {
                 JOptionPane.showMessageDialog(null, "Assign the request first");
                 return;
             }
@@ -270,9 +270,9 @@ public class NGOAdminWorkAreaPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (ProcessRequest request : ngoAdmOrg.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest request : ngoAdmOrg.getProcessQueue().getProcesReq()) {
             Object[] row = new Object[5];
-            String status = request.getReqStatus();
+            String status = request.getProcessStatus();
             row[0] = ((NGOFundRequest) request);
             row[1] = request.getSndr().getEmploye().getEmpName();
             if (status.equalsIgnoreCase("Sent to Director") ) {
@@ -280,7 +280,7 @@ public class NGOAdminWorkAreaPanel extends javax.swing.JPanel {
             } else {
                 row[2] = request.getRcvr() == null ? null : request.getRcvr().getEmploye().getEmpName();
             }
-            row[3] = request.getReqStatus();
+            row[3] = request.getProcessStatus();
             row[4] = ((NGOFundRequest) request).getAmountRequired();
 
             model.addRow(row);

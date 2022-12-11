@@ -1,6 +1,6 @@
 package userinterface.AdminRole;
 
-import userinterface.NGOAdministratorRole.NGOAdministratorWorkAreaPanel;
+import userinterface.NGOAdminRole.NGOAdminWorkAreaPanel;
 import code.EcoSystem;
 import code.Enterprise.Enterprise;
 import code.Enterprise.FDAEnterprise;

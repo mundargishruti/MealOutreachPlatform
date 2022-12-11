@@ -179,13 +179,13 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest req = (FDAApprovalRequest) tblWrkReqTbl.getValueAt(selectedRow, 0);
-            if (req.getReqStatus().equals("Sent")) {
+            if (req.getProcessStatus().equals("Sent")) {
                 req.setRcvr(usrAcnt);
-                req.setReqStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
+                req.setProcessStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
                 pplTbl();
                 JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
             } else {
-                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getReqStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getProcessStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
             }
         }
     }
@@ -199,15 +199,15 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
 
             FDAApprovalRequest request = (FDAApprovalRequest) tblWrkReqTbl.getValueAt(slRow, 0);
 
-            if (request.getReqStatus().equals("Rejected")) {
+            if (request.getProcessStatus().equals("Rejected")) {
                 JOptionPane.showMessageDialog(null, "Cannot process a Rejected Request", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (request.getReqStatus().equalsIgnoreCase("Sent to Secretary")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Sent to Secretary")) {
                 JOptionPane.showMessageDialog(null, "Request already processed", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (request.getReqStatus().equalsIgnoreCase("Sent")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Sent")) {
                 JOptionPane.showMessageDialog(null, "Assign the request first");
                 return;
             }
@@ -254,9 +254,9 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (ProcessRequest req : hlthCrOfcrJPanel.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest req : hlthCrOfcrJPanel.getProcessQueue().getProcesReq()) {
             Object[] row = new Object[5];
-            String status = req.getReqStatus();
+            String status = req.getProcessStatus();
             row[0] = ((FDAApprovalRequest) req);
             row[1] = req.getSndr().getEmploye().getEmpName();
             if (status.equalsIgnoreCase("Sent to Treasurer") || status.equalsIgnoreCase("Sent to Secretary")) {
@@ -264,7 +264,7 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
             } else {
                 row[2] = req.getRcvr() == null ? null : req.getRcvr().getEmploye().getEmpName();
             }
-            row[3] = req.getReqStatus();
+            row[3] = req.getProcessStatus();
             row[4] = ((FDAApprovalRequest) req).getRestaurantZipCode();
 
             model.addRow(row);

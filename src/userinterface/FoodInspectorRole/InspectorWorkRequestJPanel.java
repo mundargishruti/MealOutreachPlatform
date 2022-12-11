@@ -221,7 +221,7 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
             if (dialogResult == JOptionPane.YES_OPTION) {
 
                 govtFndReq.setSndr(usrAcnt);
-                govtFndReq.setReqStatus("Sent to Secretary");
+                govtFndReq.setProcessStatus("Sent to Secretary");
 
                 Organization org = null;
                 for (Organization organization : entrpz.getOrgDir().getOrganizations()) {
@@ -231,8 +231,8 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
                     }
                 }
                 if (org != null) {
-                    org.getProcessQueue().getProcessRequests().add(govtFndReq);
-                    usrAcnt.getProcessQueue().getProcessRequests().add(govtFndReq);
+                    org.getProcessQueue().getProcesReq().add(govtFndReq);
+                    usrAcnt.getProcessQueue().getProcesReq().add(govtFndReq);
                 }
                 JOptionPane.showMessageDialog(null, "Request to Secretary Successful!!!");
                 FoodInspectorMessageText.setText("");
@@ -254,7 +254,7 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
 
             if (dialogResult == JOptionPane.YES_OPTION) {
-                govtFndReq.setReqStatus("Rejected");
+                govtFndReq.setProcessStatus("Rejected");
                 FoodInspectorMessageText.setText("");
                 rejectButton.setEnabled(false);
                 sendToSecretaryButton.setEnabled(false);

@@ -4,14 +4,14 @@
  */
 package code.Role;
 import code.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Org.Organization;
-import Business.SystemUserAccount.SystemUsers;
 import code.Enterprise.Enterprise;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
-import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
+import code.Enterprise.Enterprise;
+import code.Org.Organization;
+import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
+import userinterface.SysAdArea.SysAdWorkJPanel;
 
 /**
  *
@@ -21,7 +21,7 @@ public class RoleSysAdmin extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem ecosystem) {
-        return new SystemAdminWorkAreaJPanel(userProcessContainer, ecosystem);
+        return new SysAdWorkJPanel(userProcessContainer, ecosystem);
     }
     
 }

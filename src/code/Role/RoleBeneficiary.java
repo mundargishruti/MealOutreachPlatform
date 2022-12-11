@@ -9,7 +9,7 @@ import code.Enterprise.Enterprise;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-import userinterface.PatientRole.PatientWorkAreaJPanel;
+import userinterface.BeneficiaryRole.BeneficiaryWorkAreaJPanel;
 /**
  *
  * @author Rajvi
@@ -17,6 +17,6 @@ import userinterface.PatientRole.PatientWorkAreaJPanel;
 public class RoleBeneficiary extends Role{
      @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new PatientWorkAreaJPanel(userProcessContainer, account, organization, business);
+        return new BeneficiaryWorkAreaJPanel(userProcessContainer, account, organization, business);
     }
 }

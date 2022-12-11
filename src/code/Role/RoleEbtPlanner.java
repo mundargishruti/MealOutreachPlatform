@@ -10,6 +10,7 @@ import code.Org.OrgEBTPlanner;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
+import userinterface.EBTPlannerRole.EBTPlannerWorkAreaJPanel;
 
 /**
  *
@@ -19,7 +20,7 @@ public class RoleEbtPlanner extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new InsurancePolicyPlannerWorkAreaJPanel(userProcessContainer, account, (OrgEBTPlanner)organization, enterprise);
+        return new EBTPlannerWorkAreaJPanel(userProcessContainer, account, (OrgEBTPlanner)organization, enterprise);
     }
     
     

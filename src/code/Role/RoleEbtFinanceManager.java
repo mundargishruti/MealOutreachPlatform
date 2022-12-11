@@ -10,6 +10,7 @@ import code.Org.OrgEBTFinance;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
+import userinterface.EBTFinanceRole.EBTFinanceWorkAreaJPanel;
 
 /**
  *
@@ -19,7 +20,7 @@ public class RoleEbtFinanceManager extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new InsuranceFinanceWorkAreaJPanel(userProcessContainer, account, (OrgEBTFinance)organization, enterprise);
+        return new EBTFinanceWorkAreaJPanel(userProcessContainer, account, (OrgEBTFinance)organization, enterprise);
     }
     
 }

@@ -282,18 +282,18 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void initiateClainButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_initiateClainButtonActionPerformed
-        String policyNumber = acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbtCardNo();
+        String policyNumber = acntBillingReq.getBeneficiary().getEBTMembers().getEbtCardNo();
         String ssn = acntBillingReq.getBeneficiary().getSsn();
-        String policyName = acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbt().getebtType();
-        String insuranceCompany = acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbt().getEBTAgent();
+        String policyName = acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getEbtType();
+        String insuranceCompany = acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getEBTAgent();
         double claimAmount = Double.parseDouble(ebtClaimAmountText.getText());
         double billAmount = acntBillingReq.getBillTotal();
-        if (("Patient Transaction Completed").equals(acntBillingReq.getReqStatus())) {
+        if (("Patient Transaction Completed").equals(acntBillingReq.getProcessStatus())) {
             JOptionPane.showMessageDialog(null, "Insurance request sent for claim");
             return;
         }
         EBTCard insr = new EBTCard(policyName, insuranceCompany, claimAmount);
-        insr.setAllowance(acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbt().getAllowance());
+        insr.setAllowance(acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getAllowance());
         EBTMembers insrCus = new EBTMembers(insr, policyNumber);
         insrCus.setMemFirstName(firstNameText.getText().trim());
         insrCus.setMemLastName((lastNameText.getText().trim()));
@@ -308,7 +308,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         isnrWrkReq.setFoodBank(entrpz.getName());
 
         isnrWrkReq.setSndr(usrAcnt);
-        isnrWrkReq.setReqStatus("Sent");
+        isnrWrkReq.setProcessStatus("Sent");
         isnrWrkReq.setEbtMember(insrCus);
 
         Organization org = null;
@@ -318,7 +318,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         for (Networks network : networks) {
             List<Enterprise> enterprises = network.getEntDir().getEnterpriseList();
             for (Enterprise enterprise : enterprises) {
-                if (enterprise.getName().equalsIgnoreCase(acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbt().getEBTAgent())) {
+                if (enterprise.getName().equalsIgnoreCase(acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getEBTAgent())) {
                     matchedInsuranceCompany = (EBTEnterprise) enterprise;
                 }
             }
@@ -331,9 +331,9 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
             }
         }
         if (org != null) {
-            org.getProcessQueue().getProcessRequests().add(isnrWrkReq);
-            usrAcnt.getProcessQueue().getProcessRequests().add(isnrWrkReq);
-            acntBillingReq.setReqStatus("Patient Transaction Completed");
+            org.getProcessQueue().getProcesReq().add(isnrWrkReq);
+            usrAcnt.getProcessQueue().getProcesReq().add(isnrWrkReq);
+            acntBillingReq.setProcessStatus("Patient Transaction Completed");
             acntBillingReq.getBeneficiary().setIsOrderDelivered(true);
             JOptionPane.showMessageDialog(null, "Money received from patient: " + String.format("%.2f", String.valueOf(pyblAmnt)) + ". Insurance Claim Request Raised Successfully for amount:" + claimAmount);
             initiateClainButton.setEnabled(false);
@@ -390,13 +390,13 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     private void populate() {
-        String policyNumber = acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbtCardNo();
+        String policyNumber = acntBillingReq.getBeneficiary().getEBTMembers().getEbtCardNo();
         DecimalFormat df2 = new DecimalFormat("#.##");
-        double coverage = acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbt().getAllowance();
+        double coverage = acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getAllowance();
         double billAmount = acntBillingReq.getBillTotal();
         String ssn = acntBillingReq.getBeneficiary().getSsn();
-        String policyName = acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbt().getebtType();
-        String insuranceCompany = acntBillingReq.getBeneficiary().getInsuranceCustomer().getEbt().getEBTAgent();
+        String policyName = acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getEbtType();
+        String insuranceCompany = acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getEBTAgent();
         double claimAmount = (coverage * billAmount) / 100;
         pyblAmnt = billAmount - claimAmount;
 
