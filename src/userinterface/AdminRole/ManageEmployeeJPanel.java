@@ -153,6 +153,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
 
         organisationLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        organisationLabel.setForeground(new java.awt.Color(204, 130, 43));
         organisationLabel.setText("Organization");
 
         backButton.setBackground(new java.awt.Color(204, 204, 204));
@@ -165,6 +166,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
 
         nameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        nameLabel.setForeground(new java.awt.Color(204, 130, 43));
         nameLabel.setText("Name");
 
         nameText.setBackground(new java.awt.Color(204, 204, 204));
@@ -181,9 +183,11 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         organisationTextLabel.setBackground(new java.awt.Color(204, 204, 204));
         organisationTextLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        organisationTextLabel.setForeground(new java.awt.Color(204, 130, 43));
         organisationTextLabel.setText("Organization");
 
         manageEmployeeLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        manageEmployeeLabel.setForeground(new java.awt.Color(204, 130, 43));
         manageEmployeeLabel.setText("Manage Employee");
 
         manageEmployeeImage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
