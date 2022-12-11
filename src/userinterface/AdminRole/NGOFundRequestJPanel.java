@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Pratik
+ * @author shruti
  */
 import code.EcoSystem;
 import code.Enterprise.Enterprise;
