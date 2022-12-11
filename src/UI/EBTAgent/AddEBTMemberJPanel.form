@@ -43,20 +43,9 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnBack" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnAddCstmr" min="-2" pref="150" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="lblAddNewCust" alignment="0" min="-2" pref="1042" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="0" pref="307" max="32767" attributes="0"/>
-              </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jScrollPane1" alignment="0" min="-2" pref="813" max="-2" attributes="0"/>
@@ -65,68 +54,86 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblInsPlcyNm" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="txtInsPlcyNm" min="-2" pref="138" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblInsCvrgPercent" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="inputMonthlyAllowance" min="-2" pref="140" max="-2" attributes="0"/>
+                          <Component id="btnBack" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="331" max="-2" attributes="0"/>
+                          <Component id="lblAddNewCust" min="-2" pref="186" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblDtOfBrth" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblGndr" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="inputgender" min="-2" pref="135" max="-2" attributes="0"/>
-                                  <Component id="inputSsn" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
-                                  <Component id="inputAddress" min="-2" pref="379" max="-2" attributes="0"/>
-                                  <Component id="inputPhone" alignment="0" min="-2" pref="135" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblFrstNm" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="inputFirstName" min="-2" pref="146" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lblLstNm" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="inputLastName" max="32767" attributes="0"/>
-                          </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="btnAddCstmr" min="-2" pref="150" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <Component id="lblPhn" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblPrsnlInfo" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                          <Component id="txtPlcyNum" min="-2" pref="383" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lblPrsnlInfo" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblInsPlcyNm" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="txtInsPlcyNm" min="-2" pref="138" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblInsCvrgPercent" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="inputMonthlyAllowance" min="-2" pref="140" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblDtOfBrth" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblGndr" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="inputSsn" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
+                                      <Component id="inputAddress" min="-2" pref="379" max="-2" attributes="0"/>
+                                      <Component id="inputPhone" alignment="0" min="-2" pref="135" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Component id="dobJDateChooser" min="-2" pref="128" max="-2" attributes="0"/>
+                                          <Component id="inputgender" min="-2" pref="135" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblFrstNm" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="inputFirstName" min="-2" pref="146" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="lblLstNm" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="inputLastName" min="-2" pref="150" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="lblPhn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="txtPlcyNum" min="-2" pref="383" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="lblPlcyNo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblSsn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAddr" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblInsInfo" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="63" max="32767" attributes="0"/>
+                          <Component id="img" min="-2" pref="466" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="325" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="lblPlcyNo" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblSsn" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblAddr" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblInsInfo" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="img" min="-2" pref="466" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="325" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  <Component id="lblAddNewCust" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                          <Component id="lblAddNewCust" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="btnBack" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -145,8 +152,16 @@
                                   <Component id="lblLstNm" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="lblDtOfBrth" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Component id="lblDtOfBrth" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="dobJDateChooser" min="-2" pref="34" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="inputgender" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
@@ -170,27 +185,23 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="lblInsInfo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lblInsPlcyNm" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtInsPlcyNm" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="inputMonthlyAllowance" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="lblInsCvrgPercent" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="102" attributes="0">
                           <Component id="img" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblInsPlcyNm" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtInsPlcyNm" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="inputMonthlyAllowance" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="lblInsCvrgPercent" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="17" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnAddCstmr" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="btnBack" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="btnAddCstmr" min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Component id="lblAlCstmr" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="109" max="-2" attributes="0"/>
@@ -524,6 +535,8 @@
               <Image iconType="3" name="/photos/card.png"/>
             </Property>
           </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="dobJDateChooser">
         </Component>
       </SubComponents>
     </Container>
