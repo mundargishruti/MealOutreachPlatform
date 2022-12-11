@@ -739,12 +739,12 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             patient.setAddress(address);
             patient.setVolType(cbDrTyp.getSelectedItem().toString());
             
-            patient.setInsuranceCustomer(insuranceCustomer);
+            patient.setEBTMembers(insuranceCustomer);
             
             healthCenterEnterprise.getBenificiaryDirectory().getBeneficiaries().add(patient);
             
             OrderPlaceRequest patientTreatmentWorkRequest = new OrderPlaceRequest(registrationDate, reasonForVisit, patient);
-            patientTreatmentWorkRequest.setReqStatus("Waiting for Doctor");
+            patientTreatmentWorkRequest.setProcessStatus("Waiting for Doctor");
             //   patientTreatmentWorkRequest.setSender(userAccount);
 
             Organization org = null;
@@ -755,8 +755,8 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
                 }
             }
             if (org != null) {
-                org.getProcessQueue().getProcessRequests().add(patientTreatmentWorkRequest);
-                userAccount.getProcessQueue().getProcessRequests().add(patientTreatmentWorkRequest);
+                org.getProcessQueue().getProcesReq().add(patientTreatmentWorkRequest);
+                userAccount.getProcessQueue().getProcesReq().add(patientTreatmentWorkRequest);
                 refresh();
                 JOptionPane.showMessageDialog(null, "Patient Registered Successfully");
             }
@@ -832,7 +832,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         
         if (matchedCustomer != null) {
             txtInsCmpny.setText(matchedCustomer.getEbt().getEBTAgent());
-            txtPlcyNm.setText(matchedCustomer.getEbt().getebtType());
+            txtPlcyNm.setText(matchedCustomer.getEbt().getEbtType());
             //  txtPolicyNo.setText(matchedCustomer.getInsurancePolicyNumber());
             txtPtntInsCvrg.setText(String.valueOf(matchedCustomer.getEbt().getAllowance()));
             txtPlcyNo.setEnabled(false);

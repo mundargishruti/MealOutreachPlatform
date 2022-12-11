@@ -10,6 +10,7 @@ import code.Org.OrgNGODirector;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
+import userinterface.NGODirectorRole.DirectorWorkAreaJPanel;
 
 /**
  *
@@ -20,3 +21,4 @@ public class RoleNGODirector extends Role{
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers account, Organization organization, Enterprise enterprise, EcoSystem business) {
         return new DirectorWorkAreaJPanel(userProcessContainer, account, (OrgNGODirector)organization, enterprise);
     }
+}

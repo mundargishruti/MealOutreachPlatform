@@ -263,13 +263,13 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
 
             if (accountBillingRequest.getRcvr() != null) {
                 if (accountBillingRequest.getRcvr().equals(userAccount)) {
-                    if (accountBillingRequest.getReqStatus().equalsIgnoreCase("Pending on " + accountBillingRequest.getRcvr().getEmploye().getEmpName())) {
+                    if (accountBillingRequest.getProcessStatus().equalsIgnoreCase("Pending on " + accountBillingRequest.getRcvr().getEmploye().getEmpName())) {
                         AccountantRequestJPanel panel = new AccountantRequestJPanel(userProcessContainer, userAccount, accountBillingRequest, enterprise, ecoSystem);
                         userProcessContainer.add("AccountantProcessRequestJPanel", panel);
                         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
                         layout.next(userProcessContainer);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Cannot process Request as request is in " + accountBillingRequest.getReqStatus());
+                        JOptionPane.showMessageDialog(null, "Cannot process Request as request is in " + accountBillingRequest.getProcessStatus());
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Not authorised!");
@@ -292,7 +292,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
             if (request.getRcvr() == null) {
 
                 request.setRcvr(userAccount);
-                request.setReqStatus("Pending on " + request.getRcvr().getEmploye().getEmpName());
+                request.setProcessStatus("Pending on " + request.getRcvr().getEmploye().getEmpName());
                 populateTable();
             } else {
                 JOptionPane.showMessageDialog(null, "The request is already assigned ");
@@ -326,9 +326,9 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (ProcessRequest request : accountantOrganization.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest request : accountantOrganization.getProcessQueue().getProcesReq()) {
             Object[] row = new Object[6];
-            String status = request.getReqStatus();
+            String status = request.getProcessStatus();
             row[0] = ((AccountBillRqst) request).getBeneficiary();
             row[1] = ((AccountBillRqst) request).getBeneficiary().getBenFirstName() + " " + ((AccountBillRqst) request).getBeneficiary().getBenLastName();
             row[2] = request.getSndr().getEmploye().getEmpName();
@@ -338,7 +338,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
                 row[3] = request.getRcvr() == null ? null : request.getRcvr().getEmploye().getEmpName();
             }
             //row[2] = request.getReceiver() == null ? null : request.getReceiver().getEmployee().getName();
-            row[4] = request.getReqStatus();
+            row[4] = request.getProcessStatus();
             row[5] = ((AccountBillRqst) request);
 
             model.addRow(row);
@@ -351,7 +351,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
 
     public void populateInsuranceClaimTable() {
         List<cardRequest> insuranceWorkRequests = new ArrayList<>();
-        ArrayList<ProcessRequest> workRequests = userAccount.getProcessQueue().getProcessRequests();
+        ArrayList<ProcessRequest> workRequests = userAccount.getProcessQueue().getProcesReq();
         for (ProcessRequest workRequest : workRequests) {
             if (workRequest instanceof cardRequest) {
                 insuranceWorkRequests.add((cardRequest) workRequest);
@@ -368,7 +368,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
             row[2] = insuranceWorkRequest.getRcvr() == null ? "" : insuranceWorkRequest.getRcvr().getEmploye().getEmpName();
             row[3] = insuranceWorkRequest.getBillingAmt();
             row[4] = insuranceWorkRequest.getClmAmt();
-            row[5] = insuranceWorkRequest.getReqStatus();
+            row[5] = insuranceWorkRequest.getProcessStatus();
             model.addRow(row);
 
         }

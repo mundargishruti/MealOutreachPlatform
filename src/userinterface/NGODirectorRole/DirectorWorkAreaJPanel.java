@@ -162,13 +162,13 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest request = (NGOFundRequest) tblDrctrWrkArea.getValueAt(selectedRow, 5);
-            if (request.getReqStatus().equals("Sent to Director")) {
+            if (request.getProcessStatus().equals("Sent to Director")) {
                 request.setRcvr(usrAcc);
-                request.setReqStatus("Pending on " + request.getRcvr().getEmploye().getEmpName());
+                request.setProcessStatus("Pending on " + request.getRcvr().getEmploye().getEmpName());
                 populateTable();
                 JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
             } else {
-                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + request.getReqStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + request.getProcessStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
             }
         }
 
@@ -182,11 +182,11 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             NGOFundRequest request = (NGOFundRequest) tblDrctrWrkArea.getValueAt(selectedRow, 5);
-            if (request.getReqStatus().equalsIgnoreCase("Sent to Director")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Sent to Director")) {
                 JOptionPane.showMessageDialog(null, "Please assign selected request first");
                 return;
             }
-            if (request.getReqStatus().equalsIgnoreCase("Accepted")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Accepted")) {
                 JOptionPane.showMessageDialog(null, "Request already completed", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -202,7 +202,7 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Request assigned to other Officer", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (request.getReqStatus().equals("Rejected")) {
+            if (request.getProcessStatus().equals("Rejected")) {
                 JOptionPane.showMessageDialog(null, "Cannot process a Rejected Request", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -218,8 +218,8 @@ public class DirectorWorkAreaJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblDrctrWrkArea.getModel();
         model.setRowCount(0);
 
-        for (ProcessRequest request : ngoDirOrg.getProcessQueue().getProcessRequests()) {
-            String status = request.getReqStatus();
+        for (ProcessRequest request : ngoDirOrg.getProcessQueue().getProcesReq()) {
+            String status = request.getProcessStatus();
             Object[] row = new Object[6];
             row[0] = request.getSndr().getEmploye().getEmpName();
             if (status.equalsIgnoreCase("Sent to Director") ) {

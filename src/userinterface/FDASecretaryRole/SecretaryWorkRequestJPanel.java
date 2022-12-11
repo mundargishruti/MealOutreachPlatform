@@ -217,7 +217,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
             
          if (dialogResult == JOptionPane.YES_OPTION) {
         governmentFundRequest.setSndr(userAccount);
-        governmentFundRequest.setReqStatus("Sent to Treasurer");
+        governmentFundRequest.setProcessStatus("Sent to Treasurer");
 
         Organization org = null;
         for (Organization organization : enterprise.getOrgDir().getOrganizations()) {
@@ -227,8 +227,8 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
             }
         }
         if (org != null) {
-            org.getProcessQueue().getProcessRequests().add(governmentFundRequest);
-            userAccount.getProcessQueue().getProcessRequests().add(governmentFundRequest);
+            org.getProcessQueue().getProcesReq().add(governmentFundRequest);
+            userAccount.getProcessQueue().getProcesReq().add(governmentFundRequest);
         }
         JOptionPane.showMessageDialog(null, "Request to Treasurer Successful!!!");
         FDAMessageText.setText("");
@@ -265,7 +265,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
         
          int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
-                governmentFundRequest.setReqStatus("Rejected");
+                governmentFundRequest.setProcessStatus("Rejected");
                 FDAMessageText.setText("");
             RestaurantDisapprovedButton.setEnabled(false);
             sendRequestToManagerButton.setEnabled(false);

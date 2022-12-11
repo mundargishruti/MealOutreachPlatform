@@ -10,6 +10,7 @@ import code.Org.OrgVolunteer;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
+import userinterface.VolunteerRole.VolunteerWorkAreaJPanel;
 
 /**
  *
@@ -19,7 +20,7 @@ public class RoleVolunteer extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers userAccount, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new DoctorWorkAreaJPanel(userProcessContainer, userAccount, (OrgVolunteer)organization, enterprise);
+        return new VolunteerWorkAreaJPanel(userProcessContainer, userAccount, (OrgVolunteer)organization, enterprise);
     }
     
 }

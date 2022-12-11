@@ -48,16 +48,16 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         double totalFunds = 0;
         model.setRowCount(0);
 
-        for (ProcessRequest request : usrAc.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest request : usrAc.getProcessQueue().getProcesReq()) {
 
             if(request instanceof FDAApprovalRequest){
             Object[] row = new Object[4];
             row[0] = String.valueOf(((FDAApprovalRequest) request).getRestaurantName());
             row[1] = request.getRcvr();
-            row[2] = request.getReqStatus();
+            row[2] = request.getProcessStatus();
             row[3] = String.valueOf(((FDAApprovalRequest) request).getRestaurantZipCode());
             model.addRow(row);
-            if (request.getReqStatus().equalsIgnoreCase("Accepted")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Accepted")) {
                 totalFunds += ((FDAApprovalRequest) request).getRestaurantZipCode();
             }
             }
@@ -256,7 +256,7 @@ public class RequestReportJPanel extends javax.swing.JPanel {
             }
             FDAApprovalRequest governmentFundRequest = new FDAApprovalRequest(location, Integer.parseInt(population), Double.parseDouble(amount));
             governmentFundRequest.setSndr(usrAc);
-            governmentFundRequest.setReqStatus("Sent");
+            governmentFundRequest.setProcessStatus("Sent");
 
             Organization org = null;
 
@@ -278,8 +278,8 @@ public class RequestReportJPanel extends javax.swing.JPanel {
 
             if (org != null) {
 
-                org.getProcessQueue().getProcessRequests().add(governmentFundRequest);
-                usrAc.getProcessQueue().getProcessRequests().add(governmentFundRequest);
+                org.getProcessQueue().getProcesReq().add(governmentFundRequest);
+                usrAc.getProcessQueue().getProcesReq().add(governmentFundRequest);
 
             }
             pplTbl();

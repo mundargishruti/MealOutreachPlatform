@@ -248,14 +248,14 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
 
         List<EBTCard> plcys = insrCmpEnt.getEbtCardDir().getEBTCards();
         for (EBTCard insurance : plcys) {
-            if (policyName.equalsIgnoreCase(insurance.getebtType())) {
+            if (policyName.equalsIgnoreCase(insurance.getEBTAgent())) {
                 JOptionPane.showMessageDialog(null, "Policy already exists, please provide some other policy name");
                 return;
             }
         }
         EBTCard insr = new EBTCard(policyName, insrCmpEnt.getName(), policyCoverage);
         insr.setRequirement(policyTC);
-        insr.setMothlyReimbursement(monthlyPremium);
+        insr.setMonthlyReimbursement(monthlyPremium);
 
         // InsuranceCompanyEnterprise insuranceCompanyEnterprise = insuranceCompanyEnterprise;
         insrCmpEnt.getEbtCardDir().getEBTCards().add(insr);
@@ -298,7 +298,7 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
             Object[] row = new Object[4];
             row[0] = insurancePolicy;
             row[1] = insurancePolicy.getAllowance();
-            row[2] = insurancePolicy.getMothlyReimbursement();
+            row[2] = insurancePolicy.getMonthlyReimbursement();
             row[3] = insurancePolicy.getRequirement();
             model.addRow(row);
         }

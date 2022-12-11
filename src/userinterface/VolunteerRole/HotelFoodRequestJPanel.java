@@ -140,7 +140,7 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
         
         pntTrWrkReq.setMsgFromRestaurant(message);
         pntTrWrkReq.setSndr(usrAcnt);
-        pntTrWrkReq.setReqStatus("SentToBloodBank");
+        pntTrWrkReq.setProcessStatus("SentToBloodBank");
         pntTrWrkReq.setRcvr(null);
         pntTrWrkReq.setAmountOfFood(Integer.valueOf(bloodUnits));
         
@@ -162,8 +162,8 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
         }
         if (org != null) {
 
-            org.getProcessQueue().getProcessRequests().add(pntTrWrkReq);
-            usrAcnt.getProcessQueue().getProcessRequests().add(pntTrWrkReq);
+            org.getProcessQueue().getProcesReq().add(pntTrWrkReq);
+            usrAcnt.getProcessQueue().getProcesReq().add(pntTrWrkReq);
 
 
             JOptionPane.showMessageDialog(null, "Blood Bank request sent successfully");

@@ -185,12 +185,12 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
                 }
 
                 if (org != null) {
-                    org.getProcessQueue().getProcessRequests().add(insuranceWorkRequest);
-                    account.getProcessQueue().getProcessRequests().add(insuranceWorkRequest);
+                    org.getProcessQueue().getProcesReq().add(insuranceWorkRequest);
+                    account.getProcessQueue().getProcesReq().add(insuranceWorkRequest);
                 }
 
                 JOptionPane.showMessageDialog(null, "Request Approved and Sent To Finance Department");
-                insuranceWorkRequest.setReqStatus("Sent To Finance Department");
+                insuranceWorkRequest.setProcessStatus("Sent To Finance Department");
                 insuranceWorkRequest.setEbtAgent(account.getEmploye().getEmpName());
                 insuranceWorkRequest.setRcvr(null);
 
@@ -227,7 +227,7 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
 
-                insuranceWorkRequest.setReqStatus("Rejected");
+                insuranceWorkRequest.setProcessStatus("Rejected");
                 insuranceWorkRequest.setProcessMessage(messageText.getText().trim());
                 insuranceWorkRequest.setEbtAgent(account.getEmploye().getEmpName());
                 messageText.setText("");

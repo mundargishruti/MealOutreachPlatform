@@ -264,7 +264,7 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
 
             NGOFundRequest ngoFundRequest = new NGOFundRequest(hospname,hospaddress, Integer.parseInt(neededamtreq));
             ngoFundRequest.setSndr(userAccount);
-            ngoFundRequest.setReqStatus("Sent");
+            ngoFundRequest.setProcessStatus("Sent");
             Organization org = null;
 
             List<Networks> networks = ecoSystem.getNetworks();
@@ -284,8 +284,8 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
             }
 
             if (org != null) {
-                org.getProcessQueue().getProcessRequests().add(ngoFundRequest);
-                userAccount.getProcessQueue().getProcessRequests().add(ngoFundRequest);
+                org.getProcessQueue().getProcesReq().add(ngoFundRequest);
+                userAccount.getProcessQueue().getProcesReq().add(ngoFundRequest);
             }
             populateNGORequestTable();
         }
@@ -315,15 +315,15 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblNgoReq.getModel();
         int totalreqFunds = 0;
         model.setRowCount(0);
-        for (ProcessRequest request : userAccount.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest request : userAccount.getProcessQueue().getProcesReq()) {
             if(request instanceof NGOFundRequest){
             Object[] row = new Object[4];
             row[0] = String.valueOf(((NGOFundRequest) request).getNameOfHospital());
             row[1] = String.valueOf(((NGOFundRequest) request).getAddressOfHospital());
             row[2] = String.valueOf(((NGOFundRequest) request).getAmountRequired());
-            row[3] = request.getReqStatus();
+            row[3] = request.getProcessStatus();
             model.addRow(row);
-            if (request.getReqStatus().equalsIgnoreCase("Accepted")) {
+            if (request.getProcessStatus().equalsIgnoreCase("Accepted")) {
                 totalreqFunds += ((NGOFundRequest) request).getAmountRequired();
             }
             }

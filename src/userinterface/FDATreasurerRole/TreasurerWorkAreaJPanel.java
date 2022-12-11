@@ -161,13 +161,13 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest req = (FDAApprovalRequest) tblTrsr.getValueAt(selectedRow, 5);
-            if (req.getReqStatus().equals("Sent to Treasurer")) {
+            if (req.getProcessStatus().equals("Sent to Treasurer")) {
                 req.setRcvr(userAccount);
-                req.setReqStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
+                req.setProcessStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
                 pplTbl();
                 JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
             } else {
-                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getReqStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getProcessStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
             }
         }
 
@@ -181,11 +181,11 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             FDAApprovalRequest req = (FDAApprovalRequest) tblTrsr.getValueAt(selectedRow, 5);
-            if (req.getReqStatus().equalsIgnoreCase("Sent to Treasurer")) {
+            if (req.getProcessStatus().equalsIgnoreCase("Sent to Treasurer")) {
                 JOptionPane.showMessageDialog(null, "Please assign selected request first");
                 return;
             }
-            if (req.getReqStatus().equalsIgnoreCase("Accepted")) {
+            if (req.getProcessStatus().equalsIgnoreCase("Accepted")) {
                 JOptionPane.showMessageDialog(null, "Request already completed", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -201,7 +201,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Request assigned to other Officer", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (req.getReqStatus().equals("Rejected")) {
+            if (req.getProcessStatus().equals("Rejected")) {
                 JOptionPane.showMessageDialog(null, "Cannot process a Rejected Request", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -217,8 +217,8 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblTrsr.getModel();
         model.setRowCount(0);
 
-        for (ProcessRequest request : treasurerOrganization.getProcessQueue().getProcessRequests()) {
-            String status = request.getReqStatus();
+        for (ProcessRequest request : treasurerOrganization.getProcessQueue().getProcesReq()) {
+            String status = request.getProcessStatus();
             Object[] row = new Object[6];
             row[0] = request.getSndr().getEmploye().getEmpName();
             if (status.equalsIgnoreCase("Sent to Treasurer") || status.equalsIgnoreCase("Sent to Secretary")) {

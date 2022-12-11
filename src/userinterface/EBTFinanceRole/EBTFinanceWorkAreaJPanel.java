@@ -153,13 +153,13 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest req = (cardRequest) tblInsFinance.getValueAt(selectedRow, 0);
-            if (req.getReqStatus().equals("Sent To Finance Department")) {
+            if (req.getProcessStatus().equals("Sent To Finance Department")) {
                 req.setRcvr(usrAcnt);
-                req.setReqStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
+                req.setProcessStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
                 pplTabl();
                 JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you");
             } else {
-                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getReqStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Can't assign this work request, as the work request is in " + req.getProcessStatus() + " status", "Warning!", JOptionPane.WARNING_MESSAGE);
             }
         }
     }//GEN-LAST:event_AssignToMeButtonActionPerformed
@@ -173,11 +173,11 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
         } else {
 
             cardRequest insrWrReq = (cardRequest) tblInsFinance.getValueAt(selRow, 0);
-            if (insrWrReq.getReqStatus().equalsIgnoreCase("Sent To Finance Department")) {
+            if (insrWrReq.getProcessStatus().equalsIgnoreCase("Sent To Finance Department")) {
                 JOptionPane.showMessageDialog(null, "Assign the request first");
                 return;
             }
-            if (insrWrReq.getReqStatus().equalsIgnoreCase("Insurance Claim Approved")) {
+            if (insrWrReq.getProcessStatus().equalsIgnoreCase("Insurance Claim Approved")) {
                 JOptionPane.showMessageDialog(null, "Request already Completed", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -189,7 +189,7 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Request assigned to other Officer", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (insrWrReq.getReqStatus().equals("Insurance Claim Rejected")) {
+            if (insrWrReq.getProcessStatus().equals("Insurance Claim Rejected")) {
                 JOptionPane.showMessageDialog(null, "Cannot process a Rejected Request", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             } else {
@@ -218,7 +218,7 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblInsFinance.getModel();
         model.setRowCount(0);
 
-        for (ProcessRequest workRequest : insrFincOrg.getProcessQueue().getProcessRequests()) {
+        for (ProcessRequest workRequest : insrFincOrg.getProcessQueue().getProcesReq()) {
             cardRequest insrWkReq = ((cardRequest) workRequest);
             Object[] row = new Object[8];
             row[0] = insrWkReq;
@@ -226,7 +226,7 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
             row[2] = insrWkReq.getEbtMember().getEbt().getAllowance();
             row[3] = insrWkReq.getClmAmt();
             row[4] = insrWkReq.getBillingAmt();
-            row[5] = insrWkReq.getReqStatus();
+            row[5] = insrWkReq.getProcessStatus();
             row[6] = insrWkReq.getInsuranceName();
             row[7] = insrWkReq.getRcvr() == null ? "" : insrWkReq.getRcvr().getEmploye().getEmpName();
 

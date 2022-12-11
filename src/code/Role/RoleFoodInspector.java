@@ -10,7 +10,7 @@ import code.Org.OrgFoodInspector;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-import UI.HealthcareOfficerRole.OfficerWorkAreaJPanel;
+import userinterface.FoodInspectorRole.InspectorWorkAreaJPanel;
 
 /**
  *
@@ -20,7 +20,7 @@ public class RoleFoodInspector extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, SystemUsers userAccount, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new OfficerWorkAreaJPanel(userProcessContainer, userAccount, (OrgFoodInspector)organization, enterprise);
+        return new InspectorWorkAreaJPanel(userProcessContainer, userAccount, (OrgFoodInspector)organization, enterprise);
     }
     
 }

@@ -193,7 +193,7 @@ public class DirectorWorkRequestJPanel extends javax.swing.JPanel {
         ngoFndReq.setProcessMessage(message);
          int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
          if (dialogResult == JOptionPane.YES_OPTION) {
-        ngoFndReq.setReqStatus("Accepted");
+        ngoFndReq.setProcessStatus("Accepted");
         JOptionPane.showMessageDialog(null, "Funds Disbursed Successfully!!!");
         disburseAmountButton.setEnabled(false);
         messageText.setText("");
@@ -226,7 +226,7 @@ public class DirectorWorkRequestJPanel extends javax.swing.JPanel {
             
             
             if (dialogResult == JOptionPane.YES_OPTION) {
-        ngoFndReq.setReqStatus("Rejected");
+        ngoFndReq.setProcessStatus("Rejected");
          messageText.setText("");
             rejectButton.setEnabled(false);
             disburseAmountButton.setEnabled(false);

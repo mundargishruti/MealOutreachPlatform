@@ -128,7 +128,7 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
 
         pntTrmntWrReq.setOrderStatus(message);
         pntTrmntWrReq.setSndr(usrAcnt);
-        pntTrmntWrReq.setReqStatus("SentToLab");
+        pntTrmntWrReq.setProcessStatus("SentToLab");
         pntTrmntWrReq.setRcvr(null);
 
         Organization org = null;
@@ -141,8 +141,8 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         }
         if (org != null) {
 
-            org.getProcessQueue().getProcessRequests().add(pntTrmntWrReq);
-            usrAcnt.getProcessQueue().getProcessRequests().add(pntTrmntWrReq);
+            org.getProcessQueue().getProcesReq().add(pntTrmntWrReq);
+            usrAcnt.getProcessQueue().getProcesReq().add(pntTrmntWrReq);
 
             JOptionPane.showMessageDialog(null, "Lab request sent");
             txtMsg.setText("");
