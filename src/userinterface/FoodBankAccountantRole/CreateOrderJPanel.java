@@ -125,13 +125,15 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
 
         jLabel14.setText("Middle Name :");
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
+        setForeground(new java.awt.Color(204, 130, 43));
 
-        lblFndPtnt.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        lblFndPtnt.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        lblFndPtnt.setForeground(new java.awt.Color(204, 130, 43));
         lblFndPtnt.setText("CREATE ORDER");
 
         btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +142,8 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblAlreadyRegistered.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblAlreadyRegistered.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblAlreadyRegistered.setForeground(new java.awt.Color(204, 130, 43));
         lblAlreadyRegistered.setText("Already registered? Provide SSN: ");
 
         btnFndPtnt.setBackground(new java.awt.Color(0, 102, 102));
@@ -153,22 +156,28 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblDt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblDt.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblDt.setForeground(new java.awt.Color(204, 130, 43));
         lblDt.setText("Date:");
 
-        lblPtntInfo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblPtntInfo.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblPtntInfo.setForeground(new java.awt.Color(204, 130, 43));
         lblPtntInfo.setText("PATIENT INFORMATION");
 
-        lblFrstNm.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblFrstNm.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblFrstNm.setForeground(new java.awt.Color(204, 130, 43));
         lblFrstNm.setText("First Name :");
 
-        lblAddr.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblAddr.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblAddr.setForeground(new java.awt.Color(204, 130, 43));
         lblAddr.setText("Address:");
 
-        lblLstNm.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblLstNm.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblLstNm.setForeground(new java.awt.Color(204, 130, 43));
         lblLstNm.setText("Last Name :");
 
-        lblSsn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblSsn.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblSsn.setForeground(new java.awt.Color(204, 130, 43));
         lblSsn.setText("SSN :");
 
         txtPnNo.addActionListener(new java.awt.event.ActionListener() {
@@ -177,7 +186,8 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblPnNo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblPnNo.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblPnNo.setForeground(new java.awt.Color(204, 130, 43));
         lblPnNo.setText("Phone Number:");
 
         txtAge.addActionListener(new java.awt.event.ActionListener() {
@@ -186,13 +196,17 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblAge.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblAge.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblAge.setForeground(new java.awt.Color(204, 130, 43));
         lblAge.setText("Age :");
 
-        lblSex.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblSex.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblSex.setForeground(new java.awt.Color(204, 130, 43));
         lblSex.setText("Sex :");
 
         buttonGroup2.add(rbMale);
+        rbMale.setFont(new java.awt.Font("YuGothic", 0, 14)); // NOI18N
+        rbMale.setForeground(new java.awt.Color(204, 130, 43));
         rbMale.setText("M");
         rbMale.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,7 +215,8 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         });
 
         buttonGroup2.add(rbFemale);
-        rbFemale.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        rbFemale.setFont(new java.awt.Font("YuGothic", 0, 14)); // NOI18N
+        rbFemale.setForeground(new java.awt.Color(204, 130, 43));
         rbFemale.setText("F");
         rbFemale.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,11 +224,13 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblInsInfo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblInsInfo.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblInsInfo.setForeground(new java.awt.Color(204, 130, 43));
         lblInsInfo.setText("INSURANCE INFORMATION");
 
         buttonGroup1.add(rbPtntInsYes);
-        rbPtntInsYes.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        rbPtntInsYes.setFont(new java.awt.Font("YuGothic", 0, 12)); // NOI18N
+        rbPtntInsYes.setForeground(new java.awt.Color(204, 130, 43));
         rbPtntInsYes.setText("Yes");
         rbPtntInsYes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,7 +239,8 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         });
 
         buttonGroup1.add(rbPtntInsNo);
-        rbPtntInsNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        rbPtntInsNo.setFont(new java.awt.Font("YuGothic", 0, 12)); // NOI18N
+        rbPtntInsNo.setForeground(new java.awt.Color(204, 130, 43));
         rbPtntInsNo.setText("No");
         rbPtntInsNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,17 +248,20 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblIsThsPtntCvrdByIns.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblIsThsPtntCvrdByIns.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblIsThsPtntCvrdByIns.setForeground(new java.awt.Color(204, 130, 43));
         lblIsThsPtntCvrdByIns.setText("Is this patient covered by Insurance");
 
-        lblPlcyNm.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblPlcyNm.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblPlcyNm.setForeground(new java.awt.Color(204, 130, 43));
         lblPlcyNm.setText("Policy Name :");
 
-        lblInsCmpny.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblInsCmpny.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblInsCmpny.setForeground(new java.awt.Color(204, 130, 43));
         lblInsCmpny.setText("Card Issuer :");
 
-        btnCrt.setBackground(new java.awt.Color(0, 102, 102));
-        btnCrt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnCrt.setBackground(new java.awt.Color(204, 130, 43));
+        btnCrt.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnCrt.setForeground(new java.awt.Color(255, 255, 255));
         btnCrt.setText("Create");
         btnCrt.addActionListener(new java.awt.event.ActionListener() {
@@ -249,24 +270,30 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblRsnFrVst.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblRsnFrVst.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblRsnFrVst.setForeground(new java.awt.Color(204, 130, 43));
         lblRsnFrVst.setText("Reason for Visit:");
 
-        lblPtntMdclCndtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        txtRsnFrVst.setFont(new java.awt.Font("YuGothic", 0, 13)); // NOI18N
+
+        lblPtntMdclCndtn.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblPtntMdclCndtn.setForeground(new java.awt.Color(204, 130, 43));
         lblPtntMdclCndtn.setText("PATIENT MEDICAL CONDITION");
 
         txtAddr.setColumns(20);
+        txtAddr.setFont(new java.awt.Font("YuGothic", 0, 13)); // NOI18N
         txtAddr.setRows(5);
         jScrollPane1.setViewportView(txtAddr);
 
-        lblPlcyNo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblPlcyNo.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblPlcyNo.setForeground(new java.awt.Color(204, 130, 43));
         lblPlcyNo.setText("Provide Card Number:");
 
         txtPlcyNo.setEnabled(false);
 
         btnFndPlcy.setBackground(new java.awt.Color(0, 102, 102));
-        btnFndPlcy.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnFndPlcy.setForeground(new java.awt.Color(255, 255, 255));
+        btnFndPlcy.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        btnFndPlcy.setForeground(new java.awt.Color(153, 153, 153));
         btnFndPlcy.setText("Find Policy");
         btnFndPlcy.setEnabled(false);
         btnFndPlcy.addActionListener(new java.awt.event.ActionListener() {
@@ -275,17 +302,21 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblPtntInsCvrg.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblPtntInsCvrg.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblPtntInsCvrg.setForeground(new java.awt.Color(204, 130, 43));
         lblPtntInsCvrg.setText("Coverage % :");
 
         buttonGroup2.add(rbOthr);
+        rbOthr.setFont(new java.awt.Font("YuGothic", 0, 14)); // NOI18N
+        rbOthr.setForeground(new java.awt.Color(204, 130, 43));
         rbOthr.setText("Other");
 
-        lblVstId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblVstId.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblVstId.setForeground(new java.awt.Color(204, 130, 43));
         lblVstId.setText("Beneficiary ID:");
 
-        btnRstPlcyNo.setBackground(new java.awt.Color(0, 102, 102));
-        btnRstPlcyNo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnRstPlcyNo.setBackground(new java.awt.Color(204, 130, 43));
+        btnRstPlcyNo.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnRstPlcyNo.setForeground(new java.awt.Color(255, 255, 255));
         btnRstPlcyNo.setText("Reset Policy Number");
         btnRstPlcyNo.addActionListener(new java.awt.event.ActionListener() {
@@ -294,15 +325,19 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             }
         });
 
-        txtEml.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        txtEml.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        txtEml.setForeground(new java.awt.Color(204, 130, 43));
         txtEml.setText("Beneficiary Email:");
 
-        lblDrTyp.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        lblDrTyp.setText("Doctor Type");
+        lblDrTyp.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblDrTyp.setForeground(new java.awt.Color(204, 130, 43));
+        lblDrTyp.setText("Volunteer Type");
 
-        cbDrTyp.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Physician", "Neurologist", "Pediatrician", "Orthopedic" }));
+        cbDrTyp.setFont(new java.awt.Font("YuGothic", 0, 13)); // NOI18N
+        cbDrTyp.setForeground(new java.awt.Color(204, 130, 43));
+        cbDrTyp.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Delivery Volunteer", "Take Home Assistant" }));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/appointment1.gif"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Untitled-design.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -543,7 +578,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(351, Short.MAX_VALUE))
+                .addContainerGap(341, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

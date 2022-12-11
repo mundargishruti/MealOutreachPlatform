@@ -79,7 +79,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         btnMriScan = new javax.swing.JButton();
         btnXray = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 51, 51));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
         tbl.setBackground(new java.awt.Color(204, 204, 204));
@@ -114,8 +114,8 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         add(jScrollPane1);
         jScrollPane1.setBounds(310, 30, 730, 90);
 
-        assignToMe.setBackground(new java.awt.Color(0, 153, 255));
-        assignToMe.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        assignToMe.setBackground(new java.awt.Color(253, 249, 232));
+        assignToMe.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         assignToMe.setText("Assign to me");
         assignToMe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,8 +125,8 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         add(assignToMe);
         assignToMe.setBounds(220, 140, 140, 40);
 
-        processButton.setBackground(new java.awt.Color(0, 153, 255));
-        processButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        processButton.setBackground(new java.awt.Color(253, 249, 232));
+        processButton.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         processButton.setText("Process");
         processButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,12 +136,13 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         add(processButton);
         processButton.setBounds(1010, 140, 140, 40);
 
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/scanner.gif"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/brunch-order-up.gif"))); // NOI18N
+        img.setToolTipText("");
         add(img);
         img.setBounds(320, 200, 710, 370);
 
-        btnBldTst.setBackground(new java.awt.Color(0, 153, 255));
-        btnBldTst.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnBldTst.setBackground(new java.awt.Color(253, 249, 232));
+        btnBldTst.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         btnBldTst.setText("Blood Test");
         btnBldTst.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,8 +152,8 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         add(btnBldTst);
         btnBldTst.setBounds(400, 140, 140, 40);
 
-        btnMriScan.setBackground(new java.awt.Color(0, 153, 255));
-        btnMriScan.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnMriScan.setBackground(new java.awt.Color(253, 249, 232));
+        btnMriScan.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         btnMriScan.setText("MRI scan");
         btnMriScan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,8 +163,8 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         add(btnMriScan);
         btnMriScan.setBounds(810, 140, 140, 40);
 
-        btnXray.setBackground(new java.awt.Color(0, 153, 255));
-        btnXray.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnXray.setBackground(new java.awt.Color(253, 249, 232));
+        btnXray.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         btnXray.setText("X Ray");
         btnXray.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

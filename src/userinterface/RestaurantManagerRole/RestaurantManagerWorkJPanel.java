@@ -80,7 +80,7 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
         processButton = new javax.swing.JButton();
         restaurantImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
         restaurantTable.setBackground(new java.awt.Color(204, 204, 204));
@@ -115,8 +115,8 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
         add(jScrollPane1);
         jScrollPane1.setBounds(10, 20, 730, 90);
 
-        assignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        assignToMeButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        assignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        assignToMeButton.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         assignToMeButton.setForeground(java.awt.Color.white);
         assignToMeButton.setText("Assign to me");
         assignToMeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -127,8 +127,8 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
         add(assignToMeButton);
         assignToMeButton.setBounds(190, 130, 140, 40);
 
-        processButton.setBackground(new java.awt.Color(0, 102, 102));
-        processButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        processButton.setBackground(new java.awt.Color(204, 130, 43));
+        processButton.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         processButton.setForeground(new java.awt.Color(255, 255, 255));
         processButton.setText("Process");
         processButton.addActionListener(new java.awt.event.ActionListener() {
@@ -139,9 +139,9 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
         add(processButton);
         processButton.setBounds(370, 130, 140, 40);
 
-        restaurantImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bloodB.gif"))); // NOI18N
+        restaurantImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/foodgiphy.gif"))); // NOI18N
         add(restaurantImage);
-        restaurantImage.setBounds(100, 190, 630, 400);
+        restaurantImage.setBounds(130, 190, 480, 360);
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignToMeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeButtonActionPerformed

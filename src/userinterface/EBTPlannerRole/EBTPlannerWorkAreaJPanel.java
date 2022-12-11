@@ -65,24 +65,30 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
         monthlyPremiumText = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
+        setForeground(new java.awt.Color(204, 130, 43));
 
-        ebtCardTypeLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        ebtCardTypeLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        ebtCardTypeLabel.setForeground(new java.awt.Color(204, 130, 43));
         ebtCardTypeLabel.setText("Create a New Card");
 
-        cardTypeLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        cardTypeLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        cardTypeLabel.setForeground(new java.awt.Color(204, 130, 43));
         cardTypeLabel.setText("Card Number");
 
-        cardCoverageLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        cardCoverageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        cardCoverageLabel.setForeground(new java.awt.Color(204, 130, 43));
         cardCoverageLabel.setText("Card Coverage");
 
-        cardTermsLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        cardTermsLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        cardTermsLabel.setForeground(new java.awt.Color(204, 130, 43));
         cardTermsLabel.setText("Card Terms & Condition");
 
         none.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         none.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 130, 43));
         jLabel6.setText("Card Planner Work Area");
 
         tblPlcyPlanner.setBackground(new java.awt.Color(204, 204, 204));
@@ -108,8 +114,8 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPlcyPlanner);
 
-        createCardButton.setBackground(new java.awt.Color(0, 102, 102));
-        createCardButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        createCardButton.setBackground(new java.awt.Color(204, 130, 43));
+        createCardButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         createCardButton.setText("Create Card Type");
         createCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,10 +123,11 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        monthlyPremiumLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        monthlyPremiumLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        monthlyPremiumLabel.setForeground(new java.awt.Color(204, 130, 43));
         monthlyPremiumLabel.setText("Monthly Premium(USD)");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/InsurancePolicy.jpg"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/EBTcard.PNG"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -129,59 +136,54 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(1061, 1061, 1061)
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(105, 105, 105)
+                                        .addComponent(ebtCardTypeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(cardTypeLabel)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(cardTypeText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(cardCoverageLabel)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(cardCoverageText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(monthlyPremiumLabel)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(monthlyPremiumText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(cardTermsLabel)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(cardTermsText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(139, 139, 139)
+                                        .addComponent(createCardButton)))
+                                .addGap(58, 58, 58)
+                                .addComponent(jLabel8)))
+                        .addGap(315, 315, 315)
                         .addComponent(none))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(468, 468, 468)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(148, 148, 148)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 963, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(520, 520, 520)
-                        .addComponent(ebtCardTypeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(415, 415, 415)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cardTypeLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cardTypeText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cardCoverageLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cardCoverageText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(monthlyPremiumLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(monthlyPremiumText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cardTermsLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cardTermsText, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(139, 139, 139)
-                        .addComponent(jLabel8))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(554, 554, 554)
-                        .addComponent(createCardButton)))
-                .addContainerGap(762, Short.MAX_VALUE))
+                        .addGap(301, 301, 301)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(897, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ebtCardTypeLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(none))
-                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ebtCardTypeLabel)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cardTypeLabel)
                             .addComponent(cardTypeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -199,9 +201,12 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
                             .addComponent(cardTermsText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(createCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                        .addComponent(none)
+                        .addGap(461, 461, 461))))
         );
     }// </editor-fold>//GEN-END:initComponents
 

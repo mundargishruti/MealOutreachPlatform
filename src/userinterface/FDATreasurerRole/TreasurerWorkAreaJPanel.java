@@ -57,10 +57,11 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
         btnPrcsReq = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 153, 153));
+        setBackground(new java.awt.Color(253, 249, 232));
         setForeground(new java.awt.Color(255, 255, 255));
 
-        lblTrsrWrkArea.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblTrsrWrkArea.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        lblTrsrWrkArea.setForeground(new java.awt.Color(204, 130, 43));
         lblTrsrWrkArea.setText("FDA MANAGER WORK AREA");
 
         tblTrsr.setBackground(new java.awt.Color(204, 204, 204));
@@ -93,9 +94,8 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblTrsr);
 
-        btnAssgn.setBackground(new java.awt.Color(0, 102, 102));
-        btnAssgn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnAssgn.setForeground(new java.awt.Color(255, 255, 255));
+        btnAssgn.setBackground(new java.awt.Color(204, 130, 43));
+        btnAssgn.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
         btnAssgn.setText("Assign To Me");
         btnAssgn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,9 +103,8 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnPrcsReq.setBackground(new java.awt.Color(0, 102, 102));
-        btnPrcsReq.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnPrcsReq.setForeground(new java.awt.Color(255, 255, 255));
+        btnPrcsReq.setBackground(new java.awt.Color(204, 130, 43));
+        btnPrcsReq.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
         btnPrcsReq.setText("Process Request");
         btnPrcsReq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +112,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/moneyimg.gif"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FDA.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -122,20 +121,20 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(487, 487, 487)
-                        .addComponent(btnAssgn)
-                        .addGap(102, 102, 102)
-                        .addComponent(btnPrcsReq))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(467, 467, 467)
                         .addComponent(lblTrsrWrkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(270, 270, 270)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 734, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 777, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(636, Short.MAX_VALUE))
+                        .addGap(487, 487, 487)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnAssgn)
+                                .addGap(102, 102, 102)
+                                .addComponent(btnPrcsReq)))))
+                .addContainerGap(659, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -148,9 +147,9 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnPrcsReq, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAssgn, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(jLabel2)
+                .addContainerGap(164, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

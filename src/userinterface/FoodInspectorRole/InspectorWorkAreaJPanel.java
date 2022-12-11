@@ -60,13 +60,14 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
         btnVrcfnOnMap = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        lblGovHealthOfcrWrkArea.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblGovHealthOfcrWrkArea.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        lblGovHealthOfcrWrkArea.setForeground(new java.awt.Color(204, 130, 43));
         lblGovHealthOfcrWrkArea.setText("Government Health Officer Work Area");
 
         tblWrkReqTbl.setBackground(new java.awt.Color(204, 204, 204));
-        tblWrkReqTbl.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        tblWrkReqTbl.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         tblWrkReqTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -95,8 +96,8 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblWrkReqTbl);
 
-        btnAssign.setBackground(new java.awt.Color(0, 102, 102));
-        btnAssign.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnAssign.setBackground(new java.awt.Color(204, 130, 43));
+        btnAssign.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnAssign.setText("Assign To Me");
         btnAssign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,8 +105,8 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnProcessReq.setBackground(new java.awt.Color(0, 102, 102));
-        btnProcessReq.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnProcessReq.setBackground(new java.awt.Color(204, 130, 43));
+        btnProcessReq.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnProcessReq.setText("Process Request");
         btnProcessReq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,8 +114,8 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnVrcfnOnMap.setBackground(new java.awt.Color(0, 102, 102));
-        btnVrcfnOnMap.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnVrcfnOnMap.setBackground(new java.awt.Color(204, 130, 43));
+        btnVrcfnOnMap.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnVrcfnOnMap.setText("Verification on Map");
         btnVrcfnOnMap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,7 +165,6 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnVrcfnOnMap, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                         .addGap(5, 5, 5)))
-                .addGap(18, 18, 18)
                 .addComponent(btnProcessReq, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(77, 77, 77)
                 .addComponent(jLabel2)

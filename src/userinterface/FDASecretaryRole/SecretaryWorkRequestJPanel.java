@@ -65,13 +65,14 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
         RestaurantDisapprovedButton = new javax.swing.JButton();
         imgSecReqProcessArea = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        secretaryRequestProcessAreaLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        secretaryRequestProcessAreaLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        secretaryRequestProcessAreaLabel.setForeground(new java.awt.Color(204, 130, 43));
         secretaryRequestProcessAreaLabel.setText("Secretary Request Process area ");
 
-        sendRequestToManagerButton.setBackground(new java.awt.Color(0, 102, 102));
-        sendRequestToManagerButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        sendRequestToManagerButton.setBackground(new java.awt.Color(204, 130, 43));
+        sendRequestToManagerButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         sendRequestToManagerButton.setText("Send Request to Manager ");
         sendRequestToManagerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,11 +80,12 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        restaurantNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        restaurantNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        restaurantNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         restaurantNameLabel.setText("Restaurant Name:");
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,16 +99,19 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
         ZipcodeText.setBackground(new java.awt.Color(204, 204, 204));
         ZipcodeText.setEnabled(false);
 
-        ZipCodeLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ZipCodeLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ZipCodeLabel.setForeground(new java.awt.Color(204, 130, 43));
         ZipCodeLabel.setText("Restaurant ZipCOde");
 
         restaurantIDText.setBackground(new java.awt.Color(204, 204, 204));
         restaurantIDText.setEnabled(false);
 
-        restaurantIDLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        restaurantIDLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        restaurantIDLabel.setForeground(new java.awt.Color(204, 130, 43));
         restaurantIDLabel.setText("Restaurant ID");
 
-        FDAMessageLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        FDAMessageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        FDAMessageLabel.setForeground(new java.awt.Color(204, 130, 43));
         FDAMessageLabel.setText("Message");
 
         FDAMessageText.setBackground(new java.awt.Color(204, 204, 204));
@@ -116,8 +121,8 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        RestaurantDisapprovedButton.setBackground(new java.awt.Color(0, 102, 102));
-        RestaurantDisapprovedButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        RestaurantDisapprovedButton.setBackground(new java.awt.Color(204, 130, 43));
+        RestaurantDisapprovedButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         RestaurantDisapprovedButton.setText("Restaurant Dissaproved");
         RestaurantDisapprovedButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,7 +203,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
                     .addComponent(RestaurantDisapprovedButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(imgSecReqProcessArea, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

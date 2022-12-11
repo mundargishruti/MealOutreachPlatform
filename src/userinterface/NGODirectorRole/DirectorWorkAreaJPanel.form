@@ -3,7 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="cc" green="cc" red="0" type="rgb"/>
+      <Color blue="e8" green="f9" red="fd" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -59,7 +59,7 @@
                   <Component id="btnPrcsReq" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   <Component id="btnAssgndToMe" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="212" max="32767" attributes="0"/>
+              <EmptySpace pref="204" max="32767" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
           </Group>
@@ -70,7 +70,10 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="24" style="1"/>
+          <Font name="YuGothic" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Director Work Area "/>
       </Properties>
@@ -144,10 +147,10 @@
     <Component class="javax.swing.JButton" name="btnAssgndToMe">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="0" type="rgb"/>
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Assign To Me"/>
       </Properties>
@@ -158,10 +161,10 @@
     <Component class="javax.swing.JButton" name="btnPrcsReq">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="0" type="rgb"/>
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Process Request"/>
       </Properties>

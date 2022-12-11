@@ -2,6 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/RestaurantManagerRole/RestaurantWorkRequestJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/SysAdArea/EnterpriseAdminManagementJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/NGODirectorRole/DirectorWorkAreaJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/FoodInspectorRole/MapJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/NGOAdminRole/NGOAdminWorkRequestJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/RestaurantManagerRole/RestaurantManagerWorkJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/FoodInspectorRole/InspectorWorkAreaJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/HotelOrderAssistantRole/HotelStaffWorkAreaJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/NGOAdminRole/NGOAdminWorkAreaPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/HotelOrderAssistantRole/HotelWorkRequestJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/FoodInspectorRole/InspectorWorkRequestJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/NGODirectorRole/DirectorWorkRequestJPanel.java</file>
+        </group>
     </open-files>
 </project-private>

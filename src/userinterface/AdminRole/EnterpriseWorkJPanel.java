@@ -61,13 +61,16 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
         workAreaImageLabel = new javax.swing.JLabel();
         NgoFundReqbutton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        myWorkAreaLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        myWorkAreaLabel.setBackground(new java.awt.Color(204, 130, 43));
+        myWorkAreaLabel.setFont(new java.awt.Font("YuKyokasho", 1, 24)); // NOI18N
+        myWorkAreaLabel.setForeground(new java.awt.Color(204, 130, 43));
         myWorkAreaLabel.setText("ADMINISTRATION PORTAL");
 
-        manageUserButton.setBackground(new java.awt.Color(204, 204, 204));
-        manageUserButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        manageUserButton.setBackground(new java.awt.Color(222, 167, 50));
+        manageUserButton.setFont(new java.awt.Font("YuKyokasho", 1, 14)); // NOI18N
+        manageUserButton.setForeground(new java.awt.Color(253, 249, 232));
         manageUserButton.setText("Manage User");
         manageUserButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,8 +78,9 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageEmployeeButton.setBackground(new java.awt.Color(204, 204, 204));
-        manageEmployeeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        manageEmployeeButton.setBackground(new java.awt.Color(222, 167, 50));
+        manageEmployeeButton.setFont(new java.awt.Font("YuKyokasho", 1, 14)); // NOI18N
+        manageEmployeeButton.setForeground(new java.awt.Color(253, 249, 232));
         manageEmployeeButton.setText("Manage Employee");
         manageEmployeeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,8 +88,9 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageOrgButton.setBackground(new java.awt.Color(255, 204, 204));
-        manageOrgButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        manageOrgButton.setBackground(new java.awt.Color(222, 167, 50));
+        manageOrgButton.setFont(new java.awt.Font("YuKyokasho", 1, 14)); // NOI18N
+        manageOrgButton.setForeground(new java.awt.Color(253, 249, 232));
         manageOrgButton.setText("Manage Organization");
         manageOrgButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,13 +98,16 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setBackground(new java.awt.Color(204, 130, 43));
+        enterpriseLabel.setFont(new java.awt.Font("YuKyokasho", 1, 18)); // NOI18N
+        enterpriseLabel.setForeground(new java.awt.Color(204, 130, 43));
         enterpriseLabel.setText("Enterprise :");
 
         enterpriseValueLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
-        FDAReportRequestButton.setBackground(new java.awt.Color(204, 204, 204));
-        FDAReportRequestButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        FDAReportRequestButton.setBackground(new java.awt.Color(222, 167, 50));
+        FDAReportRequestButton.setFont(new java.awt.Font("YuKyokasho", 1, 14)); // NOI18N
+        FDAReportRequestButton.setForeground(new java.awt.Color(253, 249, 232));
         FDAReportRequestButton.setText("FDA Approval Request");
         FDAReportRequestButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,10 +115,11 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        workAreaImageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdministrativeRole.png"))); // NOI18N
+        workAreaImageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Screenshot.png"))); // NOI18N
 
-        NgoFundReqbutton.setBackground(new java.awt.Color(204, 204, 204));
-        NgoFundReqbutton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        NgoFundReqbutton.setBackground(new java.awt.Color(222, 167, 50));
+        NgoFundReqbutton.setFont(new java.awt.Font("YuKyokasho", 1, 14)); // NOI18N
+        NgoFundReqbutton.setForeground(new java.awt.Color(253, 249, 232));
         NgoFundReqbutton.setText("Request Funds from NGO");
         NgoFundReqbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,7 +160,7 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
                         .addGap(170, 170, 170)
                         .addComponent(workAreaImageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(309, 309, 309)
+                        .addGap(275, 275, 275)
                         .addComponent(myWorkAreaLabel)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

@@ -45,12 +45,12 @@ public class HotelWorkRequestJPanel extends javax.swing.JPanel {
         OrderStatusLabel = new javax.swing.JLabel();
         img = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 153, 153));
+        setBackground(new java.awt.Color(253, 249, 232));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        SubmitReportButton.setBackground(new java.awt.Color(0, 102, 102));
-        SubmitReportButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        SubmitReportButton.setBackground(new java.awt.Color(204, 130, 43));
+        SubmitReportButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         SubmitReportButton.setForeground(java.awt.Color.white);
         SubmitReportButton.setText("Submit Status");
         SubmitReportButton.addActionListener(new java.awt.event.ActionListener() {
@@ -59,18 +59,19 @@ public class HotelWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(SubmitReportButton);
-        SubmitReportButton.setBounds(500, 170, 131, 36);
+        SubmitReportButton.setBounds(500, 170, 140, 36);
 
         StatusLabel.setBackground(new java.awt.Color(255, 255, 255));
-        StatusLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        StatusLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        StatusLabel.setForeground(new java.awt.Color(204, 130, 43));
         StatusLabel.setText("Status");
         add(StatusLabel);
-        StatusLabel.setBounds(440, 130, 38, 17);
+        StatusLabel.setBounds(428, 130, 50, 22);
         add(statusText);
         statusText.setBounds(490, 120, 160, 30);
 
         backButton.setBackground(new java.awt.Color(204, 204, 204));
-        backButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         backButton.setText(" Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,13 +81,14 @@ public class HotelWorkRequestJPanel extends javax.swing.JPanel {
         add(backButton);
         backButton.setBounds(10, 11, 75, 29);
 
-        OrderStatusLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        OrderStatusLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        OrderStatusLabel.setForeground(new java.awt.Color(204, 130, 43));
         OrderStatusLabel.setText("Order Process Status");
         add(OrderStatusLabel);
-        OrderStatusLabel.setBounds(270, 20, 240, 29);
+        OrderStatusLabel.setBounds(230, 20, 260, 37);
 
         img.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/labassis.jpeg"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/drrive.gif"))); // NOI18N
         add(img);
         img.setBounds(30, 70, 650, 460);
     }// </editor-fold>//GEN-END:initComponents

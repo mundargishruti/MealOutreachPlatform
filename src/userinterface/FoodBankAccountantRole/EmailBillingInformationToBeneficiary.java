@@ -59,17 +59,19 @@ public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
         backButton = new javax.swing.JButton();
         emailImageButton = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("EMAIL BILLING TO BENEFICIARY");
 
         emailMesageText.setColumns(20);
+        emailMesageText.setFont(new java.awt.Font("YuGothic", 0, 13)); // NOI18N
         emailMesageText.setRows(5);
         jScrollPane1.setViewportView(emailMesageText);
 
-        sendEmailButton.setBackground(new java.awt.Color(0, 102, 102));
-        sendEmailButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        sendEmailButton.setBackground(new java.awt.Color(204, 130, 43));
+        sendEmailButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         sendEmailButton.setForeground(new java.awt.Color(255, 255, 255));
         sendEmailButton.setText("Send Email");
         sendEmailButton.addActionListener(new java.awt.event.ActionListener() {
@@ -78,8 +80,8 @@ public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
             }
         });
 
-        clearTextButton.setBackground(new java.awt.Color(0, 102, 102));
-        clearTextButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        clearTextButton.setBackground(new java.awt.Color(204, 130, 43));
+        clearTextButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         clearTextButton.setForeground(new java.awt.Color(255, 255, 255));
         clearTextButton.setText("Clear");
         clearTextButton.addActionListener(new java.awt.event.ActionListener() {
@@ -88,8 +90,8 @@ public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
             }
         });
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -98,48 +100,46 @@ public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
             }
         });
 
-        emailImageButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/email.gif"))); // NOI18N
+        emailImageButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/email_465634.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(64, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 953, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addComponent(sendEmailButton)
-                        .addGap(33, 33, 33)
-                        .addComponent(clearTextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(360, 360, 360))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(368, 368, 368)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(297, 297, 297)
-                        .addComponent(emailImageButton)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(290, 290, 290)
+                        .addComponent(emailImageButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 953, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(47, 47, 47)
+                                .addComponent(sendEmailButton)
+                                .addGap(33, 33, 33)
+                                .addComponent(clearTextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(337, 337, 337)))))
+                .addContainerGap(1311, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(clearTextButton, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                     .addComponent(sendEmailButton, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                     .addComponent(backButton, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(emailImageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
         );

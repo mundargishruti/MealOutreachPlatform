@@ -65,24 +65,28 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
         rejectButton = new javax.swing.JButton();
         inspectorProcessRequestImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
+        setForeground(new java.awt.Color(204, 130, 43));
 
         restaurantIDText.setBackground(new java.awt.Color(204, 204, 204));
         restaurantIDText.setEnabled(false);
 
-        restaurantIDLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        restaurantIDLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        restaurantIDLabel.setForeground(new java.awt.Color(204, 130, 43));
         restaurantIDLabel.setText("Restaurant ID:");
 
-        FoodInspectorMessageLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        FoodInspectorMessageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        FoodInspectorMessageLabel.setForeground(new java.awt.Color(204, 130, 43));
         FoodInspectorMessageLabel.setText("Message");
 
         FoodInspectorMessageText.setBackground(new java.awt.Color(204, 204, 204));
 
-        FoodInspectorProcessArea.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        FoodInspectorProcessArea.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        FoodInspectorProcessArea.setForeground(new java.awt.Color(204, 130, 43));
         FoodInspectorProcessArea.setText("FOOD INSPECTOR PROCESSING AREA");
 
-        sendToSecretaryButton.setBackground(new java.awt.Color(0, 102, 102));
-        sendToSecretaryButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        sendToSecretaryButton.setBackground(new java.awt.Color(204, 130, 43));
+        sendToSecretaryButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         sendToSecretaryButton.setText("Forward to Secretary");
         sendToSecretaryButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +95,7 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
         });
 
         backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,7 +103,8 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        restaurantNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        restaurantNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        restaurantNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         restaurantNameLabel.setText("Restaurant Name:");
 
         restaurantNameText.setBackground(new java.awt.Color(204, 204, 204));
@@ -108,11 +113,12 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
         restaurantZipCodeText.setBackground(new java.awt.Color(204, 204, 204));
         restaurantZipCodeText.setEnabled(false);
 
-        ZipCodeLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ZipCodeLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ZipCodeLabel.setForeground(new java.awt.Color(204, 130, 43));
         ZipCodeLabel.setText("Zip Code:");
 
-        rejectButton.setBackground(new java.awt.Color(0, 102, 102));
-        rejectButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rejectButton.setBackground(new java.awt.Color(204, 130, 43));
+        rejectButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         rejectButton.setText("Reject");
         rejectButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,8 +142,8 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
                 .addContainerGap(409, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(sendToSecretaryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(69, 69, 69)
+                        .addComponent(sendToSecretaryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(53, 53, 53)
                         .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(487, 487, 487))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -190,7 +196,7 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(sendToSecretaryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(inspectorProcessRequestImage, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
     }// </editor-fold>//GEN-END:initComponents

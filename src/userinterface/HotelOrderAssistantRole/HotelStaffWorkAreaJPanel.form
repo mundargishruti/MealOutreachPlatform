@@ -3,7 +3,7 @@
 <Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="33" green="33" red="ff" type="rgb"/>
+      <Color blue="e8" green="f9" red="fd" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -100,10 +100,10 @@
     <Component class="javax.swing.JButton" name="assignToMe">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="e8" green="f9" red="fd" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="YuGothic" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Assign to me"/>
       </Properties>
@@ -119,10 +119,10 @@
     <Component class="javax.swing.JButton" name="processButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="e8" green="f9" red="fd" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="YuGothic" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Process"/>
       </Properties>
@@ -138,8 +138,9 @@
     <Component class="javax.swing.JLabel" name="img">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/scanner.gif"/>
+          <Image iconType="3" name="/Images/brunch-order-up.gif"/>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -150,10 +151,10 @@
     <Component class="javax.swing.JButton" name="btnBldTst">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="e8" green="f9" red="fd" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="YuGothic" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Blood Test"/>
       </Properties>
@@ -169,10 +170,10 @@
     <Component class="javax.swing.JButton" name="btnMriScan">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="e8" green="f9" red="fd" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="YuGothic" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="MRI scan"/>
       </Properties>
@@ -188,10 +189,10 @@
     <Component class="javax.swing.JButton" name="btnXray">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="e8" green="f9" red="fd" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="YuGothic" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="X Ray"/>
       </Properties>

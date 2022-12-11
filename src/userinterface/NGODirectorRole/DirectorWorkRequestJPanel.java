@@ -58,10 +58,10 @@ public class DirectorWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         img = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        disburseAmountButton.setBackground(new java.awt.Color(0, 102, 102));
-        disburseAmountButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        disburseAmountButton.setBackground(new java.awt.Color(204, 130, 43));
+        disburseAmountButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         disburseAmountButton.setText("Disburse Amount");
         disburseAmountButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,8 +78,8 @@ public class DirectorWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        rejectButton.setBackground(new java.awt.Color(0, 102, 102));
-        rejectButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rejectButton.setBackground(new java.awt.Color(204, 130, 43));
+        rejectButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         rejectButton.setText("Reject");
         rejectButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,25 +87,30 @@ public class DirectorWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        messageLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        messageLabel.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
+        messageLabel.setForeground(new java.awt.Color(204, 130, 43));
         messageLabel.setText("Message:");
 
-        FoodBankNameLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        FoodBankNameLabel.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
+        FoodBankNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         FoodBankNameLabel.setText("Food Bank Name");
 
         hospitalNameText.setEnabled(false);
 
         hospitalAddressText.setEnabled(false);
 
-        hospitalAddressLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        hospitalAddressLabel.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
+        hospitalAddressLabel.setForeground(new java.awt.Color(204, 130, 43));
         hospitalAddressLabel.setText("Food Bank Address");
 
         amountRequiredText.setEnabled(false);
 
-        AmountRequiredLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        AmountRequiredLabel.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
+        AmountRequiredLabel.setForeground(new java.awt.Color(204, 130, 43));
         AmountRequiredLabel.setText("Amount Required:");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("Director Work Area");
 
         img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NgoDirector.jpg"))); // NOI18N

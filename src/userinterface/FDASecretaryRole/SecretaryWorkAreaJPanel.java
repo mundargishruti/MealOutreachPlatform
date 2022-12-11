@@ -57,7 +57,7 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
         FDASecretaryWorkArea = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setForeground(new java.awt.Color(255, 255, 255));
         setToolTipText("");
 
@@ -91,8 +91,8 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(processRequestTable);
 
-        assignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        assignToMeButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        assignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        assignToMeButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         assignToMeButton.setText("Assign To Me");
         assignToMeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +100,7 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        processRequestButton.setBackground(new java.awt.Color(0, 102, 102));
+        processRequestButton.setBackground(new java.awt.Color(204, 130, 43));
         processRequestButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         processRequestButton.setText("Process Request");
         processRequestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -109,50 +109,50 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        FDASecretaryWorkArea.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        FDASecretaryWorkArea.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        FDASecretaryWorkArea.setForeground(new java.awt.Color(204, 130, 43));
         FDASecretaryWorkArea.setText("Secretary Work Area");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Secratary.gif"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/approved-stamp.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(488, 488, 488)
+                .addComponent(FDASecretaryWorkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(504, 504, 504)
-                        .addComponent(FDASecretaryWorkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(266, 266, 266)
+                        .addGap(49, 49, 49)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 734, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(493, 493, 493)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(assignToMeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(processRequestButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(402, 402, 402)
-                        .addComponent(jLabel2)))
-                .addContainerGap(309, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(processRequestButton)
+                        .addGap(173, 173, 173)))
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(FDASecretaryWorkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(FDASecretaryWorkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(197, 197, 197)
+                        .addGap(43, 43, 43)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(processRequestButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(assignToMeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(29, 29, 29)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(15, 15, 15))
+                            .addComponent(assignToMeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
