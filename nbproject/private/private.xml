@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/AdminRole/ManageOrganizationJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/EBTAgent/EBTAgentWorkAreaJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/AdminRole/ManageEmployeeJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/AdminRole/RequestReportJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/EBTAgent/AddEBTMemberJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/AdminRole/EnterpriseWorkJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/AdminRole/ManageUserAccountJPanel.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/MainJFrame.java</file>
+            <file>file:/Users/shruti/Desktop/MealOutreachPlatform/src/userinterface/AdminRole/NGOFundRequestJPanel.java</file>
+        </group>
     </open-files>
 </project-private>

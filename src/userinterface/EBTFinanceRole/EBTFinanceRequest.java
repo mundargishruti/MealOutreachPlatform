@@ -68,11 +68,11 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
         coverageText = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
-        AcceptAmount.setBackground(new java.awt.Color(0, 102, 102));
-        AcceptAmount.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        AcceptAmount.setBackground(new java.awt.Color(204, 130, 43));
+        AcceptAmount.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         AcceptAmount.setForeground(new java.awt.Color(255, 255, 255));
         AcceptAmount.setText("Disburse Amount");
         AcceptAmount.addActionListener(new java.awt.event.ActionListener() {
@@ -81,10 +81,10 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
             }
         });
         add(AcceptAmount);
-        AcceptAmount.setBounds(170, 340, 150, 32);
+        AcceptAmount.setBounds(170, 340, 162, 32);
 
-        rejectButton.setBackground(new java.awt.Color(0, 102, 102));
-        rejectButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rejectButton.setBackground(new java.awt.Color(204, 130, 43));
+        rejectButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         rejectButton.setForeground(new java.awt.Color(255, 255, 255));
         rejectButton.setText("Reject Claim");
         rejectButton.addActionListener(new java.awt.event.ActionListener() {
@@ -95,18 +95,20 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
         add(rejectButton);
         rejectButton.setBounds(360, 340, 130, 32);
 
-        EBTrequestAreaLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        EBTrequestAreaLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        EBTrequestAreaLabel.setForeground(new java.awt.Color(144, 86, 18));
         EBTrequestAreaLabel.setText("Card Reimbursement Request Area");
         add(EBTrequestAreaLabel);
-        EBTrequestAreaLabel.setBounds(270, 20, 420, 29);
+        EBTrequestAreaLabel.setBounds(310, 10, 250, 22);
 
-        ebtCardNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ebtCardNumberLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ebtCardNumberLabel.setForeground(new java.awt.Color(144, 86, 18));
         ebtCardNumberLabel.setText("Card Number");
         add(ebtCardNumberLabel);
-        ebtCardNumberLabel.setBounds(150, 90, 85, 17);
+        ebtCardNumberLabel.setBounds(135, 90, 100, 22);
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -115,7 +117,7 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
             }
         });
         add(backButton);
-        backButton.setBounds(10, 23, 75, 29);
+        backButton.setBounds(10, 23, 78, 29);
 
         ebtCardNumberText.setEditable(false);
         add(ebtCardNumberText);
@@ -125,10 +127,11 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
         add(ebtCardTypeText);
         ebtCardTypeText.setBounds(278, 209, 116, 23);
 
-        policyNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        policyNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        policyNameLabel.setForeground(new java.awt.Color(144, 86, 18));
         policyNameLabel.setText("Card Type");
         add(policyNameLabel);
-        policyNameLabel.setBounds(160, 210, 90, 17);
+        policyNameLabel.setBounds(140, 210, 90, 22);
 
         billamountText.setEditable(false);
         billamountText.addActionListener(new java.awt.event.ActionListener() {
@@ -139,10 +142,11 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
         add(billamountText);
         billamountText.setBounds(278, 247, 116, 23);
 
-        amountLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        amountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        amountLabel.setForeground(new java.awt.Color(144, 86, 18));
         amountLabel.setText("Billing Amount");
         add(amountLabel);
-        amountLabel.setBounds(140, 250, 110, 17);
+        amountLabel.setBounds(140, 250, 110, 22);
 
         claimAmountText.setEditable(false);
         claimAmountText.addActionListener(new java.awt.event.ActionListener() {
@@ -153,34 +157,37 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
         add(claimAmountText);
         claimAmountText.setBounds(278, 285, 116, 23);
 
-        claimamountLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        claimamountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        claimamountLabel.setForeground(new java.awt.Color(144, 86, 18));
         claimamountLabel.setText("Claim Amount");
         add(claimamountLabel);
-        claimamountLabel.setBounds(140, 290, 100, 17);
+        claimamountLabel.setBounds(140, 290, 100, 22);
 
-        ssnLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ssnLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ssnLabel.setForeground(new java.awt.Color(144, 86, 18));
         ssnLabel.setText("SSN");
         add(ssnLabel);
-        ssnLabel.setBounds(210, 130, 50, 17);
+        ssnLabel.setBounds(140, 130, 50, 22);
 
         ssnText.setEditable(false);
         add(ssnText);
         ssnText.setBounds(278, 124, 116, 23);
 
-        coverageLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        coverageLabel.setText("Coverage%");
+        coverageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        coverageLabel.setForeground(new java.awt.Color(144, 86, 18));
+        coverageLabel.setText("Allowance");
         add(coverageLabel);
-        coverageLabel.setBounds(170, 177, 70, 20);
+        coverageLabel.setBounds(140, 170, 71, 20);
 
         coverageText.setEditable(false);
         add(coverageText);
         coverageText.setBounds(278, 171, 116, 23);
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/insurance finance request.gif"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/1 AkY4Z8IN-byq7ecW9YHTIw.gif"))); // NOI18N
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         add(jLabel2);
-        jLabel2.setBounds(0, 10, 880, 540);
+        jLabel2.setBounds(-30, 0, 910, 550);
     }// </editor-fold>//GEN-END:initComponents
 
     private void AcceptAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AcceptAmountActionPerformed

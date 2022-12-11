@@ -249,11 +249,11 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
 
         jLabel9.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(204, 130, 43));
-        jLabel9.setText("Doctor Type");
+        jLabel9.setText("Volunteer Type");
 
         doctorTypeJComboBox1.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         doctorTypeJComboBox1.setForeground(new java.awt.Color(204, 130, 43));
-        doctorTypeJComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Physician", "Neurologist", "Pediatrician", "Orthopedic" }));
+        doctorTypeJComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Delivery Volunteer", "Take Home Assistant" }));
         doctorTypeJComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 doctorTypeJComboBox1ActionPerformed(evt);

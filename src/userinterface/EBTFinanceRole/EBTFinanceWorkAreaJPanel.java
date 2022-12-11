@@ -56,13 +56,15 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
         processRequestButton = new javax.swing.JButton();
         img = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
+        setForeground(new java.awt.Color(204, 130, 43));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("Card Finance Work Area");
 
         tblInsFinance.setBackground(new java.awt.Color(204, 204, 204));
-        tblInsFinance.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        tblInsFinance.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
         tblInsFinance.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
@@ -84,8 +86,8 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblInsFinance);
 
-        AssignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        AssignToMeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        AssignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        AssignToMeButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         AssignToMeButton.setForeground(new java.awt.Color(255, 255, 255));
         AssignToMeButton.setText("Assign To Me");
         AssignToMeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -94,8 +96,8 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        processRequestButton.setBackground(new java.awt.Color(0, 102, 102));
-        processRequestButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        processRequestButton.setBackground(new java.awt.Color(204, 130, 43));
+        processRequestButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         processRequestButton.setForeground(new java.awt.Color(255, 255, 255));
         processRequestButton.setText("Process Request");
         processRequestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +106,7 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/insurance agent.jpg"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/essential-technology-425x425.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -125,8 +127,8 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
                         .addGap(406, 406, 406)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(257, 257, 257)
-                        .addComponent(img, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(277, 277, 277)
+                        .addComponent(img, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(37, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -140,9 +142,9 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(processRequestButton)
                     .addComponent(AssignToMeButton))
-                .addGap(36, 36, 36)
-                .addComponent(img, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(261, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(img)
+                .addContainerGap(185, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
