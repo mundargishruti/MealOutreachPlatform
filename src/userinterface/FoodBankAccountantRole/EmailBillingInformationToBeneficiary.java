@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Parth
+ * @author Rajvi
  */
 public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
 
