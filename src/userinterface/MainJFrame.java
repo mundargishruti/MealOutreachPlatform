@@ -5,11 +5,11 @@
 package userinterface;
 import java.awt.Color;
 import code.EcoSystem;
-import Business.DB4OUtil.DB4OUtil;
-import Business.Enterprise.Enterprise;
-import Business.Networks.Networks;
-import Business.Org.Organization;
-import Business.SystemUserAccount.SystemUsers;
+import code.DB4OUtil.DB4OUtil;
+import code.Enterprise.Enterprise;
+import code.Networks.Networks;
+import code.Org.Organization;
+import code.SystemUserAccount.SystemUsers;
 import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.BorderFactory;
