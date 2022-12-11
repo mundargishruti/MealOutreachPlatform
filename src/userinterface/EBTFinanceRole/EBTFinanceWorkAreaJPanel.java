@@ -18,7 +18,7 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author Parth
+ * @author shruti
  */
 public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
 

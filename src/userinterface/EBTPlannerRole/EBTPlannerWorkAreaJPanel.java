@@ -18,7 +18,7 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author Pratik
+ * @author shruti
  */
 public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
 
