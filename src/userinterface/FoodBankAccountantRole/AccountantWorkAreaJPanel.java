@@ -69,15 +69,15 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
         btnShwPtntRprt = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/hospital reception.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/6.23.20-4-FAQs-About-Donated-Meals-Republish-of-Donated-Meals-Make-an-Impact.png"))); // NOI18N
         jLabel1.setText("Patient Details");
 
-        btnCrtApptmt.setBackground(new java.awt.Color(0, 102, 102));
-        btnCrtApptmt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnCrtApptmt.setBackground(new java.awt.Color(204, 130, 43));
+        btnCrtApptmt.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnCrtApptmt.setForeground(new java.awt.Color(255, 255, 255));
         btnCrtApptmt.setText("Create Order");
         btnCrtApptmt.addActionListener(new java.awt.event.ActionListener() {
@@ -86,8 +86,8 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnPrcsMdclBll.setBackground(new java.awt.Color(0, 102, 102));
-        btnPrcsMdclBll.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnPrcsMdclBll.setBackground(new java.awt.Color(204, 130, 43));
+        btnPrcsMdclBll.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnPrcsMdclBll.setForeground(new java.awt.Color(255, 255, 255));
         btnPrcsMdclBll.setText("Process Order Billings");
         btnPrcsMdclBll.addActionListener(new java.awt.event.ActionListener() {
@@ -132,8 +132,8 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPtn);
 
-        btnShwPtntRprt.setBackground(new java.awt.Color(0, 102, 102));
-        btnShwPtntRprt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnShwPtntRprt.setBackground(new java.awt.Color(204, 130, 43));
+        btnShwPtntRprt.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnShwPtntRprt.setForeground(new java.awt.Color(255, 255, 255));
         btnShwPtntRprt.setText("Show Beneficiary Report");
         btnShwPtntRprt.addActionListener(new java.awt.event.ActionListener() {
@@ -142,7 +142,8 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 130, 43));
         jLabel3.setText("FOOD BANK RECEPTION WORK AREA");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -150,29 +151,28 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 619, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addGap(323, 323, 323)
+                                .addComponent(btnShwPtntRprt))
+                            .addComponent(btnCrtApptmt, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnPrcsMdclBll))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(160, 160, 160)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(323, 323, 323)
-                                        .addComponent(btnShwPtntRprt))
-                                    .addComponent(btnCrtApptmt, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnPrcsMdclBll)))))
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap(58, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(122, 122, 122)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 701, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

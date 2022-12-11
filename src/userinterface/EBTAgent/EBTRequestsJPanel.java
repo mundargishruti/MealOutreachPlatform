@@ -60,9 +60,10 @@ public class EBTRequestsJPanel extends javax.swing.JPanel {
         backButton = new javax.swing.JButton();
         assignToMeButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("Process Requests");
 
         tblPrcsReq.setBackground(new java.awt.Color(204, 204, 204));
@@ -101,8 +102,8 @@ public class EBTRequestsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPrcsReq);
 
-        processRequestButton.setBackground(new java.awt.Color(0, 102, 102));
-        processRequestButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        processRequestButton.setBackground(new java.awt.Color(204, 130, 43));
+        processRequestButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         processRequestButton.setForeground(new java.awt.Color(255, 255, 255));
         processRequestButton.setText("Process Request");
         processRequestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -120,8 +121,8 @@ public class EBTRequestsJPanel extends javax.swing.JPanel {
             }
         });
 
-        assignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        assignToMeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        assignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        assignToMeButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         assignToMeButton.setForeground(java.awt.Color.white);
         assignToMeButton.setText("Assign To Me");
         assignToMeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -169,7 +170,7 @@ public class EBTRequestsJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(processRequestButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(assignToMeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(190, Short.MAX_VALUE))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

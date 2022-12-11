@@ -18,7 +18,10 @@
   </NonVisualComponents>
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="cc" green="cc" red="0" type="rgb"/>
+      <Color blue="e8" green="f9" red="fd" type="rgb"/>
+    </Property>
+    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="2b" green="82" red="cc" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -347,7 +350,7 @@
                       <Component id="jLabel5" min="-2" pref="245" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="351" max="32767" attributes="0"/>
+              <EmptySpace pref="341" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -356,7 +359,10 @@
     <Component class="javax.swing.JLabel" name="lblFndPtnt">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="YuGothic" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="CREATE ORDER"/>
       </Properties>
@@ -367,7 +373,7 @@
           <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -381,7 +387,10 @@
     <Component class="javax.swing.JLabel" name="lblAlreadyRegistered">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Already registered? Provide SSN: "/>
       </Properties>
@@ -408,7 +417,10 @@
     <Component class="javax.swing.JLabel" name="lblDt">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Date:"/>
       </Properties>
@@ -416,7 +428,10 @@
     <Component class="javax.swing.JLabel" name="lblPtntInfo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="PATIENT INFORMATION"/>
       </Properties>
@@ -426,7 +441,10 @@
     <Component class="javax.swing.JLabel" name="lblFrstNm">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="First Name :"/>
       </Properties>
@@ -434,7 +452,10 @@
     <Component class="javax.swing.JLabel" name="lblAddr">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Address:"/>
       </Properties>
@@ -442,7 +463,10 @@
     <Component class="javax.swing.JLabel" name="lblLstNm">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Last Name :"/>
       </Properties>
@@ -452,7 +476,10 @@
     <Component class="javax.swing.JLabel" name="lblSsn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="SSN :"/>
       </Properties>
@@ -467,7 +494,10 @@
     <Component class="javax.swing.JLabel" name="lblPnNo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Phone Number:"/>
       </Properties>
@@ -480,7 +510,10 @@
     <Component class="javax.swing.JLabel" name="lblAge">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Age :"/>
       </Properties>
@@ -488,7 +521,10 @@
     <Component class="javax.swing.JLabel" name="lblSex">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Sex :"/>
       </Properties>
@@ -497,6 +533,12 @@
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup2"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="YuGothic" size="14" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="M"/>
       </Properties>
@@ -510,7 +552,10 @@
           <ComponentRef name="buttonGroup2"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="0"/>
+          <Font name="YuGothic" size="14" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="F"/>
       </Properties>
@@ -521,7 +566,10 @@
     <Component class="javax.swing.JLabel" name="lblInsInfo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="INSURANCE INFORMATION"/>
       </Properties>
@@ -532,7 +580,7 @@
           <ComponentRef name="buttonGroup1"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="12" style="0"/>
+          <Font name="YuGothic" size="12" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Yes"/>
       </Properties>
@@ -546,7 +594,7 @@
           <ComponentRef name="buttonGroup1"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="12" style="0"/>
+          <Font name="YuGothic" size="12" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="No"/>
       </Properties>
@@ -557,7 +605,10 @@
     <Component class="javax.swing.JLabel" name="lblIsThsPtntCvrdByIns">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Is this patient covered by Insurance"/>
       </Properties>
@@ -565,7 +616,10 @@
     <Component class="javax.swing.JLabel" name="lblPlcyNm">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Policy Name :"/>
       </Properties>
@@ -573,7 +627,10 @@
     <Component class="javax.swing.JLabel" name="lblInsCmpny">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Card Issuer :"/>
       </Properties>
@@ -581,10 +638,10 @@
     <Component class="javax.swing.JButton" name="btnCrt">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="0" type="rgb"/>
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -598,17 +655,28 @@
     <Component class="javax.swing.JLabel" name="lblRsnFrVst">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Reason for Visit:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtRsnFrVst">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="YuGothic" size="13" style="0"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblPtntMdclCndtn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="PATIENT MEDICAL CONDITION"/>
       </Properties>
@@ -623,6 +691,9 @@
         <Component class="javax.swing.JTextArea" name="txtAddr">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="YuGothic" size="13" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
           </Properties>
         </Component>
@@ -631,7 +702,10 @@
     <Component class="javax.swing.JLabel" name="lblPlcyNo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Provide Card Number:"/>
       </Properties>
@@ -647,10 +721,10 @@
           <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="99" green="99" red="99" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Find Policy"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -668,7 +742,10 @@
     <Component class="javax.swing.JLabel" name="lblPtntInsCvrg">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Coverage % :"/>
       </Properties>
@@ -680,13 +757,22 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup2"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="YuGothic" size="14" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Other"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblVstId">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Beneficiary ID:"/>
       </Properties>
@@ -696,10 +782,10 @@
     <Component class="javax.swing.JButton" name="btnRstPlcyNo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="0" type="rgb"/>
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -713,7 +799,10 @@
     <Component class="javax.swing.JLabel" name="txtEml">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Beneficiary Email:"/>
       </Properties>
@@ -723,19 +812,26 @@
     <Component class="javax.swing.JLabel" name="lblDrTyp">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="1"/>
+          <Font name="YuGothic" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Doctor Type"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="cbDrTyp">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="YuGothic" size="13" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
+        </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Physician"/>
-            <StringItem index="1" value="Neurologist"/>
-            <StringItem index="2" value="Pediatrician"/>
-            <StringItem index="3" value="Orthopedic"/>
+          <StringArray count="2">
+            <StringItem index="0" value="Delivery Volunteer"/>
+            <StringItem index="1" value="Take Home Assistant"/>
           </StringArray>
         </Property>
       </Properties>
@@ -743,7 +839,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/appointment1.gif"/>
+          <Image iconType="3" name="/Images/Untitled-design.gif"/>
         </Property>
       </Properties>
     </Component>

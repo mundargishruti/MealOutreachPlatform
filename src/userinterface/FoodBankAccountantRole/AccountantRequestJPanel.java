@@ -84,38 +84,46 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         completeBeneficiaryTransactionButton = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
+        setForeground(new java.awt.Color(204, 130, 43));
 
         processBillingAreaLabel.setBackground(new java.awt.Color(255, 255, 255));
-        processBillingAreaLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        processBillingAreaLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        processBillingAreaLabel.setForeground(new java.awt.Color(204, 130, 43));
         processBillingAreaLabel.setText("Process Billing Request Area");
 
         ssnLabel.setBackground(new java.awt.Color(255, 255, 255));
-        ssnLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ssnLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ssnLabel.setForeground(new java.awt.Color(204, 130, 43));
         ssnLabel.setText("SSN");
 
         firstNameLabel.setBackground(new java.awt.Color(255, 255, 255));
-        firstNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        firstNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        firstNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         firstNameLabel.setText("FirstName");
 
         lastNameLabel.setBackground(new java.awt.Color(255, 255, 255));
-        lastNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lastNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lastNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         lastNameLabel.setText("LastName");
 
         billAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
-        billAmountLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        billAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        billAmountLabel.setForeground(new java.awt.Color(204, 130, 43));
         billAmountLabel.setText("Bill Amount");
 
         ebtCardType.setBackground(new java.awt.Color(255, 255, 255));
-        ebtCardType.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ebtCardType.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ebtCardType.setForeground(new java.awt.Color(204, 130, 43));
         ebtCardType.setText("Insurance Policy Name");
 
         payableAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
-        payableAmountLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        payableAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        payableAmountLabel.setForeground(new java.awt.Color(204, 130, 43));
         payableAmountLabel.setText("Payable Amount");
 
-        initiateClainButton.setBackground(new java.awt.Color(0, 102, 102));
-        initiateClainButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        initiateClainButton.setBackground(new java.awt.Color(204, 130, 43));
+        initiateClainButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         initiateClainButton.setForeground(new java.awt.Color(255, 255, 255));
         initiateClainButton.setText("Charge Amount / Initiate Claim Request");
         initiateClainButton.addActionListener(new java.awt.event.ActionListener() {
@@ -139,11 +147,13 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         ebtCardNumberText.setEditable(false);
 
         ebtCardNumberLabel.setBackground(new java.awt.Color(255, 255, 255));
-        ebtCardNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ebtCardNumberLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ebtCardNumberLabel.setForeground(new java.awt.Color(204, 130, 43));
         ebtCardNumberLabel.setText("EBT Card Number");
 
         EBTClaimAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
-        EBTClaimAmountLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        EBTClaimAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        EBTClaimAmountLabel.setForeground(new java.awt.Color(204, 130, 43));
         EBTClaimAmountLabel.setText("Insurance Claim Amount");
 
         ebtClaimAmountText.setEditable(false);
@@ -154,7 +164,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         });
 
         backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -163,8 +173,8 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        completeBeneficiaryTransactionButton.setBackground(new java.awt.Color(0, 102, 102));
-        completeBeneficiaryTransactionButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        completeBeneficiaryTransactionButton.setBackground(new java.awt.Color(204, 130, 43));
+        completeBeneficiaryTransactionButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         completeBeneficiaryTransactionButton.setForeground(new java.awt.Color(255, 255, 255));
         completeBeneficiaryTransactionButton.setText("Complete Patient Transaction");
         completeBeneficiaryTransactionButton.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +183,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Accountant.gif"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/4070394.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -188,7 +198,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
                         .addComponent(processBillingAreaLabel))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                            .addContainerGap(136, Short.MAX_VALUE)
+                            .addContainerGap(121, Short.MAX_VALUE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(12, 12, 12)
@@ -277,7 +287,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(initiateClainButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(completeBeneficiaryTransactionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(87, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
