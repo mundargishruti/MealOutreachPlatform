@@ -99,7 +99,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         manageEmployeeLabel = new javax.swing.JLabel();
         manageEmployeeImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setForeground(new java.awt.Color(255, 255, 255));
 
         organizationJTable.setBackground(new java.awt.Color(204, 204, 204));
