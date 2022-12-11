@@ -211,14 +211,14 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
 
     private void FDAReportRequestButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FDAReportRequestButtonActionPerformed
         CardLayout layout = (CardLayout) jPanel.getLayout();
-        jPanel.add("RequestFundsJPanel", new RequestFundsJPanel(jPanel, entrpz, usrAc, ecosystem));
+        jPanel.add("RequestReportJPanel", new RequestReportJPanel(jPanel, entrpz, usrAc, ecosystem));
         layout.next(jPanel);
     }//GEN-LAST:event_FDAReportRequestButtonActionPerformed
 
     private void NgoFundReqbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NgoFundReqbuttonActionPerformed
         // TODO add your handling code here:
        CardLayout layout = (CardLayout) jPanel.getLayout();
-        jPanel.add("NGORequestFundsJPanel", new NGORequestFundsJPanel(jPanel, entrpz, usrAc, ecosystem));
+        jPanel.add("NGORequestFundsJPanel", new NGOFundRequestJPanel(jPanel, entrpz, usrAc, ecosystem));
         layout.next(jPanel);
     }//GEN-LAST:event_NgoFundReqbuttonActionPerformed
 
