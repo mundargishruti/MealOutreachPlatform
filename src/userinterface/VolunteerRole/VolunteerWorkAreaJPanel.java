@@ -97,7 +97,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         restaurantRequestLabel = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
+        setForeground(new java.awt.Color(204, 130, 43));
 
         tblDrWrkArea.setBackground(new java.awt.Color(204, 204, 204));
         tblDrWrkArea.setModel(new javax.swing.table.DefaultTableModel(
@@ -127,8 +128,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDrWrkArea);
 
-        orderProcessButton.setBackground(new java.awt.Color(0, 102, 102));
-        orderProcessButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderProcessButton.setBackground(new java.awt.Color(204, 130, 43));
+        orderProcessButton.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         orderProcessButton.setForeground(new java.awt.Color(255, 255, 255));
         orderProcessButton.setText("Order Process");
         orderProcessButton.addActionListener(new java.awt.event.ActionListener() {
@@ -138,16 +139,19 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         enterpriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        enterpriceLabel.setForeground(new java.awt.Color(204, 130, 43));
         enterpriceLabel.setText("Enterprise :");
 
         valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(204, 130, 43));
         valueLabel.setText("<value>");
 
-        orderWorkQueueLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderWorkQueueLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
+        orderWorkQueueLabel.setForeground(new java.awt.Color(204, 130, 43));
         orderWorkQueueLabel.setText("Food Order Work Queue");
 
-        assignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        assignToMeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        assignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        assignToMeButton.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         assignToMeButton.setForeground(new java.awt.Color(255, 255, 255));
         assignToMeButton.setText("Assign To Me");
         assignToMeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -156,8 +160,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterStatusButton.setBackground(new java.awt.Color(0, 102, 102));
-        enterStatusButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        enterStatusButton.setBackground(new java.awt.Color(204, 130, 43));
+        enterStatusButton.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         enterStatusButton.setForeground(new java.awt.Color(255, 255, 255));
         enterStatusButton.setText("List Order Items");
         enterStatusButton.addActionListener(new java.awt.event.ActionListener() {
@@ -166,8 +170,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        completeOrderButton.setBackground(new java.awt.Color(0, 102, 102));
-        completeOrderButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        completeOrderButton.setBackground(new java.awt.Color(204, 130, 43));
+        completeOrderButton.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         completeOrderButton.setForeground(new java.awt.Color(255, 255, 255));
         completeOrderButton.setText("Complete Order");
         completeOrderButton.addActionListener(new java.awt.event.ActionListener() {
@@ -176,8 +180,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        viewBeneficiaryButton.setBackground(new java.awt.Color(0, 102, 102));
-        viewBeneficiaryButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        viewBeneficiaryButton.setBackground(new java.awt.Color(204, 130, 43));
+        viewBeneficiaryButton.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         viewBeneficiaryButton.setForeground(new java.awt.Color(255, 255, 255));
         viewBeneficiaryButton.setText("View Beneficiary");
         viewBeneficiaryButton.addActionListener(new java.awt.event.ActionListener() {
@@ -186,11 +190,12 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        volunteerWorkAreaLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        volunteerWorkAreaLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
+        volunteerWorkAreaLabel.setForeground(new java.awt.Color(204, 130, 43));
         volunteerWorkAreaLabel.setText("Volunteer Work Area");
 
-        restaurantRequestLabel.setBackground(new java.awt.Color(0, 102, 102));
-        restaurantRequestLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        restaurantRequestLabel.setBackground(new java.awt.Color(204, 130, 43));
+        restaurantRequestLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         restaurantRequestLabel.setForeground(new java.awt.Color(255, 255, 255));
         restaurantRequestLabel.setText("Request Restaurant");
         restaurantRequestLabel.addActionListener(new java.awt.event.ActionListener() {
@@ -199,60 +204,60 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/happy-happy-doctor.gif"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/foodOrder.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(enterpriceLabel)
-                                .addGap(18, 18, 18)
-                                .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(327, 327, 327)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(volunteerWorkAreaLabel)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(19, 19, 19)
-                                        .addComponent(orderWorkQueueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(viewBeneficiaryButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(assignToMeButton)
-                        .addGap(31, 31, 31)
-                        .addComponent(orderProcessButton)
-                        .addGap(30, 30, 30)
-                        .addComponent(enterStatusButton)
-                        .addGap(18, 18, 18)
-                        .addComponent(completeOrderButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(325, 325, 325)
-                        .addComponent(restaurantRequestLabel))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(39, 39, 39)
+                        .addContainerGap(70, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(viewBeneficiaryButton)
+                                .addGap(31, 31, 31)
+                                .addComponent(assignToMeButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(orderProcessButton)
+                                .addGap(41, 41, 41)
+                                .addComponent(enterStatusButton)
+                                .addGap(44, 44, 44)
+                                .addComponent(completeOrderButton))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(restaurantRequestLabel)
+                        .addGap(385, 385, 385)))
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(volunteerWorkAreaLabel)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(79, 79, 79)
+                            .addComponent(enterpriceLabel)
+                            .addGap(18, 18, 18)
+                            .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(425, 425, 425)
+                            .addComponent(orderWorkQueueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(volunteerWorkAreaLabel)
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(enterpriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(volunteerWorkAreaLabel)
-                        .addGap(15, 15, 15)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(enterpriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(14, 14, 14)
                         .addComponent(orderWorkQueueLabel)
                         .addGap(18, 18, 18)
@@ -264,12 +269,12 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                             .addComponent(orderProcessButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(viewBeneficiaryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(completeOrderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(restaurantRequestLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(161, Short.MAX_VALUE))
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel3)))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
