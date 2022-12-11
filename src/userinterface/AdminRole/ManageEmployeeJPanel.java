@@ -136,7 +136,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        rmployeeCreationButton.setBackground(new java.awt.Color(0, 102, 102));
+        rmployeeCreationButton.setBackground(new java.awt.Color(204, 130, 43));
         rmployeeCreationButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rmployeeCreationButton.setText("Create Employee");
         rmployeeCreationButton.addActionListener(new java.awt.event.ActionListener() {
@@ -145,6 +145,8 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
 
+        organisationComboBox.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 15)); // NOI18N
+        organisationComboBox.setForeground(new java.awt.Color(204, 130, 43));
         organisationComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organisationComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,7 +175,8 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         nameText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
         employeeOrganisationcomboBox.setBackground(new java.awt.Color(204, 204, 204));
-        employeeOrganisationcomboBox.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        employeeOrganisationcomboBox.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 14)); // NOI18N
+        employeeOrganisationcomboBox.setForeground(new java.awt.Color(204, 130, 43));
         employeeOrganisationcomboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         employeeOrganisationcomboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,7 +194,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         manageEmployeeLabel.setText("Manage Employee");
 
         manageEmployeeImage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        manageEmployeeImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/HospitalEmployee.jpg"))); // NOI18N
+        manageEmployeeImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageEmployee.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -220,13 +223,15 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(nameText, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(employeeOrganisationcomboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(148, Short.MAX_VALUE))
+                .addContainerGap(164, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(rmployeeCreationButton)
-                    .addComponent(manageEmployeeImage, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(rmployeeCreationButton)
                 .addGap(223, 223, 223))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(manageEmployeeImage, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -255,9 +260,9 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                             .addComponent(nameLabel))
                         .addGap(36, 36, 36)
                         .addComponent(rmployeeCreationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(75, 75, 75)
+                .addGap(27, 27, 27)
                 .addComponent(manageEmployeeImage, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(343, Short.MAX_VALUE))
+                .addContainerGap(391, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

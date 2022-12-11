@@ -86,7 +86,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         deleteOrganisationButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setToolTipText("");
 
         organizationTable.setBackground(new java.awt.Color(204, 204, 204));
@@ -123,8 +123,8 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             organizationTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        addOrganisationButton.setBackground(new java.awt.Color(0, 102, 102));
-        addOrganisationButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        addOrganisationButton.setBackground(new java.awt.Color(204, 130, 43));
+        addOrganisationButton.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         addOrganisationButton.setText("Add Organization");
         addOrganisationButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,14 +133,16 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         });
 
         organizationComboBox.setBackground(new java.awt.Color(204, 204, 204));
-        organizationComboBox.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        organizationComboBox.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        organizationComboBox.setForeground(new java.awt.Color(204, 130, 43));
         organizationComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         organisationTypeLabel.setBackground(new java.awt.Color(204, 204, 204));
-        organisationTypeLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        organisationTypeLabel.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 14)); // NOI18N
+        organisationTypeLabel.setForeground(new java.awt.Color(204, 130, 43));
         organisationTypeLabel.setText("Organization Type ");
 
-        backJButton.setBackground(new java.awt.Color(0, 102, 102));
+        backJButton.setBackground(new java.awt.Color(204, 130, 43));
         backJButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -149,11 +151,12 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageOrganisationHeaderLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        manageOrganisationHeaderLabel.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 24)); // NOI18N
+        manageOrganisationHeaderLabel.setForeground(new java.awt.Color(204, 130, 43));
         manageOrganisationHeaderLabel.setText("Manage Organizations");
 
-        deleteOrganisationButton.setBackground(new java.awt.Color(0, 102, 102));
-        deleteOrganisationButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        deleteOrganisationButton.setBackground(new java.awt.Color(204, 130, 43));
+        deleteOrganisationButton.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 14)); // NOI18N
         deleteOrganisationButton.setText("Delete");
         deleteOrganisationButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,48 +174,51 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(backJButton)
-                        .addGap(116, 116, 116)
-                        .addComponent(manageOrganisationHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(228, 228, 228)
+                        .addGap(290, 290, 290)
                         .addComponent(organisationTypeLabel)
-                        .addGap(49, 49, 49)
+                        .addGap(56, 56, 56)
                         .addComponent(organizationComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(55, 55, 55)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(addOrganisationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(deleteOrganisationButton))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(311, 311, 311)
+                        .addComponent(addOrganisationButton)
+                        .addGap(34, 34, 34)
+                        .addComponent(deleteOrganisationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(backJButton)
+                        .addGap(215, 215, 215)
+                        .addComponent(manageOrganisationHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(234, 234, 234)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(101, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(manageOrganisationHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(backJButton))
-                .addGap(40, 40, 40)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(manageOrganisationHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(organizationComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(organisationTypeLabel))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deleteOrganisationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addOrganisationButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(78, 78, 78)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
