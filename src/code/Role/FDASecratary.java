@@ -10,7 +10,7 @@ import code.Org.Organization;
 import code.Org.OrgSecretary;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-import UI.GovernmentSecretaryRole.SecretaryWorkAreaJPanel;
+import userinterface.FDASecretaryRole.SecretaryWorkAreaJPanel;
 
 
 /**

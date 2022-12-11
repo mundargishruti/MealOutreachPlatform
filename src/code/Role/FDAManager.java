@@ -10,7 +10,7 @@ import code.Org.Organization;
 import code.Org.OrgFDAManager;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-import UI.GovernmentTreasurerRole.TreasurerWorkAreaJPanel;
+import userinterface.FDATreasurerRole.TreasurerWorkAreaJPanel;
 
 
 /**

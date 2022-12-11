@@ -10,7 +10,7 @@ import code.Org.OrgAccountant;
 import code.Org.Organization;
 import code.SystemUserAccount.SystemUsers;
 import javax.swing.JPanel;
-import userinterface.HealthcareAccountantRole.AccountantWorkAreaJPanel;
+import userinterface.FoodBankAccountantRole.AccountantWorkAreaJPanel;
 /**
  *
  * @author Rajvi
