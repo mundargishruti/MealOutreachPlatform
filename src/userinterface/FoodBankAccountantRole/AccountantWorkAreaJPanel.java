@@ -218,11 +218,11 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
                 underTreatmentPatients.add(patient);
             }
         }
-        defaultPieDataset.setValue("Patient still under treatment", underTreatmentPatients.size());
-        defaultPieDataset.setValue("Patient Treated Successfully", treatedPatients.size());
+        defaultPieDataset.setValue("Order Pending", underTreatmentPatients.size());
+        defaultPieDataset.setValue("Order Completed", treatedPatients.size());
         JFreeChart chart = ChartFactory.createPieChart("Patient Status Pie Chart", defaultPieDataset, true, true, true);
         PiePlot piePlot =(PiePlot) chart.getPlot();
-        ChartFrame frame = new ChartFrame("Patient Status Pie Chart", chart);
+        ChartFrame frame = new ChartFrame("Order Status Pie Chart", chart);
         frame.setVisible(true);
         frame.setSize(500,500);
     }//GEN-LAST:event_btnShwPtntRprtActionPerformed
@@ -249,7 +249,7 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
             row[1] = ptnt.getBenFirstName() + " " + ptnt.getBenLastName();
             row[2] = ptnt.getContactNo();
             row[3] = ptnt.getAddress();
-            row[4] = ptnt.isIsOrderDelivered() ? "Treatment Complete" : "Treatment In Progress";
+            row[4] = ptnt.isIsOrderDelivered() ? "Order Complete" : "Order In Progress";
             row[5] = ptnt.getOrderDate();
             row[6] = ptnt.getVolType();
             dtm.addRow(row);

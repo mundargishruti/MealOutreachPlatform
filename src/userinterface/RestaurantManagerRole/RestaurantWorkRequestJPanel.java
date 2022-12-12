@@ -107,13 +107,13 @@ public class RestaurantWorkRequestJPanel extends javax.swing.JPanel {
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         String bloodBankMessage = messageTeaxt.getText().trim();
         if (bloodBankMessage.equals("")) {
-            JOptionPane.showMessageDialog(null, "Result is mandatory");
+            JOptionPane.showMessageDialog(null, "Message is mandatory");
             return;
         } else {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
                 ptTrWrReq.setMsgFromRestaurant(bloodBankMessage);
-                ptTrWrReq.setProcessStatus("Blood Bank Request Completed");
+                ptTrWrReq.setProcessStatus("Restaurant Request Completed");
                 JOptionPane.showMessageDialog(null, "Result submitted successfully");
                 messageTeaxt.setText("");
                 submitButton.setEnabled(false);

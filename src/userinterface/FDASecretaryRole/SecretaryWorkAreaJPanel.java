@@ -188,7 +188,7 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
                 return;
             }
             
-            if (fundReq.getProcessStatus().equalsIgnoreCase("Sent to Treasurer")) {
+            if (fundReq.getProcessStatus().equalsIgnoreCase("Sent to Manager")) {
                 JOptionPane.showMessageDialog(null, "Request already processed" , "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -224,7 +224,7 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
             Object[] row = new Object[6];
             row[0] = ((FDAApprovalRequest) req);
             row[1] = req.getSndr().getEmploye().getEmpName();
-            if (status.equalsIgnoreCase("Sent to Treasurer") || status.equalsIgnoreCase("Sent to Secretary")) {
+            if (status.equalsIgnoreCase("Sent to Manager") || status.equalsIgnoreCase("Sent to Secretary")) {
                 row[2] = null;
             } else {
                 row[2] = req.getRcvr() == null ? null : req.getRcvr().getEmploye().getEmpName();

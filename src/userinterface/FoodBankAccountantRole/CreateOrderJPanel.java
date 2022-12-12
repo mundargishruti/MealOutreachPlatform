@@ -654,12 +654,12 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         }
         
         if (buttonGroup1.isSelected(null)) {
-            JOptionPane.showMessageDialog(null, "Please choose if Patient covered by Insurance");
+            JOptionPane.showMessageDialog(null, "Please choose if beneficiary had an EBT card");
             return;
         }
         
         if (txtRsnFrVst.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Please provide Reason for visit");
+            JOptionPane.showMessageDialog(null, "Please provide preferred food");
             return;
             
         }
@@ -734,12 +734,12 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             String policyNumber = txtPlcyNo.getText().trim();
             if (rbPtntInsYes.isSelected()) {
                 if (policyNumber.equals("")) {
-                    JOptionPane.showMessageDialog(null, "Provide policy number");
+                    JOptionPane.showMessageDialog(null, "Provide ebt card number");
                     return;
                 }
                 
                 if (txtPlcyNm.getText().equals("")) {
-                    JOptionPane.showMessageDialog(null, "No Policy found, please provide correct policy number");
+                    JOptionPane.showMessageDialog(null, "No card found, please provide correct card number");
                     return;
                 }
             }
@@ -780,7 +780,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             healthCenterEnterprise.getBenificiaryDirectory().getBeneficiaries().add(patient);
             
             OrderPlaceRequest patientTreatmentWorkRequest = new OrderPlaceRequest(registrationDate, reasonForVisit, patient);
-            patientTreatmentWorkRequest.setProcessStatus("Waiting for Doctor");
+            patientTreatmentWorkRequest.setProcessStatus("Waiting for volunteer");
             //   patientTreatmentWorkRequest.setSender(userAccount);
 
             Organization org = null;
@@ -794,7 +794,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
                 org.getProcessQueue().getProcesReq().add(patientTreatmentWorkRequest);
                 userAccount.getProcessQueue().getProcesReq().add(patientTreatmentWorkRequest);
                 refresh();
-                JOptionPane.showMessageDialog(null, "Patient Registered Successfully");
+                JOptionPane.showMessageDialog(null, "Order Placed Successfully");
             }
             
         }
@@ -837,7 +837,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         }
         
         if (!isPatientFound) {
-            JOptionPane.showMessageDialog(null, "No patient Found");
+            JOptionPane.showMessageDialog(null, "No User Found");
         }
     }//GEN-LAST:event_btnFndPtntActionPerformed
 
@@ -874,7 +874,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
             txtPlcyNo.setEnabled(false);
             txtSsn.setEnabled(false);
         } else {
-            JOptionPane.showMessageDialog(null, "Policy number does not match with provided SSN");
+            JOptionPane.showMessageDialog(null, "EBT card number does not match with provided SSN");
             txtInsCmpny.setText("");
             txtPlcyNm.setText("");
             txtPtntInsCvrg.setText("");

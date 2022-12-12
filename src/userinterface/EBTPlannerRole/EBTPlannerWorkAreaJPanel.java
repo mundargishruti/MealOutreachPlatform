@@ -74,7 +74,7 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
 
         cardTypeLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         cardTypeLabel.setForeground(new java.awt.Color(204, 130, 43));
-        cardTypeLabel.setText("Card Number");
+        cardTypeLabel.setText("Card Type");
 
         cardCoverageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         cardCoverageLabel.setForeground(new java.awt.Color(204, 130, 43));
@@ -255,7 +255,7 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
         List<EBTCard> plcys = insrCmpEnt.getEbtCardDir().getEBTCards();
         for (EBTCard insurance : plcys) {
             if (policyName.equalsIgnoreCase(insurance.getEBTAgent())) {
-                JOptionPane.showMessageDialog(null, "Policy already exists, please provide some other policy name");
+                JOptionPane.showMessageDialog(null, "Card Type already exists, please provide some other Card Type");
                 return;
             }
         }
@@ -265,8 +265,8 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
 
         // InsuranceCompanyEnterprise insuranceCompanyEnterprise = insuranceCompanyEnterprise;
         insrCmpEnt.getEbtCardDir().getEBTCards().add(insr);
-        JOptionPane.showMessageDialog(null, "Policy Added Successfully");
-        System.out.println("Policy Added Successfully:" + insrCmpEnt.getEbtCardDir().getEBTCards());
+        JOptionPane.showMessageDialog(null, "Card Added Successfully");
+        System.out.println("Card Added Successfully:" + insrCmpEnt.getEbtCardDir().getEBTCards());
         pplTbl();
         cardTypeText.setText("");
         monthlyPremiumText.setText("");

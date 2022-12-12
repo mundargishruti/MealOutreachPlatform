@@ -126,7 +126,7 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
             try {
                 Integer.parseInt(bloodUnits);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please provide integer values in Blood Units textfield");
+                JOptionPane.showMessageDialog(null, "Please provide integer values in amount of food (kgs) textfield");
                 return;
             }
             
@@ -134,7 +134,7 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
         String message = messageText.getText().trim();
 
         if (bloodUnits.equals("")) {
-            JOptionPane.showMessageDialog(null, "Blood Units is mandatory!");
+            JOptionPane.showMessageDialog(null, "Amount of food is mandatory!");
             return;
         }
         if (message.equals("")) {
@@ -145,7 +145,7 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
         
         pntTrWrkReq.setMsgFromRestaurant(message);
         pntTrWrkReq.setSndr(usrAcnt);
-        pntTrWrkReq.setProcessStatus("SentToBloodBank");
+        pntTrWrkReq.setProcessStatus("SentToRestaurant");
         pntTrWrkReq.setRcvr(null);
         pntTrWrkReq.setAmountOfFood(Integer.valueOf(bloodUnits));
         
@@ -171,7 +171,7 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
             usrAcnt.getProcessQueue().getProcesReq().add(pntTrWrkReq);
 
 
-            JOptionPane.showMessageDialog(null, "Blood Bank request sent successfully");
+            JOptionPane.showMessageDialog(null, "Hotel order request sent successfully");
             messageText.setText("");
             amountOfFoodText.setText("");
             requestButton.setEnabled(false);

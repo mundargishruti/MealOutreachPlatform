@@ -190,14 +190,14 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         String prescription = txtPrscrptn.getText();
         if (prescription.equals("")) {
-            JOptionPane.showMessageDialog(null, "Prescription is mandatory");
+            JOptionPane.showMessageDialog(null, "Providing order items is mandatory");
             return;
         } else {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
                 req.setVolunteerNote(prescription);
-                req.setProcessStatus("Prescription Provided");
-                JOptionPane.showMessageDialog(null, "Prescription submitted successfully");
+                req.setProcessStatus("Order List Provided");
+                JOptionPane.showMessageDialog(null, "Items submitted successfully");
                 submitButton.setEnabled(false);
             }
         }        

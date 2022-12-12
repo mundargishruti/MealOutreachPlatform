@@ -106,15 +106,15 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         lblLabTyp.setBackground(new java.awt.Color(204, 130, 43));
         lblLabTyp.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         lblLabTyp.setForeground(new java.awt.Color(204, 130, 43));
-        lblLabTyp.setText("Restaurant Type");
+        lblLabTyp.setText("Food Type");
         add(lblLabTyp, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, -1, -1));
         add(txtLabTyp, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, 130, 30));
 
         lblLabTypReq.setBackground(new java.awt.Color(204, 130, 43));
         lblLabTypReq.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
         lblLabTypReq.setForeground(new java.awt.Color(204, 130, 43));
-        lblLabTypReq.setText("Restaurant Request");
-        add(lblLabTypReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, -1, -1));
+        lblLabTypReq.setText("Food from storage Request");
+        add(lblLabTypReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, -1, -1));
 
         imgLabTstReq.setForeground(new java.awt.Color(204, 130, 43));
         imgLabTstReq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/orderProcessinggifff.gif"))); // NOI18N
@@ -128,7 +128,7 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         String message = txtMsg.getText().trim();
 
         if (labType.equals("")) {
-            JOptionPane.showMessageDialog(null, "Lap type is mandatory!");
+            JOptionPane.showMessageDialog(null, "Food type is mandatory!");
             return;
         }
         if (message.equals("")) {
@@ -139,7 +139,7 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
 
         pntTrmntWrReq.setOrderStatus(message);
         pntTrmntWrReq.setSndr(usrAcnt);
-        pntTrmntWrReq.setProcessStatus("SentToLab");
+        pntTrmntWrReq.setProcessStatus("SentToStorage");
         pntTrmntWrReq.setRcvr(null);
 
         Organization org = null;
@@ -155,7 +155,7 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
             org.getProcessQueue().getProcesReq().add(pntTrmntWrReq);
             usrAcnt.getProcessQueue().getProcesReq().add(pntTrmntWrReq);
 
-            JOptionPane.showMessageDialog(null, "Lab request sent");
+            JOptionPane.showMessageDialog(null, "Process request sent");
             txtMsg.setText("");
             txtLabTyp.setText("");
             btnReqTst.setEnabled(false);

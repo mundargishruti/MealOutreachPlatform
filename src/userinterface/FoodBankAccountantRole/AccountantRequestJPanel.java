@@ -299,7 +299,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         double claimAmount = Double.parseDouble(ebtClaimAmountText.getText());
         double billAmount = acntBillingReq.getBillTotal();
         if (("Patient Transaction Completed").equals(acntBillingReq.getProcessStatus())) {
-            JOptionPane.showMessageDialog(null, "Insurance request sent for claim");
+            JOptionPane.showMessageDialog(null, "EBT claim request sent for verification");
             return;
         }
         EBTCard insr = new EBTCard(policyName, insuranceCompany, claimAmount);
@@ -345,7 +345,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
             usrAcnt.getProcessQueue().getProcesReq().add(isnrWrkReq);
             acntBillingReq.setProcessStatus("Patient Transaction Completed");
             acntBillingReq.getBeneficiary().setIsOrderDelivered(true);
-            JOptionPane.showMessageDialog(null, "Money received from patient: " + String.format("%.2f", String.valueOf(pyblAmnt)) + ". Insurance Claim Request Raised Successfully for amount:" + claimAmount);
+            JOptionPane.showMessageDialog(null, "Successful!!");
             initiateClainButton.setEnabled(false);
         }
 

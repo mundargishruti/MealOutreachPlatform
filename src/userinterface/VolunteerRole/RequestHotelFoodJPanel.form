@@ -142,7 +142,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Restaurant Type"/>
+        <Property name="text" type="java.lang.String" value="Food Type"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -168,11 +168,11 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Restaurant Request"/>
+        <Property name="text" type="java.lang.String" value="Food from storage Request"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="360" y="30" width="-1" height="-1"/>
+          <AbsoluteConstraints x="310" y="30" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

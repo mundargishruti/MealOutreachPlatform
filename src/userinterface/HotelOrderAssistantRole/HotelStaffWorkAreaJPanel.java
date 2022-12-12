@@ -143,7 +143,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
 
         btnBldTst.setBackground(new java.awt.Color(253, 249, 232));
         btnBldTst.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
-        btnBldTst.setText("Blood Test");
+        btnBldTst.setText("Meal");
         btnBldTst.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBldTstActionPerformed(evt);
@@ -154,7 +154,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
 
         btnMriScan.setBackground(new java.awt.Color(253, 249, 232));
         btnMriScan.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
-        btnMriScan.setText("MRI scan");
+        btnMriScan.setText("Groceries");
         btnMriScan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMriScanActionPerformed(evt);
@@ -165,7 +165,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
 
         btnXray.setBackground(new java.awt.Color(253, 249, 232));
         btnXray.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
-        btnXray.setText("X Ray");
+        btnXray.setText("Canned Food");
         btnXray.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnXrayActionPerformed(evt);
@@ -186,9 +186,9 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
 
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if (request.getOrderPlacedVolunteer() == null) {
-            if (request.getProcessStatus().equalsIgnoreCase("SentToLab")) {
+            if (request.getProcessStatus().equalsIgnoreCase("SentToStorage")) {
                 request.setOrderPlacedVolunteer(userAccount);
-                request.setProcessStatus("Pending on Lab Assistant");
+                request.setProcessStatus("Pending on storage volunteer");
                 //  request.setReceiver(userAccount);
                 popLabAsstTbl();
                 JOptionPane.showMessageDialog(null, "The request is assigned to You!");
@@ -204,7 +204,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
             }
             else
             {
-                JOptionPane.showMessageDialog(null, "Request is assigned to other Lab Assistant");
+                JOptionPane.showMessageDialog(null, "Request is assigned to other volunteer");
             }
         }
 
@@ -225,7 +225,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         HotelWorkRequestJPanel processWorkRequestJPanel = new HotelWorkRequestJPanel(userProcessContainer, request);
         if (request.getOrderPlacedVolunteer() != null) {
             if (userAccount.equals(request.getOrderPlacedVolunteer())) {
-                if (request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")) {
+                if (request.getProcessStatus().equalsIgnoreCase("Pending on storage volunteer")) {
 
                     userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
                     CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -255,14 +255,14 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if(userAccount.equals(request.getOrderPlacedVolunteer()))
             {   
-                if(request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")){
-                    request.setOrderType("Blood Test");
+                if(request.getProcessStatus().equalsIgnoreCase("Pending on storage volunteer")){
+                    request.setOrderType("Meal");
                 }else{
-                    JOptionPane.showMessageDialog(null, "Test is already done!");
+                    JOptionPane.showMessageDialog(null, "Order is already done!");
                 }
                 
             }else{
-            JOptionPane.showMessageDialog(null, "Lab assistant is not assigned cannot modify the type of test");
+            JOptionPane.showMessageDialog(null, "Process volunteer is not assigned cannot modify the type of order");
         }
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBldTstActionPerformed
@@ -280,14 +280,14 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if(userAccount.equals(request.getOrderPlacedVolunteer()))
             {   
-                if(request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")){
-                    request.setOrderType("MRI Scan");
+                if(request.getProcessStatus().equalsIgnoreCase("Pending on storage volunteer")){
+                    request.setOrderType("Groceries");
                 }else{
-                    JOptionPane.showMessageDialog(null, "Test is already done!");
+                    JOptionPane.showMessageDialog(null, "Order is already done!");
                 }
                 
             }else{
-            JOptionPane.showMessageDialog(null, "Lab assistant is not assigned cannot modify the type of blood test");
+            JOptionPane.showMessageDialog(null, "Process volunteer is not assigned cannot modify the type of order");
         }
     }//GEN-LAST:event_btnMriScanActionPerformed
 
@@ -304,14 +304,14 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if(userAccount.equals(request.getOrderPlacedVolunteer()))
             {   
-                if(request.getProcessStatus().equalsIgnoreCase("Pending on Lab Assistant")){
-                    request.setOrderType("X Ray");
+                if(request.getProcessStatus().equalsIgnoreCase("Pending on storage volunteer")){
+                    request.setOrderType("Canned Food");
                 }else{
-                    JOptionPane.showMessageDialog(null, "Test is already done!");
+                    JOptionPane.showMessageDialog(null, "Order is already done!");
                 }
                 
             }else{
-            JOptionPane.showMessageDialog(null, "Lab assistant is not assigned cannot modify the type of blood test");
+            JOptionPane.showMessageDialog(null, "Process volunteer is not assigned cannot modify the type of order");
         }
     }//GEN-LAST:event_btnXrayActionPerformed
 

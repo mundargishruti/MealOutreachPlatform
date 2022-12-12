@@ -179,8 +179,8 @@ public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
         properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
         String to = toMail;
-        final String from = "parthkatariaextra@gmail.com";
-        final String password = "Qwerty123@";
+        final String from = "hemant.jomraj@gmail.com";
+        final String password = "otrumwkzqafdbuzq";
         
         // login using this email address
         Session session = Session.getInstance(properties, new Authenticator(){
@@ -214,7 +214,7 @@ public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
             message.setFrom(new InternetAddress(myAccountEmail)); // from address
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient) );
             
-            message.setSubject("Hospital Billing Statement");
+            message.setSubject("Order Billing Statement");
             message.setText(text);
             
             return message;

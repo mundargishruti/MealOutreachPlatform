@@ -155,9 +155,9 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
 
         OrderPlaceRequest request = (OrderPlaceRequest) restaurantTable.getValueAt(selectedRow, 0);
         if (request.getRestaurantManagement() == null) {
-            if (request.getProcessStatus().equalsIgnoreCase("SentToBloodBank")) {
+            if (request.getProcessStatus().equalsIgnoreCase("SentToRestaurant")) {
                 request.setRestaurantManagement(usrAcnt);
-                request.setProcessStatus("Pending on Blood Bank");
+                request.setProcessStatus("Pending on Restaurant");
                 //  request.setReceiver(userAccount);
                 pplTbl();
                 JOptionPane.showMessageDialog(null, "The request is assigned to You!");
@@ -175,7 +175,7 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
             }
             else
             {
-                JOptionPane.showMessageDialog(null, "Request is assigned to other Lab Assistant");
+                JOptionPane.showMessageDialog(null, "Request is assigned to other volunteer");
             }
         }
 
@@ -196,7 +196,7 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
         RestaurantWorkRequestJPanel processWorkRequestJPanel = new RestaurantWorkRequestJPanel(jPanel, request);
         if (request.getRestaurantManagement() != null) {
             if (usrAcnt.equals(request.getRestaurantManagement())) {
-                if (request.getProcessStatus().equalsIgnoreCase("Pending on Blood Bank")) {
+                if (request.getProcessStatus().equalsIgnoreCase("Pending on Restaurant")) {
 
                     jPanel.add("processWorkRequestJPanel", processWorkRequestJPanel);
                     CardLayout layout = (CardLayout) jPanel.getLayout();

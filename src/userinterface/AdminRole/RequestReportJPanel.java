@@ -77,6 +77,8 @@ public class RequestReportJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txtTotFndRcvd = new javax.swing.JTextField();
+        lblTotFundRcvd = new javax.swing.JLabel();
         lblRequestFund = new javax.swing.JLabel();
         lblLocation = new javax.swing.JLabel();
         txtLoc = new javax.swing.JTextField();
@@ -88,10 +90,15 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblWrkReq = new javax.swing.JTable();
         lblAllFndReq = new javax.swing.JLabel();
-        lblTotFundRcvd = new javax.swing.JLabel();
-        txtTotFndRcvd = new javax.swing.JTextField();
         btnBack = new javax.swing.JButton();
         imgReqFund = new javax.swing.JLabel();
+
+        txtTotFndRcvd.setEditable(false);
+        txtTotFndRcvd.setBackground(new java.awt.Color(204, 204, 204));
+        txtTotFndRcvd.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+
+        lblTotFundRcvd.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblTotFundRcvd.setText("Total Funds Received :");
 
         setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
@@ -169,7 +176,7 @@ public class RequestReportJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Location", "Receiver", "Status", "Amount"
+                "Restaurant Name", "ID", "Status", "Zip Code"
             }
         ) {
             Class[] types = new Class [] {
@@ -196,17 +203,6 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         lblAllFndReq.setText("All Funds Requests");
         add(lblAllFndReq);
         lblAllFndReq.setBounds(270, 270, 150, 36);
-
-        lblTotFundRcvd.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblTotFundRcvd.setText("Total Funds Received :");
-        add(lblTotFundRcvd);
-        lblTotFundRcvd.setBounds(67, 225, 138, 15);
-
-        txtTotFndRcvd.setEditable(false);
-        txtTotFndRcvd.setBackground(new java.awt.Color(204, 204, 204));
-        txtTotFndRcvd.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        add(txtTotFndRcvd);
-        txtTotFndRcvd.setBounds(208, 223, 143, 23);
 
         btnBack.setBackground(new java.awt.Color(0, 102, 102));
         btnBack.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N

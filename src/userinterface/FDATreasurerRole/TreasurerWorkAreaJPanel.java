@@ -163,7 +163,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest req = (FDAApprovalRequest) tblTrsr.getValueAt(selectedRow, 5);
-            if (req.getProcessStatus().equals("Sent to Treasurer")) {
+            if (req.getProcessStatus().equals("Sent to Manager")) {
                 req.setRcvr(userAccount);
                 req.setProcessStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
                 pplTbl();
@@ -183,7 +183,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             FDAApprovalRequest req = (FDAApprovalRequest) tblTrsr.getValueAt(selectedRow, 5);
-            if (req.getProcessStatus().equalsIgnoreCase("Sent to Treasurer")) {
+            if (req.getProcessStatus().equalsIgnoreCase("Sent to Manager")) {
                 JOptionPane.showMessageDialog(null, "Please assign selected request first");
                 return;
             }
@@ -223,7 +223,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             String status = request.getProcessStatus();
             Object[] row = new Object[6];
             row[0] = request.getSndr().getEmploye().getEmpName();
-            if (status.equalsIgnoreCase("Sent to Treasurer") || status.equalsIgnoreCase("Sent to Secretary")) {
+            if (status.equalsIgnoreCase("Sent to Manager") || status.equalsIgnoreCase("Sent to Secretary")) {
                 row[1] = null;
             } else {
                 row[1] = request.getRcvr() == null ? null : request.getRcvr().getEmploye().getEmpName();

@@ -233,26 +233,26 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             try {
                 Double.parseDouble(consultationCharge);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please provide a Numeric value for Consultation Charges");
+                JOptionPane.showMessageDialog(null, "Please provide a Numeric value for Billing Charges");
                 return;
             }
             
             try {
                 Integer.parseInt(labChargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Lab Charges");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Discounted Charges");
                 return;
             }
             try {
                 Integer.parseInt(miscellaneouschargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Miscellaneous charges");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Quantity");
                 return;
             }
             try {
                 Integer.parseInt(medicationChargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Medication charges");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Devlivery charges");
                 return;
             }
             double labCharges = Double.parseDouble(labChargesStr);
@@ -263,7 +263,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
 
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
-                pntTrtmntWrkReq.setProcessStatus("Consultation Completed");
+                pntTrtmntWrkReq.setProcessStatus("Order Completed");
 
                 AccountBillRqst accountantBillingRequest = new AccountBillRqst();
                 accountantBillingRequest.setBillTotal(billingAmount);

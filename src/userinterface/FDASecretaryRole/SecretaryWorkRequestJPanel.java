@@ -221,7 +221,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
             
          if (dialogResult == JOptionPane.YES_OPTION) {
         governmentFundRequest.setSndr(userAccount);
-        governmentFundRequest.setProcessStatus("Sent to Treasurer");
+        governmentFundRequest.setProcessStatus("Sent to Manager");
 
         Organization org = null;
         for (Organization organization : enterprise.getOrgDir().getOrganizations()) {

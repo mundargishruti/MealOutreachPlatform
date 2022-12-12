@@ -204,7 +204,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/happy-happy-doctor.gif"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/foodgiphy.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -228,21 +228,21 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                                         .addComponent(orderWorkQueueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addComponent(viewBeneficiaryButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(assignToMeButton)
-                        .addGap(31, 31, 31)
-                        .addComponent(orderProcessButton)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(restaurantRequestLabel)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(viewBeneficiaryButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(assignToMeButton)
+                                .addGap(31, 31, 31)
+                                .addComponent(orderProcessButton)))
                         .addGap(30, 30, 30)
                         .addComponent(enterStatusButton)
                         .addGap(18, 18, 18)
-                        .addComponent(completeOrderButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(325, 325, 325)
-                        .addComponent(restaurantRequestLabel))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(completeOrderButton)))
                 .addGap(39, 39, 39)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
@@ -291,14 +291,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             wrkReq = (OrderPlaceRequest) tblDrWrkArea.getValueAt(selectedRow, 3);
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Process")) {
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();
                         jPanel.add("RequestLabTestJPanel", new RequestHotelFoodJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                         layout.next(jPanel);
 
                     } else {
-                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getProcessStatus());
+                        JOptionPane.showMessageDialog(null, "Can not create the order process request as the current status is " + wrkReq.getProcessStatus());
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Not Authorised");
@@ -324,16 +324,16 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if (((OrderPlaceRequest) pntTrtmWrkReq).getVolunteerAssigned() == null) {
 
 
-                if (pntTrtmWrkReq.getProcessStatus().equalsIgnoreCase("Waiting for Doctor")) {
+                if (pntTrtmWrkReq.getProcessStatus().equalsIgnoreCase("Waiting for volunteer")) {
                     //patientTreatmentWorkRequest.setReceiver(userAccount);
 
                     ((OrderPlaceRequest) pntTrtmWrkReq).setVolunteerAssigned(usrAcnt);
-                    pntTrtmWrkReq.setProcessStatus("Under Consultation");
+                    pntTrtmWrkReq.setProcessStatus("Under Process");
                     pplReqTbl();
 
                     JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot assign this patient as its current state is: " + pntTrtmWrkReq.getProcessStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot assign this user as its current state is: " + pntTrtmWrkReq.getProcessStatus());
                 }
 
             } else {
@@ -375,14 +375,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getProcessStatus().equalsIgnoreCase("Lab Test Completed") || wrkReq.getProcessStatus().equalsIgnoreCase("Under Consultation")||wrkReq.getProcessStatus().equalsIgnoreCase("Blood Bank Request Completed")) {
+                if (wrkReq.getProcessStatus().equalsIgnoreCase("Order from storage Completed") || wrkReq.getProcessStatus().equalsIgnoreCase("Under Process")||wrkReq.getProcessStatus().equalsIgnoreCase("Restaurant Request Completed")) {
 
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("ProvidePrescriptionJPanel", new ProvideOrderDetailsJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                     layout.next(jPanel);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot prescribe the Patient as the status is: " + wrkReq.getProcessStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot proceed as the status is: " + wrkReq.getProcessStatus());
                 }
             } else {
 
@@ -408,7 +408,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getProcessStatus().equalsIgnoreCase("Prescription Provided")) {
+                if (wrkReq.getProcessStatus().equalsIgnoreCase("Order List Provided")) {
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("RequestBillingJPanel", new RequestBillingJPanel(jPanel, usrAcnt, entrpz, wrkReq));
@@ -416,9 +416,9 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                     layout.next(jPanel);
 
                 } else {
-                    if(wrkReq.getProcessStatus().equalsIgnoreCase("Consultation Completed"))
+                    if(wrkReq.getProcessStatus().equalsIgnoreCase("Order Completed"))
                     {
-                        JOptionPane.showMessageDialog(null, "Treatment is already complete!");
+                        JOptionPane.showMessageDialog(null, "Order is already complete!");
                     }
                     else
                     {
@@ -452,14 +452,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
 
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Process")) {
 
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();
                         jPanel.add("RequestLabTestJPanel", new HotelFoodRequestJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                         layout.next(jPanel);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getProcessStatus());
+                        JOptionPane.showMessageDialog(null, "Can not create the order process request as the current status is " + wrkReq.getProcessStatus());
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Not Authorised");
