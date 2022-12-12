@@ -156,7 +156,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="YuGothic" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Blood Test"/>
+        <Property name="text" type="java.lang.String" value="Meal"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBldTstActionPerformed"/>
@@ -175,7 +175,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="YuGothic" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="MRI scan"/>
+        <Property name="text" type="java.lang.String" value="Groceries"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMriScanActionPerformed"/>
@@ -194,7 +194,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="YuGothic" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="X Ray"/>
+        <Property name="text" type="java.lang.String" value="Canned Food"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnXrayActionPerformed"/>

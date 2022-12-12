@@ -100,12 +100,12 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         firstNameLabel.setBackground(new java.awt.Color(255, 255, 255));
         firstNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         firstNameLabel.setForeground(new java.awt.Color(204, 130, 43));
-        firstNameLabel.setText("FirstName");
+        firstNameLabel.setText("First Name");
 
         lastNameLabel.setBackground(new java.awt.Color(255, 255, 255));
         lastNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         lastNameLabel.setForeground(new java.awt.Color(204, 130, 43));
-        lastNameLabel.setText("LastName");
+        lastNameLabel.setText("Last Name");
 
         billAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
         billAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
@@ -154,7 +154,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         EBTClaimAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
         EBTClaimAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         EBTClaimAmountLabel.setForeground(new java.awt.Color(204, 130, 43));
-        EBTClaimAmountLabel.setText("Insurance Claim Amount");
+        EBTClaimAmountLabel.setText("EBT Card Claim Amount");
 
         ebtClaimAmountText.setEditable(false);
         ebtClaimAmountText.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +163,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
         backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
@@ -183,7 +183,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/4070394.jpg"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Treasurer work area.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -299,7 +299,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         double claimAmount = Double.parseDouble(ebtClaimAmountText.getText());
         double billAmount = acntBillingReq.getBillTotal();
         if (("Patient Transaction Completed").equals(acntBillingReq.getProcessStatus())) {
-            JOptionPane.showMessageDialog(null, "Insurance request sent for claim");
+            JOptionPane.showMessageDialog(null, "EBT claim request sent for verification");
             return;
         }
         EBTCard insr = new EBTCard(policyName, insuranceCompany, claimAmount);
@@ -345,7 +345,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
             usrAcnt.getProcessQueue().getProcesReq().add(isnrWrkReq);
             acntBillingReq.setProcessStatus("Patient Transaction Completed");
             acntBillingReq.getBeneficiary().setIsOrderDelivered(true);
-            JOptionPane.showMessageDialog(null, "Money received from patient: " + String.format("%.2f", String.valueOf(pyblAmnt)) + ". Insurance Claim Request Raised Successfully for amount:" + claimAmount);
+            JOptionPane.showMessageDialog(null, "Successful!!");
             initiateClainButton.setEnabled(false);
         }
 

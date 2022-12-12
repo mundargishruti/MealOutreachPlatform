@@ -7,6 +7,7 @@ package userinterface.VolunteerRole;
 
 import code.Enterprise.Enterprise;
 import code.Org.OrgVolunteer;
+
 import code.SystemUserAccount.SystemUsers;
 import code.ProcessQueue.RestaurantRequest;
 import code.ProcessQueue.OrderPlaceRequest;
@@ -20,12 +21,12 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author Rajvi
+ * @author Parth
  */
 public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel jPanel;
-    private OrgVolunteer docOrg;
+    private OrgVolunteer volOrg;
     private Enterprise entrpz;
     private SystemUsers usrAcnt;
     //private Map<PatientTreatmentWorkRequest, LabTestWorkRequest> patientToLab = new HashMap<>();
@@ -37,7 +38,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         initComponents();
 
         this.jPanel = userProcessContainer;
-        this.docOrg = organization;
+        this.volOrg = organization;
         this.entrpz = enterprise;
         this.usrAcnt = account;
         valueLabel.setText(enterprise.getName());
@@ -51,7 +52,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
 
 
-        for (ProcessRequest req : docOrg.getProcessQueue().getProcesReq()) {
+        for (ProcessRequest req : volOrg.getProcessQueue().getProcesReq()) {
             Object[] row = new Object[8];
             
             if(((OrderPlaceRequest) req).getBeneficiary().getVolType().equals(usrAcnt.getUserType())){
@@ -97,7 +98,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         restaurantRequestLabel = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
         tblDrWrkArea.setBackground(new java.awt.Color(204, 204, 204));
         tblDrWrkArea.setModel(new javax.swing.table.DefaultTableModel(
@@ -127,8 +128,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDrWrkArea);
 
-        orderProcessButton.setBackground(new java.awt.Color(0, 102, 102));
-        orderProcessButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderProcessButton.setBackground(new java.awt.Color(204, 130, 43));
+        orderProcessButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         orderProcessButton.setForeground(new java.awt.Color(255, 255, 255));
         orderProcessButton.setText("Order Process");
         orderProcessButton.addActionListener(new java.awt.event.ActionListener() {
@@ -137,17 +138,20 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterpriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        enterpriceLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        enterpriceLabel.setForeground(new java.awt.Color(204, 130, 43));
         enterpriceLabel.setText("Enterprise :");
 
-        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(204, 130, 43));
         valueLabel.setText("<value>");
 
-        orderWorkQueueLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderWorkQueueLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        orderWorkQueueLabel.setForeground(new java.awt.Color(204, 130, 43));
         orderWorkQueueLabel.setText("Food Order Work Queue");
 
-        assignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        assignToMeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        assignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        assignToMeButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         assignToMeButton.setForeground(new java.awt.Color(255, 255, 255));
         assignToMeButton.setText("Assign To Me");
         assignToMeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -156,8 +160,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterStatusButton.setBackground(new java.awt.Color(0, 102, 102));
-        enterStatusButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        enterStatusButton.setBackground(new java.awt.Color(204, 130, 43));
+        enterStatusButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         enterStatusButton.setForeground(new java.awt.Color(255, 255, 255));
         enterStatusButton.setText("List Order Items");
         enterStatusButton.addActionListener(new java.awt.event.ActionListener() {
@@ -166,8 +170,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        completeOrderButton.setBackground(new java.awt.Color(0, 102, 102));
-        completeOrderButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        completeOrderButton.setBackground(new java.awt.Color(204, 130, 43));
+        completeOrderButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         completeOrderButton.setForeground(new java.awt.Color(255, 255, 255));
         completeOrderButton.setText("Complete Order");
         completeOrderButton.addActionListener(new java.awt.event.ActionListener() {
@@ -176,8 +180,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        viewBeneficiaryButton.setBackground(new java.awt.Color(0, 102, 102));
-        viewBeneficiaryButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        viewBeneficiaryButton.setBackground(new java.awt.Color(204, 130, 43));
+        viewBeneficiaryButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         viewBeneficiaryButton.setForeground(new java.awt.Color(255, 255, 255));
         viewBeneficiaryButton.setText("View Beneficiary");
         viewBeneficiaryButton.addActionListener(new java.awt.event.ActionListener() {
@@ -186,11 +190,12 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        volunteerWorkAreaLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        volunteerWorkAreaLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        volunteerWorkAreaLabel.setForeground(new java.awt.Color(204, 130, 43));
         volunteerWorkAreaLabel.setText("Volunteer Work Area");
 
-        restaurantRequestLabel.setBackground(new java.awt.Color(0, 102, 102));
-        restaurantRequestLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        restaurantRequestLabel.setBackground(new java.awt.Color(204, 130, 43));
+        restaurantRequestLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         restaurantRequestLabel.setForeground(new java.awt.Color(255, 255, 255));
         restaurantRequestLabel.setText("Request Restaurant");
         restaurantRequestLabel.addActionListener(new java.awt.event.ActionListener() {
@@ -199,7 +204,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/happy-happy-doctor.gif"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/foodgiphy.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -223,21 +228,21 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                                         .addComponent(orderWorkQueueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addComponent(viewBeneficiaryButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(assignToMeButton)
-                        .addGap(31, 31, 31)
-                        .addComponent(orderProcessButton)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(restaurantRequestLabel)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(viewBeneficiaryButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(assignToMeButton)
+                                .addGap(31, 31, 31)
+                                .addComponent(orderProcessButton)))
                         .addGap(30, 30, 30)
                         .addComponent(enterStatusButton)
                         .addGap(18, 18, 18)
-                        .addComponent(completeOrderButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(325, 325, 325)
-                        .addComponent(restaurantRequestLabel))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(completeOrderButton)))
                 .addGap(39, 39, 39)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
@@ -269,7 +274,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addContainerGap(148, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -286,14 +291,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             wrkReq = (OrderPlaceRequest) tblDrWrkArea.getValueAt(selectedRow, 3);
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Process")) {
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();
                         jPanel.add("RequestLabTestJPanel", new RequestHotelFoodJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                         layout.next(jPanel);
 
                     } else {
-                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getProcessStatus());
+                        JOptionPane.showMessageDialog(null, "Can not create the order process request as the current status is " + wrkReq.getProcessStatus());
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Not Authorised");
@@ -319,16 +324,16 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if (((OrderPlaceRequest) pntTrtmWrkReq).getVolunteerAssigned() == null) {
 
 
-                if (pntTrtmWrkReq.getProcessStatus().equalsIgnoreCase("Waiting for Doctor")) {
+                if (pntTrtmWrkReq.getProcessStatus().equalsIgnoreCase("Waiting for volunteer")) {
                     //patientTreatmentWorkRequest.setReceiver(userAccount);
 
                     ((OrderPlaceRequest) pntTrtmWrkReq).setVolunteerAssigned(usrAcnt);
-                    pntTrtmWrkReq.setProcessStatus("Under Consultation");
+                    pntTrtmWrkReq.setProcessStatus("Under Process");
                     pplReqTbl();
 
                     JOptionPane.showMessageDialog(null, "Success !! Request is assigned to you ");
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot assign this patient as its current state is: " + pntTrtmWrkReq.getProcessStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot assign this user as its current state is: " + pntTrtmWrkReq.getProcessStatus());
                 }
 
             } else {
@@ -370,14 +375,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getOrderStatus().equalsIgnoreCase("Lab Test Completed") || wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")||wrkReq.getProcessStatus().equalsIgnoreCase("Blood Bank Request Completed")) {
+                if (wrkReq.getProcessStatus().equalsIgnoreCase("Order from storage Completed") || wrkReq.getProcessStatus().equalsIgnoreCase("Under Process")||wrkReq.getProcessStatus().equalsIgnoreCase("Restaurant Request Completed")) {
 
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("ProvidePrescriptionJPanel", new ProvideOrderDetailsJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                     layout.next(jPanel);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot prescribe the Patient as the status is: " + wrkReq.getOrderStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot proceed as the status is: " + wrkReq.getProcessStatus());
                 }
             } else {
 
@@ -403,7 +408,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getOrderStatus().equalsIgnoreCase("Prescription Provided")) {
+                if (wrkReq.getProcessStatus().equalsIgnoreCase("Order List Provided")) {
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("RequestBillingJPanel", new RequestBillingJPanel(jPanel, usrAcnt, entrpz, wrkReq));
@@ -411,9 +416,9 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                     layout.next(jPanel);
 
                 } else {
-                    if(wrkReq.getOrderStatus().equalsIgnoreCase("Consultation Completed"))
+                    if(wrkReq.getProcessStatus().equalsIgnoreCase("Order Completed"))
                     {
-                        JOptionPane.showMessageDialog(null, "Treatment is already complete!");
+                        JOptionPane.showMessageDialog(null, "Order is already complete!");
                     }
                     else
                     {
@@ -447,14 +452,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
 
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Process")) {
 
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();
                         jPanel.add("RequestLabTestJPanel", new HotelFoodRequestJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                         layout.next(jPanel);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Can not create the Lab request as the current status is " + wrkReq.getProcessStatus());
+                        JOptionPane.showMessageDialog(null, "Can not create the order process request as the current status is " + wrkReq.getProcessStatus());
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Not Authorised");

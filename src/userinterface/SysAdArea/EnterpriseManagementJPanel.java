@@ -91,7 +91,7 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setPreferredSize(new java.awt.Dimension(850, 820));
 
         tblMngEnt.setBackground(new java.awt.Color(204, 204, 204));
@@ -126,20 +126,22 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
         });
 
         lblNm.setBackground(new java.awt.Color(204, 204, 204));
-        lblNm.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblNm.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblNm.setForeground(new java.awt.Color(204, 130, 43));
         lblNm.setText("Name");
 
         txtNm.setBackground(new java.awt.Color(204, 204, 204));
         txtNm.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        lblEntTyp.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblEntTyp.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lblEntTyp.setForeground(new java.awt.Color(204, 130, 43));
         lblEntTyp.setText("Enterprise Type");
 
         cbEntTyp.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         cbEntTyp.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        btnSbmtReq.setBackground(new java.awt.Color(0, 102, 102));
-        btnSbmtReq.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnSbmtReq.setBackground(new java.awt.Color(204, 130, 43));
+        btnSbmtReq.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         btnSbmtReq.setForeground(new java.awt.Color(255, 255, 255));
         btnSbmtReq.setText("Submit");
         btnSbmtReq.addActionListener(new java.awt.event.ActionListener() {
@@ -148,8 +150,8 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnBack.setBackground(new java.awt.Color(204, 130, 43));
+        btnBack.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText(" Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -158,8 +160,8 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDelt.setBackground(new java.awt.Color(0, 102, 102));
-        btnDelt.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnDelt.setBackground(new java.awt.Color(204, 130, 43));
+        btnDelt.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         btnDelt.setForeground(new java.awt.Color(255, 255, 255));
         btnDelt.setText("Delete");
         btnDelt.addActionListener(new java.awt.event.ActionListener() {
@@ -174,10 +176,12 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
         jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         jLabel5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 130, 43));
         jLabel4.setText("Network");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("MANAGE ENTERPRISE");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -202,7 +206,7 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(btnSbmtReq)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 703, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(76, 76, 76))
             .addGroup(layout.createSequentialGroup()
@@ -226,7 +230,7 @@ public class EnterpriseManagementJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()

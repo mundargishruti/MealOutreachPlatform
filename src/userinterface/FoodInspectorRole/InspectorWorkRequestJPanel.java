@@ -126,7 +126,7 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        inspectorProcessRequestImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/OfficeProcess.gif"))); // NOI18N
+        inspectorProcessRequestImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/16209033.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

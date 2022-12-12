@@ -120,7 +120,7 @@ public class SysAdWorkJPanel extends javax.swing.JPanel {
 
         jSplitPane.setLeftComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel2.setBackground(new java.awt.Color(253, 249, 232));
 
         lblNodeSelect.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblNodeSelect.setText("Selected Node:");
@@ -128,8 +128,8 @@ public class SysAdWorkJPanel extends javax.swing.JPanel {
         lblSelectedNode.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblSelectedNode.setText("<View_selected_node>");
 
-        btnMngNtwrk.setBackground(new java.awt.Color(0, 102, 102));
-        btnMngNtwrk.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnMngNtwrk.setBackground(new java.awt.Color(204, 130, 43));
+        btnMngNtwrk.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnMngNtwrk.setForeground(new java.awt.Color(255, 255, 255));
         btnMngNtwrk.setText("Manage Network");
         btnMngNtwrk.addActionListener(new java.awt.event.ActionListener() {
@@ -138,8 +138,8 @@ public class SysAdWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnManageEnt.setBackground(new java.awt.Color(0, 102, 102));
-        btnManageEnt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnManageEnt.setBackground(new java.awt.Color(204, 130, 43));
+        btnManageEnt.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnManageEnt.setForeground(new java.awt.Color(255, 255, 255));
         btnManageEnt.setText("Manage Enterprise");
         btnManageEnt.addActionListener(new java.awt.event.ActionListener() {
@@ -148,8 +148,8 @@ public class SysAdWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnManageAdm.setBackground(new java.awt.Color(0, 102, 102));
-        btnManageAdm.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnManageAdm.setBackground(new java.awt.Color(204, 130, 43));
+        btnManageAdm.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnManageAdm.setForeground(new java.awt.Color(255, 255, 255));
         btnManageAdm.setText("Manage Enterprise Admin");
         btnManageAdm.addActionListener(new java.awt.event.ActionListener() {
@@ -158,11 +158,13 @@ public class SysAdWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(253, 249, 232));
+        jLabel2.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 130, 43));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("SYSTEM ADMIN PORTAL");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/system admin.gif"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/systemlogin.gif"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -198,7 +200,7 @@ public class SysAdWorkJPanel extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnManageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnMngNtwrk, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)

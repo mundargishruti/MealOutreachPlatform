@@ -107,13 +107,13 @@ public class HotelWorkRequestJPanel extends javax.swing.JPanel {
     private void SubmitReportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitReportButtonActionPerformed
         String labResult = statusText.getText().trim();
         if (labResult.equals("")) {
-            JOptionPane.showMessageDialog(null, "Result is mandatory");
+            JOptionPane.showMessageDialog(null, "Status is mandatory");
             return;
         } else {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
                 patientTreatmentWorkRequest.setOrderResult(labResult);
-                patientTreatmentWorkRequest.setOrderStatus("Lab Test Completed");
+                patientTreatmentWorkRequest.setProcessStatus("Order from storage Completed");
                 JOptionPane.showMessageDialog(null, "Result submitted successfully");
                 statusText.setText("");
                 SubmitReportButton.setEnabled(false);

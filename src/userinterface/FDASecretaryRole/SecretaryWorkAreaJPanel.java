@@ -120,10 +120,6 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(488, 488, 488)
-                .addComponent(FDASecretaryWorkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
@@ -136,6 +132,10 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
                         .addGap(173, 173, 173)))
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(75, 75, 75))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(306, 306, 306)
+                .addComponent(FDASecretaryWorkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,7 +188,7 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
                 return;
             }
             
-            if (fundReq.getProcessStatus().equalsIgnoreCase("Sent to Treasurer")) {
+            if (fundReq.getProcessStatus().equalsIgnoreCase("Sent to Manager")) {
                 JOptionPane.showMessageDialog(null, "Request already processed" , "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -224,7 +224,7 @@ public class SecretaryWorkAreaJPanel extends javax.swing.JPanel {
             Object[] row = new Object[6];
             row[0] = ((FDAApprovalRequest) req);
             row[1] = req.getSndr().getEmploye().getEmpName();
-            if (status.equalsIgnoreCase("Sent to Treasurer") || status.equalsIgnoreCase("Sent to Secretary")) {
+            if (status.equalsIgnoreCase("Sent to Manager") || status.equalsIgnoreCase("Sent to Secretary")) {
                 row[2] = null;
             } else {
                 row[2] = req.getRcvr() == null ? null : req.getRcvr().getEmploye().getEmpName();

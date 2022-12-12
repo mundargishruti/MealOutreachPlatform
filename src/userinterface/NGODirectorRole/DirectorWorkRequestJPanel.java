@@ -113,7 +113,7 @@ public class DirectorWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(204, 130, 43));
         jLabel1.setText("Director Work Area");
 
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NgoDirector.jpg"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/foodforthought.gif"))); // NOI18N
         img.setText("jLabel6");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

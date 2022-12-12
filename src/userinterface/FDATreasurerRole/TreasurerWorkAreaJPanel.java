@@ -119,37 +119,40 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(0, 322, Short.MAX_VALUE)
+                .addComponent(lblTrsrWrkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(984, 984, 984))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(467, 467, 467)
-                        .addComponent(lblTrsrWrkArea, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(106, 106, 106)
+                        .addComponent(btnAssgn)
+                        .addGap(31, 31, 31)
+                        .addComponent(btnPrcsReq))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(270, 270, 270)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 734, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(487, 487, 487)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnAssgn)
-                                .addGap(102, 102, 102)
-                                .addComponent(btnPrcsReq)))))
-                .addContainerGap(659, Short.MAX_VALUE))
+                        .addGap(54, 54, 54)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
+                .addGap(46, 46, 46)
                 .addComponent(lblTrsrWrkArea)
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnPrcsReq, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAssgn, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addComponent(jLabel2)
-                .addContainerGap(164, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnPrcsReq, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnAssgn, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(121, 121, 121)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(397, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -160,7 +163,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             ProcessRequest req = (FDAApprovalRequest) tblTrsr.getValueAt(selectedRow, 5);
-            if (req.getProcessStatus().equals("Sent to Treasurer")) {
+            if (req.getProcessStatus().equals("Sent to Manager")) {
                 req.setRcvr(userAccount);
                 req.setProcessStatus("Pending on " + req.getRcvr().getEmploye().getEmpName());
                 pplTbl();
@@ -180,7 +183,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             return;
         } else {
             FDAApprovalRequest req = (FDAApprovalRequest) tblTrsr.getValueAt(selectedRow, 5);
-            if (req.getProcessStatus().equalsIgnoreCase("Sent to Treasurer")) {
+            if (req.getProcessStatus().equalsIgnoreCase("Sent to Manager")) {
                 JOptionPane.showMessageDialog(null, "Please assign selected request first");
                 return;
             }
@@ -220,7 +223,7 @@ public class TreasurerWorkAreaJPanel extends javax.swing.JPanel {
             String status = request.getProcessStatus();
             Object[] row = new Object[6];
             row[0] = request.getSndr().getEmploye().getEmpName();
-            if (status.equalsIgnoreCase("Sent to Treasurer") || status.equalsIgnoreCase("Sent to Secretary")) {
+            if (status.equalsIgnoreCase("Sent to Manager") || status.equalsIgnoreCase("Sent to Secretary")) {
                 row[1] = null;
             } else {
                 row[1] = request.getRcvr() == null ? null : request.getRcvr().getEmploye().getEmpName();

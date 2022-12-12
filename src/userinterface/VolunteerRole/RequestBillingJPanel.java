@@ -75,61 +75,69 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         backButton = new javax.swing.JButton();
         billRequestImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
-        billingRequestLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        billingRequestLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        billingRequestLabel.setForeground(new java.awt.Color(204, 130, 43));
         billingRequestLabel.setText("Billing Request");
         add(billingRequestLabel);
-        billingRequestLabel.setBounds(310, 60, 157, 29);
+        billingRequestLabel.setBounds(310, 60, 94, 20);
 
-        BeneficiaryInfoLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        BeneficiaryInfoLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        BeneficiaryInfoLabel.setForeground(new java.awt.Color(204, 130, 43));
         BeneficiaryInfoLabel.setText("BENEFICIARY INFORMATION");
         add(BeneficiaryInfoLabel);
-        BeneficiaryInfoLabel.setBounds(300, 130, 180, 17);
+        BeneficiaryInfoLabel.setBounds(300, 130, 180, 20);
 
         firstNameText.setEditable(false);
         add(firstNameText);
         firstNameText.setBounds(360, 160, 131, 23);
 
-        firstNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        firstNameLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        firstNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         firstNameLabel.setText("First Name :");
         add(firstNameLabel);
-        firstNameLabel.setBounds(270, 170, 90, 17);
+        firstNameLabel.setBounds(270, 170, 90, 20);
 
-        lastNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lastNameLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        lastNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         lastNameLabel.setText("Last Name :");
         add(lastNameLabel);
-        lastNameLabel.setBounds(270, 240, 74, 17);
+        lastNameLabel.setBounds(270, 240, 73, 20);
 
         lastNameText.setEditable(false);
         add(lastNameText);
         lastNameText.setBounds(360, 240, 131, 23);
 
-        assignVounteerLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        assignVounteerLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        assignVounteerLabel.setForeground(new java.awt.Color(204, 130, 43));
         assignVounteerLabel.setText("Assigned Volunteer :");
         add(assignVounteerLabel);
-        assignVounteerLabel.setBounds(210, 200, 140, 17);
+        assignVounteerLabel.setBounds(210, 200, 140, 20);
 
         assignedVolunteerText.setEditable(false);
         add(assignedVolunteerText);
         assignedVolunteerText.setBounds(360, 200, 130, 23);
 
-        beneficiaryIdLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        beneficiaryIdLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        beneficiaryIdLabel.setForeground(new java.awt.Color(204, 130, 43));
         beneficiaryIdLabel.setText("Beneficiary Id:");
         add(beneficiaryIdLabel);
-        beneficiaryIdLabel.setBounds(250, 280, 110, 17);
+        beneficiaryIdLabel.setBounds(250, 280, 110, 20);
 
         beneficiaryIDText.setEditable(false);
         add(beneficiaryIDText);
         beneficiaryIDText.setBounds(360, 280, 131, 23);
 
-        billingInformationLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        billingInformationLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        billingInformationLabel.setForeground(new java.awt.Color(204, 130, 43));
         billingInformationLabel.setText("BILLING INFORMATION");
         add(billingInformationLabel);
-        billingInformationLabel.setBounds(300, 360, 165, 17);
+        billingInformationLabel.setBounds(300, 360, 153, 20);
 
-        orderActualPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderActualPriceLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        orderActualPriceLabel.setForeground(new java.awt.Color(204, 130, 43));
         orderActualPriceLabel.setText("Actual Amount");
         add(orderActualPriceLabel);
         orderActualPriceLabel.setBounds(230, 390, 94, 21);
@@ -142,14 +150,16 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         add(orderActualPriceText);
         orderActualPriceText.setBounds(410, 390, 82, 23);
 
-        orderDiscountedPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderDiscountedPriceLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        orderDiscountedPriceLabel.setForeground(new java.awt.Color(204, 130, 43));
         orderDiscountedPriceLabel.setText("Quantity in lbs");
         add(orderDiscountedPriceLabel);
-        orderDiscountedPriceLabel.setBounds(230, 460, 92, 21);
+        orderDiscountedPriceLabel.setBounds(230, 460, 93, 21);
         add(orderDiscountedPriceText);
         orderDiscountedPriceText.setBounds(410, 460, 82, 23);
 
-        deliveryChargeLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        deliveryChargeLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        deliveryChargeLabel.setForeground(new java.awt.Color(204, 130, 43));
         deliveryChargeLabel.setText("Discounted Amount");
         add(deliveryChargeLabel);
         deliveryChargeLabel.setBounds(230, 420, 158, 21);
@@ -162,10 +172,11 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         add(deliveryChargeText);
         deliveryChargeText.setBounds(410, 420, 82, 23);
 
-        lblMiscChargesUSD.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblMiscChargesUSD.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        lblMiscChargesUSD.setForeground(new java.awt.Color(204, 130, 43));
         lblMiscChargesUSD.setText("Delivery Charges");
         add(lblMiscChargesUSD);
-        lblMiscChargesUSD.setBounds(230, 490, 103, 17);
+        lblMiscChargesUSD.setBounds(230, 490, 105, 17);
         add(txtMiscChargesUSD);
         txtMiscChargesUSD.setBounds(410, 490, 82, 23);
 
@@ -179,7 +190,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             }
         });
         add(sendBillRequestButton);
-        sendBillRequestButton.setBounds(300, 540, 151, 32);
+        sendBillRequestButton.setBounds(300, 540, 150, 32);
 
         backButton.setBackground(new java.awt.Color(0, 102, 102));
         backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -191,8 +202,9 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             }
         });
         add(backButton);
-        backButton.setBounds(80, 40, 75, 29);
+        backButton.setBounds(80, 40, 90, 25);
 
+        billRequestImage.setBackground(new java.awt.Color(253, 249, 232));
         billRequestImage.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         billRequestImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/patient_experience.gif"))); // NOI18N
         billRequestImage.setToolTipText("");
@@ -221,26 +233,26 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             try {
                 Double.parseDouble(consultationCharge);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please provide a Numeric value for Consultation Charges");
+                JOptionPane.showMessageDialog(null, "Please provide a Numeric value for Billing Charges");
                 return;
             }
             
             try {
                 Integer.parseInt(labChargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Lab Charges");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Discounted Charges");
                 return;
             }
             try {
                 Integer.parseInt(miscellaneouschargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Miscellaneous charges");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Quantity");
                 return;
             }
             try {
                 Integer.parseInt(medicationChargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Medication charges");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Devlivery charges");
                 return;
             }
             double labCharges = Double.parseDouble(labChargesStr);
@@ -251,7 +263,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
 
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
-                pntTrtmntWrkReq.setProcessStatus("Consultation Completed");
+                pntTrtmntWrkReq.setProcessStatus("Order Completed");
 
                 AccountBillRqst accountantBillingRequest = new AccountBillRqst();
                 accountantBillingRequest.setBillTotal(billingAmount);

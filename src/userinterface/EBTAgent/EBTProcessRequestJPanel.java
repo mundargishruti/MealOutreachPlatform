@@ -68,30 +68,33 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        EBTNumebrLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        EBTNumebrLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        EBTNumebrLabel.setForeground(new java.awt.Color(149, 97, 35));
         EBTNumebrLabel.setText("Card Number");
         add(EBTNumebrLabel);
-        EBTNumebrLabel.setBounds(203, 98, 80, 15);
+        EBTNumebrLabel.setBounds(183, 98, 100, 22);
 
         ebtNumberText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ebtNumberText.setEnabled(false);
         add(ebtNumberText);
         ebtNumberText.setBounds(307, 96, 145, 24);
 
-        claimAmountLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        claimAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        claimAmountLabel.setForeground(new java.awt.Color(149, 97, 35));
         claimAmountLabel.setText("Claim Amount");
         add(claimAmountLabel);
-        claimAmountLabel.setBounds(204, 212, 85, 15);
+        claimAmountLabel.setBounds(204, 212, 97, 22);
 
         claimAmountText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         claimAmountText.setEnabled(false);
         add(claimAmountText);
         claimAmountText.setBounds(308, 210, 144, 24);
 
-        messageLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        messageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        messageLabel.setForeground(new java.awt.Color(149, 97, 35));
         messageLabel.setText("Message");
         add(messageLabel);
-        messageLabel.setBounds(239, 250, 52, 15);
+        messageLabel.setBounds(239, 250, 59, 22);
 
         messageText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,8 +104,8 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
         add(messageText);
         messageText.setBounds(309, 248, 150, 23);
 
-        SendToFinanceButton.setBackground(new java.awt.Color(0, 102, 102));
-        SendToFinanceButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        SendToFinanceButton.setBackground(new java.awt.Color(204, 130, 43));
+        SendToFinanceButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         SendToFinanceButton.setForeground(java.awt.Color.white);
         SendToFinanceButton.setText("Accept and Send Request To Finance Department");
         SendToFinanceButton.addActionListener(new java.awt.event.ActionListener() {
@@ -111,10 +114,10 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(SendToFinanceButton);
-        SendToFinanceButton.setBounds(120, 290, 322, 34);
+        SendToFinanceButton.setBounds(120, 290, 308, 34);
 
-        rejectButton.setBackground(new java.awt.Color(0, 102, 102));
-        rejectButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        rejectButton.setBackground(new java.awt.Color(204, 130, 43));
+        rejectButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         rejectButton.setForeground(java.awt.Color.white);
         rejectButton.setText("Reject Request");
         rejectButton.addActionListener(new java.awt.event.ActionListener() {
@@ -123,22 +126,24 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(rejectButton);
-        rejectButton.setBounds(460, 290, 131, 34);
+        rejectButton.setBounds(460, 290, 124, 34);
 
-        customerNameLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        customerNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        customerNameLabel.setForeground(new java.awt.Color(149, 97, 35));
         customerNameLabel.setText("Card Holder Name");
         add(customerNameLabel);
-        customerNameLabel.setBounds(180, 140, 110, 15);
+        customerNameLabel.setBounds(160, 140, 130, 22);
 
         CustomerNameText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         CustomerNameText.setEnabled(false);
         add(CustomerNameText);
         CustomerNameText.setBounds(306, 134, 146, 24);
 
-        billamountLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        billamountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        billamountLabel.setForeground(new java.awt.Color(149, 97, 35));
         billamountLabel.setText("Total Bill Amount");
         add(billamountLabel);
-        billamountLabel.setBounds(185, 174, 105, 15);
+        billamountLabel.setBounds(185, 174, 118, 22);
 
         billAmountText.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         billAmountText.setEnabled(false);
@@ -146,7 +151,7 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
         billAmountText.setBounds(308, 172, 144, 24);
 
         backButton.setBackground(new java.awt.Color(0, 153, 255));
-        backButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         backButton.setText("<< Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,9 +159,9 @@ public class EBTProcessRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(backButton);
-        backButton.setBounds(10, 11, 93, 25);
+        backButton.setBounds(10, 11, 89, 25);
 
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/InsurancePolicy.jpg"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/moneyimg.gif"))); // NOI18N
         add(img);
         img.setBounds(90, -90, 930, 600);
     }// </editor-fold>//GEN-END:initComponents

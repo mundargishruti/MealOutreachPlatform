@@ -101,7 +101,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
 
         ZipCodeLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         ZipCodeLabel.setForeground(new java.awt.Color(204, 130, 43));
-        ZipCodeLabel.setText("Restaurant ZipCOde");
+        ZipCodeLabel.setText("Restaurant Zip Code");
 
         restaurantIDText.setBackground(new java.awt.Color(204, 204, 204));
         restaurantIDText.setEnabled(false);
@@ -131,7 +131,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
         });
 
         imgSecReqProcessArea.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        imgSecReqProcessArea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Gov.gif"))); // NOI18N
+        imgSecReqProcessArea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/16209033.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -162,17 +162,16 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
                         .addContainerGap()
                         .addComponent(backButton))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(imgSecReqProcessArea))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(76, 76, 76)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(secretaryRequestProcessAreaLabel)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(sendRequestToManagerButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(RestaurantDisapprovedButton)))))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(imgSecReqProcessArea)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(secretaryRequestProcessAreaLabel)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(sendRequestToManagerButton)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(RestaurantDisapprovedButton))))))
+                .addContainerGap(371, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -222,7 +221,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
             
          if (dialogResult == JOptionPane.YES_OPTION) {
         governmentFundRequest.setSndr(userAccount);
-        governmentFundRequest.setProcessStatus("Sent to Treasurer");
+        governmentFundRequest.setProcessStatus("Sent to Manager");
 
         Organization org = null;
         for (Organization organization : enterprise.getOrgDir().getOrganizations()) {

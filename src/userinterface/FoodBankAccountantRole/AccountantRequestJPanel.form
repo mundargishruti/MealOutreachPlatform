@@ -197,7 +197,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="FirstName"/>
+        <Property name="text" type="java.lang.String" value="First Name"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lastNameLabel">
@@ -211,7 +211,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="LastName"/>
+        <Property name="text" type="java.lang.String" value="Last Name"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="billAmountLabel">
@@ -333,7 +333,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Insurance Claim Amount"/>
+        <Property name="text" type="java.lang.String" value="EBT Card Claim Amount"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="ebtClaimAmountText">
@@ -347,7 +347,7 @@
     <Component class="javax.swing.JButton" name="backButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="0" type="rgb"/>
+          <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="YuGothic" size="14" style="1"/>
@@ -381,7 +381,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/4070394.jpg"/>
+          <Image iconType="3" name="/Images/Treasurer work area.gif"/>
         </Property>
       </Properties>
     </Component>
