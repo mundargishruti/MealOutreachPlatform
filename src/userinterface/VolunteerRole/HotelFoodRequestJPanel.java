@@ -63,11 +63,11 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
         restaurantRequestLabel = new javax.swing.JLabel();
         restaurantImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        requestButton.setBackground(new java.awt.Color(0, 102, 102));
-        requestButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        requestButton.setBackground(new java.awt.Color(204, 130, 43));
+        requestButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         requestButton.setForeground(new java.awt.Color(255, 255, 255));
         requestButton.setText("Request ");
         requestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -77,13 +77,14 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
         });
         add(requestButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 130, 30));
 
-        messageLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        messageLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        messageLabel.setForeground(new java.awt.Color(204, 130, 43));
         messageLabel.setText("Message:");
         add(messageLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, 100, -1));
         add(messageText, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 130, 30));
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -93,26 +94,30 @@ public class HotelFoodRequestJPanel extends javax.swing.JPanel {
         });
         add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 30));
 
-        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(204, 130, 43));
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 130, 20));
 
-        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        enterpriseLabel.setForeground(new java.awt.Color(204, 130, 43));
         enterpriseLabel.setText("Enterprise :");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 110, 20));
 
-        amountOfFoodLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        amountOfFoodLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        amountOfFoodLabel.setForeground(new java.awt.Color(204, 130, 43));
         amountOfFoodLabel.setText("Amount of food");
         add(amountOfFoodLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 140, -1));
         add(amountOfFoodText, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 130, 30));
 
-        restaurantRequestLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        restaurantRequestLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        restaurantRequestLabel.setForeground(new java.awt.Color(204, 130, 43));
         restaurantRequestLabel.setText("Restaurant Order Request ");
         add(restaurantRequestLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
 
-        restaurantImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/blood bank request1.gif"))); // NOI18N
+        restaurantImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/foodOrder.jpeg"))); // NOI18N
         restaurantImage.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        add(restaurantImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, 490, 320));
+        add(restaurantImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, 490, 320));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestButtonActionPerformed

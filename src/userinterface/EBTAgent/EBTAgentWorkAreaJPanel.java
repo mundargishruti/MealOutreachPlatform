@@ -53,8 +53,8 @@ public class EBTAgentWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        addNewCardHolderButton.setBackground(new java.awt.Color(0, 102, 102));
-        addNewCardHolderButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        addNewCardHolderButton.setBackground(new java.awt.Color(204, 130, 43));
+        addNewCardHolderButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         addNewCardHolderButton.setForeground(java.awt.Color.white);
         addNewCardHolderButton.setText("Add New Card Holder");
         addNewCardHolderButton.addActionListener(new java.awt.event.ActionListener() {
@@ -65,8 +65,8 @@ public class EBTAgentWorkAreaJPanel extends javax.swing.JPanel {
         add(addNewCardHolderButton);
         addNewCardHolderButton.setBounds(0, 10, 184, 41);
 
-        processCardRequestButton.setBackground(new java.awt.Color(0, 102, 102));
-        processCardRequestButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        processCardRequestButton.setBackground(new java.awt.Color(204, 130, 43));
+        processCardRequestButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         processCardRequestButton.setForeground(java.awt.Color.white);
         processCardRequestButton.setText("Process Card Request");
         processCardRequestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +77,7 @@ public class EBTAgentWorkAreaJPanel extends javax.swing.JPanel {
         add(processCardRequestButton);
         processCardRequestButton.setBounds(700, 550, 200, 39);
 
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/insurancehealth.jpeg"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/agent.png"))); // NOI18N
         add(img);
         img.setBounds(1, 5, 1130, 510);
     }// </editor-fold>//GEN-END:initComponents

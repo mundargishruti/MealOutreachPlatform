@@ -98,7 +98,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         restaurantRequestLabel = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
         tblDrWrkArea.setBackground(new java.awt.Color(204, 204, 204));
         tblDrWrkArea.setModel(new javax.swing.table.DefaultTableModel(
@@ -128,8 +128,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDrWrkArea);
 
-        orderProcessButton.setBackground(new java.awt.Color(0, 102, 102));
-        orderProcessButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderProcessButton.setBackground(new java.awt.Color(204, 130, 43));
+        orderProcessButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         orderProcessButton.setForeground(new java.awt.Color(255, 255, 255));
         orderProcessButton.setText("Order Process");
         orderProcessButton.addActionListener(new java.awt.event.ActionListener() {
@@ -138,17 +138,20 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterpriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        enterpriceLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        enterpriceLabel.setForeground(new java.awt.Color(204, 130, 43));
         enterpriceLabel.setText("Enterprise :");
 
-        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        valueLabel.setForeground(new java.awt.Color(204, 130, 43));
         valueLabel.setText("<value>");
 
-        orderWorkQueueLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderWorkQueueLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        orderWorkQueueLabel.setForeground(new java.awt.Color(204, 130, 43));
         orderWorkQueueLabel.setText("Food Order Work Queue");
 
-        assignToMeButton.setBackground(new java.awt.Color(0, 102, 102));
-        assignToMeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        assignToMeButton.setBackground(new java.awt.Color(204, 130, 43));
+        assignToMeButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         assignToMeButton.setForeground(new java.awt.Color(255, 255, 255));
         assignToMeButton.setText("Assign To Me");
         assignToMeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -157,8 +160,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        enterStatusButton.setBackground(new java.awt.Color(0, 102, 102));
-        enterStatusButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        enterStatusButton.setBackground(new java.awt.Color(204, 130, 43));
+        enterStatusButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         enterStatusButton.setForeground(new java.awt.Color(255, 255, 255));
         enterStatusButton.setText("List Order Items");
         enterStatusButton.addActionListener(new java.awt.event.ActionListener() {
@@ -167,8 +170,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        completeOrderButton.setBackground(new java.awt.Color(0, 102, 102));
-        completeOrderButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        completeOrderButton.setBackground(new java.awt.Color(204, 130, 43));
+        completeOrderButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         completeOrderButton.setForeground(new java.awt.Color(255, 255, 255));
         completeOrderButton.setText("Complete Order");
         completeOrderButton.addActionListener(new java.awt.event.ActionListener() {
@@ -177,8 +180,8 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        viewBeneficiaryButton.setBackground(new java.awt.Color(0, 102, 102));
-        viewBeneficiaryButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        viewBeneficiaryButton.setBackground(new java.awt.Color(204, 130, 43));
+        viewBeneficiaryButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         viewBeneficiaryButton.setForeground(new java.awt.Color(255, 255, 255));
         viewBeneficiaryButton.setText("View Beneficiary");
         viewBeneficiaryButton.addActionListener(new java.awt.event.ActionListener() {
@@ -187,11 +190,12 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        volunteerWorkAreaLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        volunteerWorkAreaLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        volunteerWorkAreaLabel.setForeground(new java.awt.Color(204, 130, 43));
         volunteerWorkAreaLabel.setText("Volunteer Work Area");
 
-        restaurantRequestLabel.setBackground(new java.awt.Color(0, 102, 102));
-        restaurantRequestLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        restaurantRequestLabel.setBackground(new java.awt.Color(204, 130, 43));
+        restaurantRequestLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         restaurantRequestLabel.setForeground(new java.awt.Color(255, 255, 255));
         restaurantRequestLabel.setText("Request Restaurant");
         restaurantRequestLabel.addActionListener(new java.awt.event.ActionListener() {
@@ -270,7 +274,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addContainerGap(148, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

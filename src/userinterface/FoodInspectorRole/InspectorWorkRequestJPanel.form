@@ -246,7 +246,7 @@
     <Component class="javax.swing.JLabel" name="inspectorProcessRequestImage">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/OfficeProcess.gif"/>
+          <Image iconType="3" name="/Images/16209033.jpg"/>
         </Property>
       </Properties>
     </Component>

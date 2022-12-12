@@ -64,16 +64,18 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
         backButton = new javax.swing.JButton();
         provideOrderImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setEnabled(false);
         setLayout(null);
 
-        provideStatusLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        provideStatusLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        provideStatusLabel.setForeground(new java.awt.Color(204, 130, 43));
         provideStatusLabel.setText("Provide Order Status");
         add(provideStatusLabel);
-        provideStatusLabel.setBounds(283, 30, 240, 29);
+        provideStatusLabel.setBounds(283, 30, 260, 37);
 
-        beneficiaryInformationLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        beneficiaryInformationLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        beneficiaryInformationLabel.setForeground(new java.awt.Color(204, 130, 43));
         beneficiaryInformationLabel.setText("BENEFICIARY INFORMATION");
         add(beneficiaryInformationLabel);
         beneficiaryInformationLabel.setBounds(337, 98, 210, 30);
@@ -82,24 +84,27 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
         add(firstNameText);
         firstNameText.setBounds(340, 190, 131, 23);
 
-        FirstNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        FirstNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        FirstNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         FirstNameLabel.setText("First Name :");
         add(FirstNameLabel);
-        FirstNameLabel.setBounds(260, 190, 77, 17);
+        FirstNameLabel.setBounds(227, 190, 110, 22);
 
-        lastNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lastNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        lastNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         lastNameLabel.setText("Last Name :");
         add(lastNameLabel);
-        lastNameLabel.setBounds(260, 300, 80, 17);
+        lastNameLabel.setBounds(230, 300, 100, 22);
 
         lastNameText.setEditable(false);
         add(lastNameText);
         lastNameText.setBounds(340, 300, 131, 23);
 
-        assignVolunteerInfoLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        assignVolunteerInfoLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        assignVolunteerInfoLabel.setForeground(new java.awt.Color(204, 130, 43));
         assignVolunteerInfoLabel.setText("Assigned Volunteer Information :");
         add(assignVolunteerInfoLabel);
-        assignVolunteerInfoLabel.setBounds(130, 260, 204, 17);
+        assignVolunteerInfoLabel.setBounds(110, 270, 223, 22);
 
         ageText.setEditable(false);
         ageText.addActionListener(new java.awt.event.ActionListener() {
@@ -110,15 +115,17 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
         add(ageText);
         ageText.setBounds(340, 340, 131, 23);
 
-        ageLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ageLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        ageLabel.setForeground(new java.awt.Color(204, 130, 43));
         ageLabel.setText("Age :");
         add(ageLabel);
-        ageLabel.setBounds(300, 340, 40, 17);
+        ageLabel.setBounds(300, 340, 40, 22);
 
-        orderStatusLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderStatusLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        orderStatusLabel.setForeground(new java.awt.Color(204, 130, 43));
         orderStatusLabel.setText("ORDER ITEMS");
         add(orderStatusLabel);
-        orderStatusLabel.setBounds(350, 380, 120, 17);
+        orderStatusLabel.setBounds(350, 380, 120, 22);
 
         txtPrscrptn.setColumns(20);
         txtPrscrptn.setRows(5);
@@ -127,10 +134,11 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
         add(jScrollPane1);
         jScrollPane1.setBounds(220, 410, 400, 86);
 
-        orderStatusCondition.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        orderStatusCondition.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        orderStatusCondition.setForeground(new java.awt.Color(204, 130, 43));
         orderStatusCondition.setText("Preferred Cuisine :");
         add(orderStatusCondition);
-        orderStatusCondition.setBounds(220, 220, 168, 17);
+        orderStatusCondition.setBounds(200, 220, 168, 22);
 
         orderDetailsText.setEditable(false);
         orderDetailsText.addActionListener(new java.awt.event.ActionListener() {
@@ -145,8 +153,8 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
         add(assignVolunteerInfoText);
         assignVolunteerInfoText.setBounds(340, 260, 131, 23);
 
-        submitButton.setBackground(new java.awt.Color(0, 102, 102));
-        submitButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        submitButton.setBackground(new java.awt.Color(204, 130, 43));
+        submitButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         submitButton.setForeground(new java.awt.Color(255, 255, 255));
         submitButton.setText("Submit");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -155,9 +163,9 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
             }
         });
         add(submitButton);
-        submitButton.setBounds(360, 520, 130, 29);
+        submitButton.setBounds(360, 520, 130, 30);
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
         backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
@@ -170,7 +178,7 @@ public class ProvideOrderDetailsJPanel extends javax.swing.JPanel {
         backButton.setBounds(29, 11, 90, 29);
 
         provideOrderImage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        provideOrderImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/doctor prescription.gif"))); // NOI18N
+        provideOrderImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ordeerprocess.gif"))); // NOI18N
         add(provideOrderImage);
         provideOrderImage.setBounds(50, 90, 680, 490);
     }// </editor-fold>//GEN-END:initComponents

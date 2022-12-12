@@ -182,7 +182,7 @@
           <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/restaurant.gif"/>
+          <Image iconType="3" name="/Images/orderProcessinggifff.gif"/>
         </Property>
         <Property name="verticalAlignment" type="int" value="1"/>
       </Properties>

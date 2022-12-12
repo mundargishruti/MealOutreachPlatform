@@ -124,7 +124,7 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
         manageEntAdminLAbel = new javax.swing.JLabel();
         img = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
         setLayout(null);
 
         manageEnterpriseTable.setBackground(new java.awt.Color(204, 204, 204));
@@ -153,11 +153,13 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
         add(jScrollPane1);
         jScrollPane1.setBounds(200, 90, 671, 88);
 
-        networkLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        networkLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        networkLabel.setForeground(new java.awt.Color(204, 130, 43));
         networkLabel.setText("Network");
         add(networkLabel);
-        networkLabel.setBounds(400, 230, 52, 17);
+        networkLabel.setBounds(382, 230, 70, 22);
 
+        networkComboBox.setForeground(new java.awt.Color(204, 130, 43));
         networkComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         networkComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,20 +169,23 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
         add(networkComboBox);
         networkComboBox.setBounds(490, 230, 136, 27);
 
-        usernameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        usernameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        usernameLabel.setForeground(new java.awt.Color(204, 130, 43));
         usernameLabel.setText("Username");
         add(usernameLabel);
-        usernameLabel.setBounds(380, 300, 70, 17);
+        usernameLabel.setBounds(360, 300, 90, 22);
 
         usernameText.setBackground(new java.awt.Color(204, 204, 204));
         add(usernameText);
         usernameText.setBounds(490, 290, 136, 25);
 
-        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        enterpriseLabel.setForeground(new java.awt.Color(204, 130, 43));
         enterpriseLabel.setText("Enterprise");
         add(enterpriseLabel);
-        enterpriseLabel.setBounds(380, 270, 70, 17);
+        enterpriseLabel.setBounds(360, 270, 90, 22);
 
+        EnterpriseComboBox.setForeground(new java.awt.Color(204, 130, 43));
         EnterpriseComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(EnterpriseComboBox);
         EnterpriseComboBox.setBounds(490, 260, 136, 27);
@@ -196,20 +201,22 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
         add(submitButton);
         submitButton.setBounds(490, 450, 100, 29);
 
-        passwordLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        passwordLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        passwordLabel.setForeground(new java.awt.Color(204, 130, 43));
         passwordLabel.setText("Password");
         add(passwordLabel);
-        passwordLabel.setBounds(390, 330, 57, 17);
+        passwordLabel.setBounds(367, 330, 80, 22);
 
         nameText.setBackground(new java.awt.Color(204, 204, 204));
         nameText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         add(nameText);
         nameText.setBounds(490, 410, 136, 28);
 
-        nameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        nameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        nameLabel.setForeground(new java.awt.Color(204, 130, 43));
         nameLabel.setText("Name");
         add(nameLabel);
-        nameLabel.setBounds(400, 410, 50, 17);
+        nameLabel.setBounds(380, 410, 70, 22);
 
         passwordText.setBackground(new java.awt.Color(204, 204, 204));
         add(passwordText);
@@ -232,18 +239,20 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
         add(rePasswordText);
         rePasswordText.setBounds(490, 370, 136, 29);
 
-        rePasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rePasswordLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        rePasswordLabel.setForeground(new java.awt.Color(204, 130, 43));
         rePasswordLabel.setText("re-enter Password");
         add(rePasswordLabel);
-        rePasswordLabel.setBounds(340, 370, 109, 17);
+        rePasswordLabel.setBounds(319, 370, 130, 22);
 
-        manageEntAdminLAbel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        manageEntAdminLAbel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        manageEntAdminLAbel.setForeground(new java.awt.Color(204, 130, 43));
         manageEntAdminLAbel.setText("ENTERPRISE ADMIN DETAILS");
         add(manageEntAdminLAbel);
-        manageEntAdminLAbel.setBounds(320, 20, 380, 29);
+        manageEntAdminLAbel.setBounds(320, 20, 380, 37);
 
         img.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manage enterprise admin.gif"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/73-734831_happy-customer-clipart.png"))); // NOI18N
         add(img);
         img.setBounds(70, 480, 310, 280);
     }// </editor-fold>//GEN-END:initComponents

@@ -68,10 +68,10 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
         tblNgoReq = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
         backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,26 +79,31 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        requestsFundNGOLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        requestsFundNGOLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        requestsFundNGOLabel.setForeground(new java.awt.Color(204, 130, 43));
         requestsFundNGOLabel.setText("Request Funds from NGO");
 
-        contributionsRecievedLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        contributionsRecievedLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        contributionsRecievedLabel.setForeground(new java.awt.Color(204, 130, 43));
         contributionsRecievedLabel.setText("Total Funds Recieved");
 
         totalNgoFundsRecievedText.setEditable(false);
         totalNgoFundsRecievedText.setBackground(new java.awt.Color(204, 204, 204));
         totalNgoFundsRecievedText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        allContributionsRequestLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        allContributionsRequestLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        allContributionsRequestLabel.setForeground(new java.awt.Color(204, 130, 43));
         allContributionsRequestLabel.setText("All Funds Requests");
 
-        hospitalAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        hospitalAddressLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        hospitalAddressLabel.setForeground(new java.awt.Color(204, 130, 43));
         hospitalAddressLabel.setText("Food Bank Address");
 
         hospitalAddressText.setBackground(new java.awt.Color(204, 204, 204));
         hospitalAddressText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        requiredAmountLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        requiredAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        requiredAmountLabel.setForeground(new java.awt.Color(204, 130, 43));
         requiredAmountLabel.setText("Amount Required By Food Bank");
 
         hospitalAmountText.setBackground(new java.awt.Color(204, 204, 204));
@@ -107,11 +112,12 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
         hospitalNameText.setBackground(new java.awt.Color(204, 204, 204));
         hospitalNameText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        hospitalNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        hospitalNameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        hospitalNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         hospitalNameLabel.setText("Name Of FoodBank");
 
-        requestFundsFromNgoButton.setBackground(new java.awt.Color(0, 102, 102));
-        requestFundsFromNgoButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        requestFundsFromNgoButton.setBackground(new java.awt.Color(204, 130, 43));
+        requestFundsFromNgoButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         requestFundsFromNgoButton.setText("Request Funds from NGO");
         requestFundsFromNgoButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +135,7 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Hospital Name", "Hospital Address", "Hospital Contribution", "Status"
+                "Food Bank Name", "Food Bank Address", "Food Bank Donation", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -169,8 +175,8 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(requiredAmountLabel)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(hospitalNameLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(hospitalAddressLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(hospitalAddressLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(hospitalNameLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -235,7 +241,7 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
                 .addComponent(allContributionsRequestLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(allcontibutionsTable, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(258, Short.MAX_VALUE))
+                .addContainerGap(254, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -66,7 +66,7 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
         deleteButton = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(253, 249, 232));
 
         tblManageNetwork.setBackground(new java.awt.Color(204, 204, 204));
         tblManageNetwork.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -101,11 +101,12 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
             tblManageNetwork.getColumnModel().getColumn(0).setResizable(false);
         }
 
-        nameLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        nameLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        nameLabel.setForeground(new java.awt.Color(204, 130, 43));
         nameLabel.setText("Name of Network");
 
-        submitButton.setBackground(new java.awt.Color(0, 102, 102));
-        submitButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        submitButton.setBackground(new java.awt.Color(204, 130, 43));
+        submitButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         submitButton.setForeground(new java.awt.Color(255, 255, 255));
         submitButton.setText("Submit");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -117,8 +118,8 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
         nameText.setBackground(new java.awt.Color(204, 204, 204));
         nameText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText(" Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +128,8 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 130, 43));
         jLabel2.setText("MANAGE NETWORKS");
 
         deleteButton.setBackground(new java.awt.Color(0, 102, 102));
@@ -140,7 +142,7 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/networks.gif"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/transparent-icon-organization-5f0385efd8e2c9.9313673515940664158884.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -148,15 +150,10 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(232, 232, 232)
-                        .addComponent(deleteButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(backButton)
-                        .addGap(242, 242, 242)
-                        .addComponent(jLabel2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(backButton)
+                .addGap(242, 242, 242)
+                .addComponent(jLabel2)
+                .addContainerGap(365, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -166,14 +163,18 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
                         .addComponent(nameText, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
-                        .addComponent(submitButton)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(72, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 831, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(73, 73, 73))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(deleteButton)
+                            .addComponent(submitButton))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(61, 61, 61))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,12 +198,12 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
                         .addGap(27, 27, 27)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 489, Short.MAX_VALUE))
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 523, Short.MAX_VALUE)
+                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
+                        .addGap(55, 55, 55)
                         .addComponent(deleteButton)
-                        .addGap(0, 447, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
     }// </editor-fold>//GEN-END:initComponents
 

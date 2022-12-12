@@ -117,7 +117,7 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         add(lblLabTypReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, -1, -1));
 
         imgLabTstReq.setForeground(new java.awt.Color(204, 130, 43));
-        imgLabTstReq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/restaurant.gif"))); // NOI18N
+        imgLabTstReq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/orderProcessinggifff.gif"))); // NOI18N
         imgLabTstReq.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         add(imgLabTstReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1460, 810));
     }// </editor-fold>//GEN-END:initComponents

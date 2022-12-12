@@ -101,7 +101,7 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Policy Name", "Policy Coverage %", "Monthly Premium", "Policy T&C"
+                "Card Name", "Card Coverage", "Monthly Allowance", "Policy T&C"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -125,9 +125,9 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
 
         monthlyPremiumLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         monthlyPremiumLabel.setForeground(new java.awt.Color(204, 130, 43));
-        monthlyPremiumLabel.setText("Monthly Premium(USD)");
+        monthlyPremiumLabel.setText("Monthly Allowance");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/EBTcard.PNG"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Blog-Post-Images-1.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -138,7 +138,10 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(533, 533, 533)
+                                .addComponent(none))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -164,14 +167,12 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(139, 139, 139)
                                         .addComponent(createCardButton)))
-                                .addGap(58, 58, 58)
-                                .addComponent(jLabel8)))
-                        .addGap(315, 315, 315)
-                        .addComponent(none))
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel8))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(301, 301, 301)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(897, Short.MAX_VALUE))
+                .addContainerGap(722, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
