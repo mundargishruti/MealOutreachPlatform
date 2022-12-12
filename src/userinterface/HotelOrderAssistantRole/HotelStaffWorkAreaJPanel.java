@@ -112,7 +112,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tbl);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(310, 30, 730, 90);
+        jScrollPane1.setBounds(110, 30, 730, 90);
 
         assignToMe.setBackground(new java.awt.Color(253, 249, 232));
         assignToMe.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
@@ -123,7 +123,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(assignToMe);
-        assignToMe.setBounds(220, 140, 140, 40);
+        assignToMe.setBounds(110, 140, 140, 40);
 
         processButton.setBackground(new java.awt.Color(253, 249, 232));
         processButton.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
@@ -134,12 +134,12 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(processButton);
-        processButton.setBounds(1010, 140, 140, 40);
+        processButton.setBounds(750, 140, 140, 40);
 
         img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/brunch-order-up.gif"))); // NOI18N
         img.setToolTipText("");
         add(img);
-        img.setBounds(320, 200, 710, 370);
+        img.setBounds(220, 200, 710, 370);
 
         btnBldTst.setBackground(new java.awt.Color(253, 249, 232));
         btnBldTst.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
@@ -150,7 +150,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(btnBldTst);
-        btnBldTst.setBounds(400, 140, 140, 40);
+        btnBldTst.setBounds(270, 140, 140, 40);
 
         btnMriScan.setBackground(new java.awt.Color(253, 249, 232));
         btnMriScan.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
@@ -161,7 +161,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(btnMriScan);
-        btnMriScan.setBounds(810, 140, 140, 40);
+        btnMriScan.setBounds(590, 140, 140, 40);
 
         btnXray.setBackground(new java.awt.Color(253, 249, 232));
         btnXray.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
@@ -172,7 +172,7 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(btnXray);
-        btnXray.setBounds(610, 140, 140, 40);
+        btnXray.setBounds(430, 140, 140, 40);
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignToMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignToMeActionPerformed

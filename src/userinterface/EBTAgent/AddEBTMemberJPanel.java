@@ -139,8 +139,8 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
             }
         });
 
-        addCustomerButton.setBackground(new java.awt.Color(0, 102, 102));
-        addCustomerButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        addCustomerButton.setBackground(new java.awt.Color(204, 130, 43));
+        addCustomerButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         addCustomerButton.setForeground(java.awt.Color.white);
         addCustomerButton.setText("ADD CARD HOLDER");
         addCustomerButton.addActionListener(new java.awt.event.ActionListener() {
@@ -383,7 +383,7 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
         }
 
         if (coverageText.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Please provide Insurance Coverage");
+            JOptionPane.showMessageDialog(null, "Please provide EBT Coverage");
             return;
         } else {
 
@@ -580,7 +580,7 @@ public class AddEBTMemberJPanel extends javax.swing.JPanel {
         coverageText.setText(String.valueOf(selectedPolicy.getAllowance()));
         }
         else{
-            JOptionPane.showMessageDialog(null , "No Existing policy!");
+            JOptionPane.showMessageDialog(null , "No Existing Card!");
             return;
         }
 

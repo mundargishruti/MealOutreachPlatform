@@ -179,7 +179,7 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Assign the request first");
                 return;
             }
-            if (insrWrReq.getProcessStatus().equalsIgnoreCase("Insurance Claim Approved")) {
+            if (insrWrReq.getProcessStatus().equalsIgnoreCase("EBT Claim Approved")) {
                 JOptionPane.showMessageDialog(null, "Request already Completed", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -191,7 +191,7 @@ public class EBTFinanceWorkAreaJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Request assigned to other Officer", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            if (insrWrReq.getProcessStatus().equals("Insurance Claim Rejected")) {
+            if (insrWrReq.getProcessStatus().equals("EBT Claim Rejected")) {
                 JOptionPane.showMessageDialog(null, "Cannot process a Rejected Request", "Warning!", JOptionPane.WARNING_MESSAGE);
                 return;
             } else {

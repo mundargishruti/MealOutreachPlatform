@@ -157,7 +157,7 @@ public class EmailBillingInformationToBeneficiary extends javax.swing.JPanel {
             Logger.getLogger(EmailBillingInformationToBeneficiary.class.getName()).log(Level.SEVERE, null, ex);
         }
         JOptionPane.showMessageDialog(null, "Billing information sent to " + acntBillingReq.getBeneficiary().getBenFirstName());
-        acntBillingReq.setProcessStatus("Patient Transaction Completed");
+        acntBillingReq.setProcessStatus("Order Transaction Completed");
     }//GEN-LAST:event_sendEmailButtonActionPerformed
 
     private void clearTextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearTextButtonActionPerformed

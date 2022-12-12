@@ -200,8 +200,8 @@ public class EBTRequestsJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "Request already sent to Finance department");
                 return;
             }
-            if (isnrWrkReq.getProcessStatus().equalsIgnoreCase("Insurance Claim Approved")) {
-                JOptionPane.showMessageDialog(null, "Insurance Claim is already Approved");
+            if (isnrWrkReq.getProcessStatus().equalsIgnoreCase("EBT Claim Approved")) {
+                JOptionPane.showMessageDialog(null, "EBT Claim is already Approved");
                 return;
             }
 

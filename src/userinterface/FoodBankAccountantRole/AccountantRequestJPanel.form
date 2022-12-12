@@ -34,20 +34,8 @@
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace pref="121" max="32767" attributes="0"/>
+                          <EmptySpace pref="125" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="ebtCardNumberLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="ebtCardType" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="ebtCardTyeText" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
-                                      <Component id="ebtCardNumberText" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
                               <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="payableAmountLabel" min="-2" max="-2" attributes="0"/>
@@ -61,21 +49,36 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="ssnLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="firstNameLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lastNameLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="billAmountLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="firstNameText" min="-2" pref="100" max="-2" attributes="0"/>
-                                          <Component id="lastNameText" min="-2" pref="100" max="-2" attributes="0"/>
-                                          <Component id="billAmountText" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="ebtCardNumberLabel" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ebtCardType" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="ebtCardTyeText" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                                              <Component id="ebtCardNumberText" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <Component id="ssnText" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="ssnLabel" min="-2" max="-2" attributes="0"/>
+                                              <Component id="firstNameLabel" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lastNameLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="billAmountLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                  <Component id="firstNameText" min="-2" pref="100" max="-2" attributes="0"/>
+                                                  <Component id="lastNameText" min="-2" pref="100" max="-2" attributes="0"/>
+                                                  <Component id="billAmountText" min="-2" pref="100" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="ssnText" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                               </Group>
                           </Group>
@@ -239,7 +242,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="2b" green="82" red="cc" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Insurance Policy Name"/>
+        <Property name="text" type="java.lang.String" value="EBT Card Type"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="payableAmountLabel">
@@ -372,7 +375,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Complete Patient Transaction"/>
+        <Property name="text" type="java.lang.String" value="Complete Order Transaction"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="completeBeneficiaryTransactionButtonActionPerformed"/>

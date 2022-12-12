@@ -115,7 +115,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         ebtCardType.setBackground(new java.awt.Color(255, 255, 255));
         ebtCardType.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         ebtCardType.setForeground(new java.awt.Color(204, 130, 43));
-        ebtCardType.setText("Insurance Policy Name");
+        ebtCardType.setText("EBT Card Type");
 
         payableAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
         payableAmountLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
@@ -176,7 +176,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         completeBeneficiaryTransactionButton.setBackground(new java.awt.Color(204, 130, 43));
         completeBeneficiaryTransactionButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         completeBeneficiaryTransactionButton.setForeground(new java.awt.Color(255, 255, 255));
-        completeBeneficiaryTransactionButton.setText("Complete Patient Transaction");
+        completeBeneficiaryTransactionButton.setText("Complete Order Transaction");
         completeBeneficiaryTransactionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 completeBeneficiaryTransactionButtonActionPerformed(evt);
@@ -198,17 +198,8 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
                         .addComponent(processBillingAreaLabel))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                            .addContainerGap(121, Short.MAX_VALUE)
+                            .addContainerGap(125, Short.MAX_VALUE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(12, 12, 12)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(ebtCardNumberLabel)
-                                        .addComponent(ebtCardType))
-                                    .addGap(52, 52, 52)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(ebtCardTyeText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(ebtCardNumberText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(payableAmountLabel)
@@ -219,19 +210,29 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
                                         .addGap(52, 52, 52)
                                         .addComponent(ebtClaimAmountText, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addGap(77, 77, 77)
+                                    .addGap(34, 34, 34)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(ssnLabel)
-                                        .addComponent(firstNameLabel)
-                                        .addComponent(lastNameLabel)
-                                        .addComponent(billAmountLabel))
-                                    .addGap(52, 52, 52)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(firstNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lastNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(billAmountText, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(ssnText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(ebtCardNumberLabel)
+                                                .addComponent(ebtCardType))
+                                            .addGap(52, 52, 52)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(ebtCardTyeText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(ebtCardNumberText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(ssnLabel)
+                                                .addComponent(firstNameLabel)
+                                                .addComponent(lastNameLabel)
+                                                .addComponent(billAmountLabel))
+                                            .addGap(52, 52, 52)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(firstNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(lastNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(billAmountText, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(ssnText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGap(48, 48, 48)
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 444, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createSequentialGroup()
@@ -298,7 +299,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         String insuranceCompany = acntBillingReq.getBeneficiary().getEBTMembers().getEbt().getEBTAgent();
         double claimAmount = Double.parseDouble(ebtClaimAmountText.getText());
         double billAmount = acntBillingReq.getBillTotal();
-        if (("Patient Transaction Completed").equals(acntBillingReq.getProcessStatus())) {
+        if (("Order Transaction Completed").equals(acntBillingReq.getProcessStatus())) {
             JOptionPane.showMessageDialog(null, "EBT claim request sent for verification");
             return;
         }
@@ -343,7 +344,7 @@ public class AccountantRequestJPanel extends javax.swing.JPanel {
         if (org != null) {
             org.getProcessQueue().getProcesReq().add(isnrWrkReq);
             usrAcnt.getProcessQueue().getProcesReq().add(isnrWrkReq);
-            acntBillingReq.setProcessStatus("Patient Transaction Completed");
+            acntBillingReq.setProcessStatus("Order Transaction Completed");
             acntBillingReq.getBeneficiary().setIsOrderDelivered(true);
             JOptionPane.showMessageDialog(null, "Successful!!");
             initiateClainButton.setEnabled(false);

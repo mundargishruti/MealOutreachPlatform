@@ -195,7 +195,7 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
         AcceptAmount.setEnabled(true);
         int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
         if (dialogResult == JOptionPane.YES_OPTION) {
-            isnrWrReq.setProcessStatus("Insurance Claim Approved");
+            isnrWrReq.setProcessStatus("EBT Claim Approved");
             JOptionPane.showMessageDialog(null, "Claim Approved Successfully!!!");
             AcceptAmount.setEnabled(false);
             rejectButton.setEnabled(false);
@@ -206,7 +206,7 @@ public class EBTFinanceRequest extends javax.swing.JPanel {
 
         int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
         if (dialogResult == JOptionPane.YES_OPTION) {
-            isnrWrReq.setProcessStatus("Insurance Claim Rejected");
+            isnrWrReq.setProcessStatus("EBT Claim Rejected");
             rejectButton.setEnabled(false);
             AcceptAmount.setEnabled(false);
         }

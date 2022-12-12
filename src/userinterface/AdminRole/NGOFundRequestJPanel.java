@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Pratik
+ * @author shruti
  */
 import code.EcoSystem;
 import code.Enterprise.Enterprise;
@@ -70,7 +70,7 @@ public class NGOFundRequestJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(253, 249, 232));
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
         backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {

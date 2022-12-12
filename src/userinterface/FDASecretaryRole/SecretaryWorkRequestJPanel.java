@@ -234,7 +234,7 @@ public class SecretaryWorkRequestJPanel extends javax.swing.JPanel {
             org.getProcessQueue().getProcesReq().add(governmentFundRequest);
             userAccount.getProcessQueue().getProcesReq().add(governmentFundRequest);
         }
-        JOptionPane.showMessageDialog(null, "Request to Treasurer Successful!!!");
+        JOptionPane.showMessageDialog(null, "Request to Manager Successful!!!");
         FDAMessageText.setText("");
             RestaurantDisapprovedButton.setEnabled(false);
             sendRequestToManagerButton.setEnabled(false);

@@ -114,7 +114,7 @@ public class HotelWorkRequestJPanel extends javax.swing.JPanel {
             if (dialogResult == JOptionPane.YES_OPTION) {
                 patientTreatmentWorkRequest.setOrderResult(labResult);
                 patientTreatmentWorkRequest.setProcessStatus("Order from storage Completed");
-                JOptionPane.showMessageDialog(null, "Result submitted successfully");
+                JOptionPane.showMessageDialog(null, "Status submitted successfully");
                 statusText.setText("");
                 SubmitReportButton.setEnabled(false);
             }

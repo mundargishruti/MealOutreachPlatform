@@ -204,7 +204,7 @@ public class TreasurerWorkRequestJPanel extends javax.swing.JPanel {
          int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
          if (dialogResult == JOptionPane.YES_OPTION) {
         govtFndRequest.setProcessStatus("Accepted");
-        JOptionPane.showMessageDialog(null, "Funds Disbursed Successfully!!!");
+        JOptionPane.showMessageDialog(null, "Restaurant Passes Regulations!!!");
         ApproveRestaurantButton.setEnabled(false);
         messageText.setText("");
         rejectRestaurantButton.setEnabled(false);

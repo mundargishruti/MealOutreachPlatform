@@ -102,7 +102,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "PatientId", "Patient Name", "Assigned Doctor", "Accountant ", "Status", "Billing Amount"
+                "BeneficiaryId", "Beneficiary Name", "Assigned Volunteer", "Accountant ", "Status", "Billing Amount"
             }
         ) {
             Class[] types = new Class [] {
@@ -132,7 +132,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
             }
         });
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
         backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
@@ -144,7 +144,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 130, 43));
-        jLabel1.setText("Receptionist: Patient Billing Area");
+        jLabel1.setText("Receptionist: Order Billing Area");
 
         tblInsClmStatus.setBackground(new java.awt.Color(204, 204, 204));
         tblInsClmStatus.setModel(new javax.swing.table.DefaultTableModel(
@@ -169,7 +169,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Policy Number", "Accountant", "Insurance Agent", "Billing Amount", "Claim Amount", "Claim Status"
+                "EBT Number", "Accountant", "EBT Agent", "Billing Amount", "Claim Amount", "Claim Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -191,11 +191,11 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
 
         EBTClaimStatusLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         EBTClaimStatusLabel.setForeground(new java.awt.Color(204, 130, 43));
-        EBTClaimStatusLabel.setText("Insurance Claim Status Table");
+        EBTClaimStatusLabel.setText("EBT Claim Status Table");
 
         BeneficiaryBillLabel.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         BeneficiaryBillLabel.setForeground(new java.awt.Color(204, 130, 43));
-        BeneficiaryBillLabel.setText("Patient Billing Table");
+        BeneficiaryBillLabel.setText("Order Billing Table");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -218,7 +218,7 @@ public class ReimburseBillingsJPanel extends javax.swing.JPanel {
                                 .addComponent(assignToMeButton)
                                 .addGap(69, 69, 69)
                                 .addComponent(processRequestButton)))
-                        .addGap(0, 324, Short.MAX_VALUE))
+                        .addGap(0, 325, Short.MAX_VALUE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2))
                 .addContainerGap())

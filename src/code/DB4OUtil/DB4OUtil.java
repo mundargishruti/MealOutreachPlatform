@@ -61,7 +61,7 @@ public class DB4OUtil {
         ObjectContainer connection = createConnection();            
         connection.store(ecosystem);
         connection.commit();
-        System.out.println("EcoSystem="+connection.query(EcoSystem.class));
+        //System.out.println("EcoSystem="+connection.query(EcoSystem.class));
         connection.close();
         
     }

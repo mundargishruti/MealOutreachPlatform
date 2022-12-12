@@ -162,7 +162,7 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
                 pplTbl();
                 JOptionPane.showMessageDialog(null, "The request is assigned to You!");
             } else {
-                JOptionPane.showMessageDialog(null, "Cannot assign this lab request as the current status is: " + request.getProcessStatus());
+                JOptionPane.showMessageDialog(null, "Cannot assign this order as the current status is: " + request.getProcessStatus());
             }
         }
         else

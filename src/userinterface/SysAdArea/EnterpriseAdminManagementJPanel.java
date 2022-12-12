@@ -190,7 +190,8 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
         add(EnterpriseComboBox);
         EnterpriseComboBox.setBounds(490, 260, 136, 27);
 
-        submitButton.setBackground(new java.awt.Color(0, 102, 102));
+        submitButton.setBackground(new java.awt.Color(204, 130, 43));
+        submitButton.setFont(new java.awt.Font("YuGothic", 0, 13)); // NOI18N
         submitButton.setForeground(new java.awt.Color(255, 255, 255));
         submitButton.setText("CREATE");
         submitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -222,8 +223,8 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
         add(passwordText);
         passwordText.setBounds(490, 330, 136, 25);
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -232,7 +233,7 @@ public class EnterpriseAdminManagementJPanel extends javax.swing.JPanel {
             }
         });
         add(backButton);
-        backButton.setBounds(10, 11, 90, 29);
+        backButton.setBounds(10, 11, 90, 30);
 
         rePasswordText.setBackground(new java.awt.Color(204, 204, 204));
         rePasswordText.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N

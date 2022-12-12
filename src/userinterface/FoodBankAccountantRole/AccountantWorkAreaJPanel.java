@@ -119,7 +119,7 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Patient Id", "Patient Name", "Phone Number", "Address", "Treatment Status", "Appointment Date", "Category"
+                "Beneficiary Id", "Beneficiary Name", "Phone Number", "Address", "Order Status", "Appointment Date", "Category"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -220,7 +220,7 @@ public class AccountantWorkAreaJPanel extends javax.swing.JPanel {
         }
         defaultPieDataset.setValue("Order Pending", underTreatmentPatients.size());
         defaultPieDataset.setValue("Order Completed", treatedPatients.size());
-        JFreeChart chart = ChartFactory.createPieChart("Patient Status Pie Chart", defaultPieDataset, true, true, true);
+        JFreeChart chart = ChartFactory.createPieChart("Order Status Pie Chart", defaultPieDataset, true, true, true);
         PiePlot piePlot =(PiePlot) chart.getPlot();
         ChartFrame frame = new ChartFrame("Order Status Pie Chart", chart);
         frame.setVisible(true);

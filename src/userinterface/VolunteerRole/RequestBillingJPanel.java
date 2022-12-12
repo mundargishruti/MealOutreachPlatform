@@ -82,13 +82,13 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         billingRequestLabel.setForeground(new java.awt.Color(204, 130, 43));
         billingRequestLabel.setText("Billing Request");
         add(billingRequestLabel);
-        billingRequestLabel.setBounds(310, 60, 94, 20);
+        billingRequestLabel.setBounds(310, 60, 110, 17);
 
         BeneficiaryInfoLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         BeneficiaryInfoLabel.setForeground(new java.awt.Color(204, 130, 43));
         BeneficiaryInfoLabel.setText("BENEFICIARY INFORMATION");
         add(BeneficiaryInfoLabel);
-        BeneficiaryInfoLabel.setBounds(300, 130, 180, 20);
+        BeneficiaryInfoLabel.setBounds(300, 130, 180, 17);
 
         firstNameText.setEditable(false);
         add(firstNameText);
@@ -98,13 +98,13 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         firstNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         firstNameLabel.setText("First Name :");
         add(firstNameLabel);
-        firstNameLabel.setBounds(270, 170, 90, 20);
+        firstNameLabel.setBounds(270, 170, 90, 17);
 
         lastNameLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         lastNameLabel.setForeground(new java.awt.Color(204, 130, 43));
         lastNameLabel.setText("Last Name :");
         add(lastNameLabel);
-        lastNameLabel.setBounds(270, 240, 73, 20);
+        lastNameLabel.setBounds(270, 240, 84, 17);
 
         lastNameText.setEditable(false);
         add(lastNameText);
@@ -114,7 +114,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         assignVounteerLabel.setForeground(new java.awt.Color(204, 130, 43));
         assignVounteerLabel.setText("Assigned Volunteer :");
         add(assignVounteerLabel);
-        assignVounteerLabel.setBounds(210, 200, 140, 20);
+        assignVounteerLabel.setBounds(210, 200, 140, 17);
 
         assignedVolunteerText.setEditable(false);
         add(assignedVolunteerText);
@@ -124,7 +124,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         beneficiaryIdLabel.setForeground(new java.awt.Color(204, 130, 43));
         beneficiaryIdLabel.setText("Beneficiary Id:");
         add(beneficiaryIdLabel);
-        beneficiaryIdLabel.setBounds(250, 280, 110, 20);
+        beneficiaryIdLabel.setBounds(250, 280, 110, 17);
 
         beneficiaryIDText.setEditable(false);
         add(beneficiaryIDText);
@@ -134,13 +134,13 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         billingInformationLabel.setForeground(new java.awt.Color(204, 130, 43));
         billingInformationLabel.setText("BILLING INFORMATION");
         add(billingInformationLabel);
-        billingInformationLabel.setBounds(300, 360, 153, 20);
+        billingInformationLabel.setBounds(300, 360, 168, 17);
 
         orderActualPriceLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         orderActualPriceLabel.setForeground(new java.awt.Color(204, 130, 43));
-        orderActualPriceLabel.setText("Actual Amount");
+        orderActualPriceLabel.setText("Service Fee");
         add(orderActualPriceLabel);
-        orderActualPriceLabel.setBounds(230, 390, 94, 21);
+        orderActualPriceLabel.setBounds(230, 390, 79, 21);
 
         orderActualPriceText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,9 +152,9 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
 
         orderDiscountedPriceLabel.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         orderDiscountedPriceLabel.setForeground(new java.awt.Color(204, 130, 43));
-        orderDiscountedPriceLabel.setText("Quantity in lbs");
+        orderDiscountedPriceLabel.setText("State Tax");
         add(orderDiscountedPriceLabel);
-        orderDiscountedPriceLabel.setBounds(230, 460, 93, 21);
+        orderDiscountedPriceLabel.setBounds(230, 460, 140, 21);
         add(orderDiscountedPriceText);
         orderDiscountedPriceText.setBounds(410, 460, 82, 23);
 
@@ -176,12 +176,12 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
         lblMiscChargesUSD.setForeground(new java.awt.Color(204, 130, 43));
         lblMiscChargesUSD.setText("Delivery Charges");
         add(lblMiscChargesUSD);
-        lblMiscChargesUSD.setBounds(230, 490, 105, 17);
+        lblMiscChargesUSD.setBounds(230, 490, 140, 17);
         add(txtMiscChargesUSD);
         txtMiscChargesUSD.setBounds(410, 490, 82, 23);
 
-        sendBillRequestButton.setBackground(new java.awt.Color(0, 102, 102));
-        sendBillRequestButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        sendBillRequestButton.setBackground(new java.awt.Color(204, 130, 43));
+        sendBillRequestButton.setFont(new java.awt.Font("YuGothic", 1, 12)); // NOI18N
         sendBillRequestButton.setForeground(new java.awt.Color(255, 255, 255));
         sendBillRequestButton.setText("Send Billing Request");
         sendBillRequestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -190,10 +190,10 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             }
         });
         add(sendBillRequestButton);
-        sendBillRequestButton.setBounds(300, 540, 150, 32);
+        sendBillRequestButton.setBounds(300, 540, 161, 32);
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
-        backButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
+        backButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         backButton.setForeground(new java.awt.Color(255, 255, 255));
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +202,7 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             }
         });
         add(backButton);
-        backButton.setBounds(80, 40, 90, 25);
+        backButton.setBounds(80, 40, 78, 30);
 
         billRequestImage.setBackground(new java.awt.Color(253, 249, 232));
         billRequestImage.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -233,20 +233,20 @@ public class RequestBillingJPanel extends javax.swing.JPanel {
             try {
                 Double.parseDouble(consultationCharge);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please provide a Numeric value for Billing Charges");
+                JOptionPane.showMessageDialog(null, "Please provide a Numeric value for Service Fee");
                 return;
             }
             
             try {
                 Integer.parseInt(labChargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Discounted Charges");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Discounted Amount");
                 return;
             }
             try {
                 Integer.parseInt(miscellaneouschargesStr);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Quantity");
+                JOptionPane.showMessageDialog(null, "Please type a Numeric value for Tax");
                 return;
             }
             try {

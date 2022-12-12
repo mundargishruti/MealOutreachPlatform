@@ -155,8 +155,8 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         add(txtAmt);
         txtAmt.setBounds(260, 140, 143, 23);
 
-        btnSendFundReq.setBackground(new java.awt.Color(0, 102, 102));
-        btnSendFundReq.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnSendFundReq.setBackground(new java.awt.Color(255, 255, 255));
+        btnSendFundReq.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnSendFundReq.setText("Send Request for Report");
         btnSendFundReq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,8 +204,8 @@ public class RequestReportJPanel extends javax.swing.JPanel {
         add(lblAllFndReq);
         lblAllFndReq.setBounds(270, 270, 150, 36);
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnBack.setBackground(new java.awt.Color(255, 255, 255));
+        btnBack.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnBack.setText(" Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -246,13 +246,13 @@ public class RequestReportJPanel extends javax.swing.JPanel {
             try {
                 Integer.parseInt(population);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type an Integer for population");
+                JOptionPane.showMessageDialog(null, "Please type an Integer for Id");
                 return;
             }
             try {
                 Double.parseDouble(amount);
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Please type an Integer value for amount");
+                JOptionPane.showMessageDialog(null, "Please type an numeric value for zip code");
                 return;
             }
             FDAApprovalRequest governmentFundRequest = new FDAApprovalRequest(location, Integer.parseInt(population), Double.parseDouble(amount));

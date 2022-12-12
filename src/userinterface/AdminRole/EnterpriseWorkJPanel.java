@@ -64,7 +64,7 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(253, 249, 232));
 
         myWorkAreaLabel.setBackground(new java.awt.Color(204, 130, 43));
-        myWorkAreaLabel.setFont(new java.awt.Font("YuKyokasho", 1, 24)); // NOI18N
+        myWorkAreaLabel.setFont(new java.awt.Font("YuGothic", 1, 24)); // NOI18N
         myWorkAreaLabel.setForeground(new java.awt.Color(204, 130, 43));
         myWorkAreaLabel.setText("ADMINISTRATION PORTAL");
 
@@ -99,11 +99,12 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
         });
 
         enterpriseLabel.setBackground(new java.awt.Color(204, 130, 43));
-        enterpriseLabel.setFont(new java.awt.Font("YuKyokasho", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(204, 130, 43));
         enterpriseLabel.setText("Enterprise :");
 
-        enterpriseValueLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseValueLabel.setFont(new java.awt.Font("YuGothic", 1, 18)); // NOI18N
+        enterpriseValueLabel.setForeground(new java.awt.Color(204, 130, 43));
 
         FDAReportRequestButton.setBackground(new java.awt.Color(222, 167, 50));
         FDAReportRequestButton.setFont(new java.awt.Font("YuKyokasho", 1, 14)); // NOI18N
@@ -115,7 +116,7 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
             }
         });
 
-        workAreaImageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Screenshot.png"))); // NOI18N
+        workAreaImageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/systemlogin.gif"))); // NOI18N
 
         NgoFundReqbutton.setBackground(new java.awt.Color(222, 167, 50));
         NgoFundReqbutton.setFont(new java.awt.Font("YuKyokasho", 1, 14)); // NOI18N
@@ -157,11 +158,11 @@ public class EnterpriseWorkJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(170, 170, 170)
-                        .addComponent(workAreaImageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(275, 275, 275)
-                        .addComponent(myWorkAreaLabel)))
+                        .addComponent(myWorkAreaLabel))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(170, 170, 170)
+                        .addComponent(workAreaImageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

@@ -94,7 +94,7 @@ public class InspectorWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        backButton.setBackground(new java.awt.Color(0, 102, 102));
+        backButton.setBackground(new java.awt.Color(204, 130, 43));
         backButton.setFont(new java.awt.Font("YuGothic", 1, 11)); // NOI18N
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {

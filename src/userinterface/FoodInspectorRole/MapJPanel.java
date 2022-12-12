@@ -16,7 +16,7 @@ import org.jxmapviewer.viewer.TileFactoryInfo;
 
 /**
  *
- * @author Pratik
+ * @author jomraj
  */
 public class MapJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;

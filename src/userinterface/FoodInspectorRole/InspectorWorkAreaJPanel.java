@@ -67,7 +67,7 @@ public class InspectorWorkAreaJPanel extends javax.swing.JPanel {
         lblGovHealthOfcrWrkArea.setText("Government Health Officer Work Area");
 
         tblWrkReqTbl.setBackground(new java.awt.Color(204, 204, 204));
-        tblWrkReqTbl.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
+        tblWrkReqTbl.setFont(new java.awt.Font("YuGothic", 0, 12)); // NOI18N
         tblWrkReqTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},

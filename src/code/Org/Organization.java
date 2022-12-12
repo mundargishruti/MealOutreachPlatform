@@ -23,13 +23,13 @@ public abstract class Organization {
 // Enums for ogranisation types
     public enum Type {
 
-        //HealthCenter Organization Types:
+        
         Admin("Admin Organization"), Volunteer("Volunteer Organization"), OrderProcess("OrderProcess Organization"), Benificiary("Beneficiary Organization"), Accountant("Accountant Organization"),Restaurant("Reastaurant Organization"),
-        //Insurance Organization Types:
+        
         EBTAgent("EBTAgent Organization"), EBTPlanner("EBTPlanner Organization"), EBTFinance("EBTFinance Organization"),
-        //Government Organization Types
+        
         FDAManger("FDAManger Organization"), Secretary("Secretary Organization"), FoodInspector("FoodInspector Organization"),
-        //NGO Organization Types
+        
         NGOAdministrator("Administrator Organization"), Director("Director Organization");
         
 

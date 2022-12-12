@@ -5,7 +5,7 @@
 package userinterface.SysAdArea;
 /**
  *
- * @author Parth
+ * @author Rajvi
  */
 import code.EcoSystem;
 import code.Networks.Networks;
@@ -132,8 +132,8 @@ public class NetworkManagementJPanel extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(204, 130, 43));
         jLabel2.setText("MANAGE NETWORKS");
 
-        deleteButton.setBackground(new java.awt.Color(0, 102, 102));
-        deleteButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        deleteButton.setBackground(new java.awt.Color(204, 130, 43));
+        deleteButton.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         deleteButton.setForeground(new java.awt.Color(255, 255, 255));
         deleteButton.setText("Delete");
         deleteButton.addActionListener(new java.awt.event.ActionListener() {

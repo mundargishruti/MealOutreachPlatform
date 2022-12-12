@@ -62,10 +62,10 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(253, 249, 232));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnReqTst.setBackground(new java.awt.Color(0, 102, 102));
+        btnReqTst.setBackground(new java.awt.Color(204, 130, 43));
         btnReqTst.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         btnReqTst.setForeground(new java.awt.Color(255, 255, 255));
-        btnReqTst.setText("Request Restaurant");
+        btnReqTst.setText("Request Storage");
         btnReqTst.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReqTstActionPerformed(evt);
@@ -80,7 +80,7 @@ public class RequestHotelFoodJPanel extends javax.swing.JPanel {
         add(lblMsg, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, 70, -1));
         add(txtMsg, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 140, 130, 30));
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
+        btnBack.setBackground(new java.awt.Color(204, 130, 43));
         btnBack.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");

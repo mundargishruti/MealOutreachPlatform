@@ -240,7 +240,7 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
         try {
             policyCoverage = Double.parseDouble(poliCoverageTxt);
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Please enter numeric values for insurance coverage");
+            JOptionPane.showMessageDialog(null, "Please enter numeric values for EBT coverage");
 
             return;
         }
@@ -249,7 +249,7 @@ public class EBTPlannerWorkAreaJPanel extends javax.swing.JPanel {
         try {
             monthlyPremium = Double.parseDouble(monthlyPremiumTxt);
         } catch (NumberFormatException ne) {
-            JOptionPane.showMessageDialog(null, "Please enter numeric values for monthly premium");
+            JOptionPane.showMessageDialog(null, "Please enter numeric values for monthly reimbursement");
         }
 
         List<EBTCard> plcys = insrCmpEnt.getEbtCardDir().getEBTCards();

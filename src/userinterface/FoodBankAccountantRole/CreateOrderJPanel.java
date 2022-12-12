@@ -132,7 +132,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         lblFndPtnt.setForeground(new java.awt.Color(204, 130, 43));
         lblFndPtnt.setText("CREATE ORDER");
 
-        btnBack.setBackground(new java.awt.Color(0, 102, 102));
+        btnBack.setBackground(new java.awt.Color(204, 130, 43));
         btnBack.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
@@ -146,8 +146,8 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         lblAlreadyRegistered.setForeground(new java.awt.Color(204, 130, 43));
         lblAlreadyRegistered.setText("Already registered? Provide SSN: ");
 
-        btnFndPtnt.setBackground(new java.awt.Color(0, 102, 102));
-        btnFndPtnt.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnFndPtnt.setBackground(new java.awt.Color(204, 130, 43));
+        btnFndPtnt.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnFndPtnt.setForeground(new java.awt.Color(255, 255, 255));
         btnFndPtnt.setText("Find Beneficiary");
         btnFndPtnt.addActionListener(new java.awt.event.ActionListener() {
@@ -250,11 +250,11 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
 
         lblIsThsPtntCvrdByIns.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         lblIsThsPtntCvrdByIns.setForeground(new java.awt.Color(204, 130, 43));
-        lblIsThsPtntCvrdByIns.setText("Is customer has EBT");
+        lblIsThsPtntCvrdByIns.setText("Does customer have EBT");
 
         lblPlcyNm.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         lblPlcyNm.setForeground(new java.awt.Color(204, 130, 43));
-        lblPlcyNm.setText("Policy Name :");
+        lblPlcyNm.setText("Card Type :");
 
         lblInsCmpny.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         lblInsCmpny.setForeground(new java.awt.Color(204, 130, 43));
@@ -291,10 +291,10 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
 
         txtPlcyNo.setEnabled(false);
 
-        btnFndPlcy.setBackground(new java.awt.Color(0, 102, 102));
+        btnFndPlcy.setBackground(new java.awt.Color(204, 130, 43));
         btnFndPlcy.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnFndPlcy.setForeground(new java.awt.Color(153, 153, 153));
-        btnFndPlcy.setText("Find Policy");
+        btnFndPlcy.setText("Find EBT");
         btnFndPlcy.setEnabled(false);
         btnFndPlcy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -318,7 +318,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
         btnRstPlcyNo.setBackground(new java.awt.Color(204, 130, 43));
         btnRstPlcyNo.setFont(new java.awt.Font("YuGothic", 1, 14)); // NOI18N
         btnRstPlcyNo.setForeground(new java.awt.Color(255, 255, 255));
-        btnRstPlcyNo.setText("Reset Policy Number");
+        btnRstPlcyNo.setText("Reset EBT Number");
         btnRstPlcyNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRstPlcyNoActionPerformed(evt);
@@ -468,7 +468,6 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
                                             .addComponent(cbDrTyp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtRsnFrVst, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(131, 131, 131)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(35, 35, 35))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -579,7 +578,7 @@ public class CreateOrderJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnCrt, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(351, Short.MAX_VALUE))
+                .addContainerGap(348, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
