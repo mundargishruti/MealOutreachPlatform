@@ -12,8 +12,11 @@ The food bank can also ask NGO for contributions in the form of funds. It sends 
 -This is how a Food Bank could operate efficiently.
 
 
+![Class_Diagram](https://user-images.githubusercontent.com/114544125/206963233-102c7473-c4c4-4694-8328-fdec3f2d0fd2.png)
 
 
+
+![Block_Diagram](https://user-images.githubusercontent.com/114544125/206963255-709d18ca-ca8e-40ba-b370-71e8dd70a6ed.png)
 
 
 
