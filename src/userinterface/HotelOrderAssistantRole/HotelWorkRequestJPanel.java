@@ -113,7 +113,7 @@ public class HotelWorkRequestJPanel extends javax.swing.JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to proceed?");
             if (dialogResult == JOptionPane.YES_OPTION) {
                 patientTreatmentWorkRequest.setOrderResult(labResult);
-                patientTreatmentWorkRequest.setOrderStatus("Lab Test Completed");
+                patientTreatmentWorkRequest.setProcessStatus("Lab Test Completed");
                 JOptionPane.showMessageDialog(null, "Result submitted successfully");
                 statusText.setText("");
                 SubmitReportButton.setEnabled(false);

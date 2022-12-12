@@ -7,6 +7,7 @@ package userinterface.VolunteerRole;
 
 import code.Enterprise.Enterprise;
 import code.Org.OrgVolunteer;
+
 import code.SystemUserAccount.SystemUsers;
 import code.ProcessQueue.RestaurantRequest;
 import code.ProcessQueue.OrderPlaceRequest;
@@ -20,12 +21,12 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author Rajvi
+ * @author Parth
  */
 public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel jPanel;
-    private OrgVolunteer docOrg;
+    private OrgVolunteer volOrg;
     private Enterprise entrpz;
     private SystemUsers usrAcnt;
     //private Map<PatientTreatmentWorkRequest, LabTestWorkRequest> patientToLab = new HashMap<>();
@@ -37,7 +38,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         initComponents();
 
         this.jPanel = userProcessContainer;
-        this.docOrg = organization;
+        this.volOrg = organization;
         this.entrpz = enterprise;
         this.usrAcnt = account;
         valueLabel.setText(enterprise.getName());
@@ -51,7 +52,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
 
 
-        for (ProcessRequest req : docOrg.getProcessQueue().getProcesReq()) {
+        for (ProcessRequest req : volOrg.getProcessQueue().getProcesReq()) {
             Object[] row = new Object[8];
             
             if(((OrderPlaceRequest) req).getBeneficiary().getVolType().equals(usrAcnt.getUserType())){
@@ -286,7 +287,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             wrkReq = (OrderPlaceRequest) tblDrWrkArea.getValueAt(selectedRow, 3);
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Consultation")) {
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();
                         jPanel.add("RequestLabTestJPanel", new RequestHotelFoodJPanel(jPanel, usrAcnt, entrpz, wrkReq));
@@ -370,14 +371,14 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getOrderStatus().equalsIgnoreCase("Lab Test Completed") || wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")||wrkReq.getProcessStatus().equalsIgnoreCase("Blood Bank Request Completed")) {
+                if (wrkReq.getProcessStatus().equalsIgnoreCase("Lab Test Completed") || wrkReq.getProcessStatus().equalsIgnoreCase("Under Consultation")||wrkReq.getProcessStatus().equalsIgnoreCase("Blood Bank Request Completed")) {
 
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("ProvidePrescriptionJPanel", new ProvideOrderDetailsJPanel(jPanel, usrAcnt, entrpz, wrkReq));
                     layout.next(jPanel);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot prescribe the Patient as the status is: " + wrkReq.getOrderStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot prescribe the Patient as the status is: " + wrkReq.getProcessStatus());
                 }
             } else {
 
@@ -403,7 +404,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
             if(wrkReq.getVolunteerAssigned() != null)
             {
             if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                if (wrkReq.getOrderStatus().equalsIgnoreCase("Prescription Provided")) {
+                if (wrkReq.getProcessStatus().equalsIgnoreCase("Prescription Provided")) {
 
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     jPanel.add("RequestBillingJPanel", new RequestBillingJPanel(jPanel, usrAcnt, entrpz, wrkReq));
@@ -411,7 +412,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
                     layout.next(jPanel);
 
                 } else {
-                    if(wrkReq.getOrderStatus().equalsIgnoreCase("Consultation Completed"))
+                    if(wrkReq.getProcessStatus().equalsIgnoreCase("Consultation Completed"))
                     {
                         JOptionPane.showMessageDialog(null, "Treatment is already complete!");
                     }
@@ -447,7 +448,7 @@ public class VolunteerWorkAreaJPanel extends javax.swing.JPanel {
 
             if (wrkReq.getVolunteerAssigned() != null) {
                 if (usrAcnt.equals(wrkReq.getVolunteerAssigned())) {
-                    if (wrkReq.getOrderStatus().equalsIgnoreCase("Under Consultation")) {
+                    if (wrkReq.getProcessStatus().equalsIgnoreCase("Under Consultation")) {
 
 
                         CardLayout layout = (CardLayout) jPanel.getLayout();

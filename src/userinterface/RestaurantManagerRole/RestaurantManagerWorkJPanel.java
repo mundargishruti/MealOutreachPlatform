@@ -155,14 +155,14 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
 
         OrderPlaceRequest request = (OrderPlaceRequest) restaurantTable.getValueAt(selectedRow, 0);
         if (request.getRestaurantManagement() == null) {
-            if (request.getOrderStatus().equalsIgnoreCase("SentToBloodBank")) {
+            if (request.getProcessStatus().equalsIgnoreCase("SentToBloodBank")) {
                 request.setRestaurantManagement(usrAcnt);
-                request.setOrderStatus("Pending on Blood Bank");
+                request.setProcessStatus("Pending on Blood Bank");
                 //  request.setReceiver(userAccount);
                 pplTbl();
                 JOptionPane.showMessageDialog(null, "The request is assigned to You!");
             } else {
-                JOptionPane.showMessageDialog(null, "Cannot assign this lab request as the current status is: " + request.getOrderStatus());
+                JOptionPane.showMessageDialog(null, "Cannot assign this lab request as the current status is: " + request.getProcessStatus());
             }
         }
         else
@@ -196,13 +196,13 @@ public class RestaurantManagerWorkJPanel extends javax.swing.JPanel {
         RestaurantWorkRequestJPanel processWorkRequestJPanel = new RestaurantWorkRequestJPanel(jPanel, request);
         if (request.getRestaurantManagement() != null) {
             if (usrAcnt.equals(request.getRestaurantManagement())) {
-                if (request.getOrderStatus().equalsIgnoreCase("Pending on Blood Bank")) {
+                if (request.getProcessStatus().equalsIgnoreCase("Pending on Blood Bank")) {
 
                     jPanel.add("processWorkRequestJPanel", processWorkRequestJPanel);
                     CardLayout layout = (CardLayout) jPanel.getLayout();
                     layout.next(jPanel);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Cannot process the request as the status is: " + request.getOrderStatus());
+                    JOptionPane.showMessageDialog(null, "Cannot process the request as the status is: " + request.getProcessStatus());
                 }
 
             } else {

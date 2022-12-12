@@ -186,14 +186,14 @@ public class HotelStaffWorkAreaJPanel extends javax.swing.JPanel {
 
         OrderPlaceRequest request = (OrderPlaceRequest) tbl.getValueAt(selectedRow, 0);
         if (request.getOrderPlacedVolunteer() == null) {
-            if (request.getOrderStatus().equalsIgnoreCase("SentToLab")) {
+            if (request.getProcessStatus().equalsIgnoreCase("SentToLab")) {
                 request.setOrderPlacedVolunteer(userAccount);
                 request.setProcessStatus("Pending on Lab Assistant");
                 //  request.setReceiver(userAccount);
                 popLabAsstTbl();
                 JOptionPane.showMessageDialog(null, "The request is assigned to You!");
             } else {
-                JOptionPane.showMessageDialog(null, "Cannot assign this lab request as the current status is: " + request.getOrderStatus());
+                JOptionPane.showMessageDialog(null, "Cannot assign this lab request as the current status is: " + request.getProcessStatus());
             }
         }
         else
